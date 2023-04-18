@@ -1,3 +1,4 @@
 name: Kane Adams, Games Programmer
 markdown: kramsdown
 permalink: /blog/:year/:month/:day/:title
+theme: hacker
