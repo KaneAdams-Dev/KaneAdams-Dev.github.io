@@ -10,11 +10,7 @@ nav ul, footer ul {
     padding: 5px;
     list-style: none;
     font-weight: bold;
-
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 5;
+    
     position: fixed;
 }
 
