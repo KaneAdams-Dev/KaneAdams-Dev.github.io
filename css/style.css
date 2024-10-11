@@ -6,6 +6,11 @@ body {
     padding-bottom: 60px;
 }
 
+.topnav{
+    background-color: #333;
+    overflow: hidden;
+}
+
 footer{
     position: fixed;
     bottom: 0;
