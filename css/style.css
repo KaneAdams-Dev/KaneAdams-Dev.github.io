@@ -69,6 +69,10 @@ button{
     background-color: #A5FFEE;
 }
 
+footer{
+    background-color: pink;
+}
+
 .Gallery{
     float: left;
     width: 65%;
