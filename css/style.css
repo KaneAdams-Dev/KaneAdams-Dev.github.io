@@ -11,6 +11,11 @@ body {
     overflow: hidden;
 }
 
+.bottomnav{
+    background-color: #333;
+    overflow: hidden;
+}
+
 footer{
     position: fixed;
     bottom: 0;
