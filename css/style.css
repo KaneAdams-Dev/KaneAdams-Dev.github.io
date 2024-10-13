@@ -128,5 +128,6 @@ button{
         float:none;
         display:block;
         width:100%;
+        background: rgb(202, 37, 152);
       }
 }
