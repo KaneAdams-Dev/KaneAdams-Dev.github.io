@@ -16,6 +16,11 @@ body {
     overflow: hidden;
 }
 
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+
 footer{
     position: fixed;
     bottom: 0;
