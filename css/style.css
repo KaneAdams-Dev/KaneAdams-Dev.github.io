@@ -72,13 +72,13 @@ a:hover {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 8vw;
     font: 'Helvetica', 'Arial', 'Sans-Serif';
     color: #A5FFEE;
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 2vw;
     line-height: 1em;
     color: #FFFFFF;
 }
@@ -110,6 +110,8 @@ video{
 button{
     color:#333b3a;
     background-color: #A5FFEE;
+    width: 100%;
+    
 }
 
 .Gallery{
