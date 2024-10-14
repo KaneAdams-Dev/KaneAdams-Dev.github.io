@@ -2,15 +2,24 @@
 <html lang="en">
     <head>
         <title>{{ page.title }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Link to main stylesheet -->
         <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="/Scripts/Core.js"></script>
     </head>
+
     <body>
-        <div class="topnav">
+        <div class="topnav" id="topnavbar">
             <a class="active" href="/">Home</a>
             <a href="/aboutme.html">About Me</a>
             <a href="/blog.html">Blog</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="MenuIconClicked(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
         </div>
         
         <div class="main">
