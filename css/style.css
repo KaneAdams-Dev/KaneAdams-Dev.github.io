@@ -196,6 +196,10 @@ button {
 }
 
 @media screen and (max-width: 720px) {
+    /* .topnav {
+        width: 100%;
+    } */
+
     .topnav a {
         font-size: 32px;
     }
@@ -226,13 +230,13 @@ button {
     .Gallery, .Breakdown {
         float:none;
         display:block;
-        width:100%;
+        width: 100%;
       }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 960px){
     .iframe-webgl iframe {
-        width: 100%;
+        width: 95%;
         height: 75%;
     }
 }
