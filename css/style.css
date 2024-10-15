@@ -190,6 +190,11 @@ button {
     border: 10px solid rgba(0, 0, 0, 0);
 }
 
+.iframe-webgl iframe {
+    width: 960px;
+    height: 540px;
+}
+
 @media screen and (max-width: 640px) {
     .topnav a {
         font-size: 32px;
@@ -223,4 +228,17 @@ button {
         display:block;
         width:100%;
       }
+}
+
+@media screen and (max-width: 950px){
+    .iframe-webgl iframe {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .iframe-webgl iframe {
+        display: none;
+    }
 }
