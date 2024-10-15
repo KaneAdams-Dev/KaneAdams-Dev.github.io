@@ -233,6 +233,6 @@ button {
 @media screen and (max-width: 720px){
     .iframe-webgl iframe {
         width: 100%;
-        height: 50%;
+        height: 75%;
     }
 }
