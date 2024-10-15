@@ -195,7 +195,7 @@ button {
     height: 540px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     .topnav a {
         font-size: 32px;
     }
@@ -207,7 +207,7 @@ button {
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 720px){
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
         position: absolute;
@@ -222,7 +222,7 @@ button {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
     .Gallery, .Breakdown {
         float:none;
         display:block;
@@ -230,15 +230,9 @@ button {
       }
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 720px){
     .iframe-webgl iframe {
         width: 100%;
         height: 50%;
-    }
-}
-
-@media screen and (max-width: 420px){
-    .iframe-webgl iframe {
-        display: none;
     }
 }
