@@ -124,7 +124,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 8vw;
+    font-size: 2rem;
     font: 'Helvetica', 'Arial', 'Sans-Serif';
     color: #A5FFEE;
 }
@@ -157,9 +157,9 @@ p {
     rotate(45deg);
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+ul .posts {
+    margin: 1.5rem auto 2.5px;
+    font-size: 1.5rem;
 }
 
 ul.posts li {
