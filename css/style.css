@@ -190,9 +190,16 @@ button {
     border: 10px solid rgba(0, 0, 0, 0);
 }
 
+.iframe-webgl{
+    margin: 0 auto;
+    background-color: rgb(4, 3, 49);
+}
 .iframe-webgl iframe {
     width: 960px;
-    height: 540px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 1%;
+    display: block;
 }
 
 @media screen and (max-width: 720px) {
