@@ -80,6 +80,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    border: 1rem solid rebeccapurple;
 }
 
 .main {
@@ -199,8 +200,8 @@ button {
     background-color: rgb(4, 3, 49);
 }
 .iframe-webgl iframe {
-    width: 960px;
-    height: 600px;
+    width: 60rem;
+    height: 35rem;
     margin: 0 auto;
     padding: 1%;
     display: block;
