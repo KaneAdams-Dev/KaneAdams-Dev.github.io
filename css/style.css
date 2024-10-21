@@ -106,6 +106,10 @@ body {
     font-size: 1rem;
 }
 
+.collapsible p{
+    color: #191919;
+}
+
 .active, .collapsible:hover {
     background-color: #ccc;
 }
@@ -115,6 +119,14 @@ body {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+}
+
+.collapsible-content p {
+    color:#191919;
+}
+
+.collapsible-content img {
+    position: center;
 }
 
 /* footer {
