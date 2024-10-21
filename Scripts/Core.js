@@ -12,3 +12,12 @@ function MenuIconClicked(a_icon){
 function ChangeIcon(x){
     
 }
+
+function goFullscreen(a_id){
+    var element = document.getElementById(a_id);
+    if (element.mozRequestFullScreen){
+        element.mozRequestFullScreen();
+    }else if (element.webkitRequestFullScreen){
+        element.webkitRequestFullScreen();
+    }
+}
