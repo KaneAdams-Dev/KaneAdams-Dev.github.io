@@ -23,7 +23,7 @@ function goFullscreen(a_id){
 }
 
 function expandCollapsible(){
-    var coll = document.getElementByClassName("collapsible");
+    var coll = document.getElementsByClassName("collapsible");
     var i;
 
     for (i = 0; i < coll.length; i++){
