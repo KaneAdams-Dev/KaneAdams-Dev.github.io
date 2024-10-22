@@ -130,7 +130,7 @@ body {
     margin-left: 0.5rem;
 }
 
-.collapsible .active::after{
+.collapsible.active::after{
     content: '\2796';
 }
 
