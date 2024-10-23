@@ -24,11 +24,10 @@ function goFullscreen(a_id){
 
 function initialiseCollapsibles(){
     var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++){
+    
+    for (var i = 0; i < coll.length; i++){
         if (i === 0){
-            expandCollapsibles(coll[i])
+            expandCollapsibles(coll[i]);
         }
 
         coll[i].addEventListener("click", function() {
@@ -42,6 +41,7 @@ function expandCollapsibles(a_coll){
     var content = a_coll.nextElementSibling;
     if (content.style.maxHeight){
         content.style.maxHeight = null;
+        
     } else {
         content.style.maxHeight = content.scrollHeight + "px";
     }
