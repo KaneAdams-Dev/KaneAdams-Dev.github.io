@@ -22,29 +22,27 @@ function goFullscreen(a_id){
     }
 }
 
-function expandCollapsible(){
+function initialiseCollapsibles(){
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
     for (i = 0; i < coll.length; i++){
+        if (i === 0){
+            expandCollapsibles(coll[i])
+        }
+
         coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
+            expandCollapsibles(this);
         });
     }
 }
 
-// function expandColl(a_coll){
-//     a_coll.classList.toggle("active");
-//     var content = a_coll.nextElementSibling;
-//     if (content.style.maxHeight){
-//         content.style.maxHeight = null;
-//     } else {
-//         content.style.maxHeight = content.scrollHeight + "px";
-//     }
-// }
+function expandCollapsibles(a_coll){
+    a_coll.classList.toggle("active");
+    var content = a_coll.nextElementSibling;
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }
+}
