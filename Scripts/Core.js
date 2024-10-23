@@ -33,18 +33,18 @@ function expandCollapsible(){
             if (content.style.maxHeight){
                 content.style.maxHeight = null;
             } else {
-                content.style.maxHeight = content.scrollHeight + "rem";
+                content.style.maxHeight = content.scrollHeight + "px";
             }
         });
     }
 }
 
-function expandColl(a_coll){
-    a_coll.classList.toggle("active");
-    var content = a_coll.nextElementSibling;
-    if (content.style.maxHeight){
-        content.style.maxHeight = null;
-    } else {
-        content.style.maxHeight = content.scrollHeight + "rem";
-    }
-}
+// function expandColl(a_coll){
+//     a_coll.classList.toggle("active");
+//     var content = a_coll.nextElementSibling;
+//     if (content.style.maxHeight){
+//         content.style.maxHeight = null;
+//     } else {
+//         content.style.maxHeight = content.scrollHeight + "px";
+//     }
+// }

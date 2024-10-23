@@ -9,6 +9,7 @@ body {
     color: #FFFFFF;
     padding-bottom: 60px;
     font-family: Helvetica, Arial, Sans-Serif;
+    height: 1000vh;
 }
 
 .topnav {
@@ -96,7 +97,7 @@ body {
 
 .collapsible{
     background-color: #404040;
-    color: #444;
+    color: #cfcece;
     cursor: pointer;
     padding: 1.2rem;
     width: 100%;
@@ -119,7 +120,7 @@ body {
     max-height: 0;
     overflow: hidden;
     background-color: #505050;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.2s ease-out;
 }
 
 .collapsible::after{
