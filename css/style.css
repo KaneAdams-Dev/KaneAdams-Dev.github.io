@@ -250,23 +250,24 @@ button {
 }
 
 .iframe-webgl{
-    margin: 0 auto;
-    background-color: rgb(4, 3, 49);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 100vh;                  /* Set height to full viewport height */
-    width: 100vw;                   /* Set width to full viewport width */
-    box-sizing: border-box;         /* Include padding in width/height calculations */
+    margin: 0 auto;
+    padding: 1%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .iframe-webgl iframe {
-    width: 60rem;
-    height: 35rem;
-    margin: 0 auto;
-    padding: 1%;
-    display: block;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 60rem;
+    
+    height: auto;
+    border: 5px solid transparent;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 45rem) {
@@ -309,19 +310,11 @@ button {
 }
 
 @media screen and (max-width: 60rem){
-    .iframe-webgl {
-        padding-bottom: 56.25%;
-        width: 100%;
-        position: relative;
-    }
+     .iframe-webgl{
+        padding: 5px;
+     }
 
-    .iframe-webgl .embedded-game{
-        position: absolute;
-       
-        width: 100%;
-        height: 100%;
-
-        left: 0;
-        top: 0;
-    }
+     .iframe-webgl iframe {
+        aspect-ratio: 4 / 3;
+     }
 }
