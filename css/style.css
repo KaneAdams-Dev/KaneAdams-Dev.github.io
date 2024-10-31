@@ -39,12 +39,6 @@ header .icon {
     display: none;
 }
 
-/* .topnav a:checked {
-    background: #ddd;
-    color: black;
-    text-decoration: none;
-} */
-
 footer {
     background-color: #333;
     overflow: hidden;
@@ -143,32 +137,6 @@ footer a:hover {
     position: center;
 }
 
-/* footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #d5d5d5;
-    font-size: 1rem;
-    background-color:  #191919;
-    text-align: center;
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-nav ul, footer ul {
-    padding: 0.25rem;
-    list-style: none;
-    font-weight: bold;
-    
-    position: fixed;
-} */
-/* 
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-} */
-
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -263,7 +231,7 @@ button {
 .iframe-webgl iframe {
     aspect-ratio: 16 / 9;
     width: 100%;
-    /* max-width: 100rem; */
+    max-width: 100rem;
     
     height: auto;
     border: 5px solid transparent;
@@ -271,10 +239,6 @@ button {
 }
 
 @media screen and (max-width: 45rem) {
-    /* .topnav {
-        width: 100%;
-    } */
-
     header a {
         font-size: 2rem;
     }
