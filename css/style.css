@@ -39,13 +39,22 @@ header .icon {
     display: none;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100;
+}
+
+#content-wrap {
+    padding-bottom: 3rem;
+}
+
 footer {
     background-color: #333;
     overflow: hidden;
     position: absolute; 
     bottom: 0;
     width: 100%;
-    z-index: 9999;
+    height: 3rem;
 }
 
 footer a {
