@@ -231,7 +231,7 @@ button {
 .iframe-webgl iframe {
     aspect-ratio: 16 / 9;
     width: 100%;
-    max-width: 75rem;
+    max-width: 100rem;
     
     height: auto;
     border: 5px solid transparent;
