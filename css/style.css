@@ -231,7 +231,7 @@ button {
 .iframe-webgl iframe {
     aspect-ratio: 16 / 9;
     width: 100%;
-    max-width: 95rem;
+    max-width: 80rem;
     
     height: auto;
     border: 5px solid transparent;
@@ -270,7 +270,7 @@ button {
         float:none;
         display:block;
         width: 100%;
-      }
+    }
 }
 
 @media screen and ((max-width: 60rem) and (max-height > max-width)){
