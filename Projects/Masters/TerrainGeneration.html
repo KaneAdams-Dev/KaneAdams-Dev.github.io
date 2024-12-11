@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mobbers | Lead Programmer
+title: Terrain Generator | Lead Programmer
 ---
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ title: Mobbers | Lead Programmer
 
     <body onload="initialiseCollapsibles()">
         <section id="main-content">
-            <h1>Mobbers</h1>
+            <h1>Terrain Generator</h1>
             <div class="VideoPreview">
                 <video controls width="100%">
                     <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4"/>
@@ -23,17 +23,20 @@ title: Mobbers | Lead Programmer
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="iframe-webgl">
-                    
-                    <iframe class="embedded-game" id="embeddedGame"
-                    mozallowfullscreen="true" 
-                    src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no" frameborder="0"></iframe>
-                    
+
+                <br>
+
+                <div class="embedded-game">
+                    <div class="iframe-webgl">
+                        <iframe id="PerlinNoise"
+                        mozallowfullscreen="true" src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no" frameborder="0"></iframe>
+                    </div>
+                    <div class="iframe-hotbar">
+                        <button onclick="copyToClipboard('PerlinNoise');">Share</button>
+                        <button class="right-button" onclick="goFullscreen('embeddedGame'); return false">FullScreen</button>
+                    </div>
                 </div>
-                <div>
-                    <br>
-                    <button onclick="goFullscreen('embeddedGame'); return false">FullScreen</button>
-                </div>
+                
             </div>
 
             <br>
