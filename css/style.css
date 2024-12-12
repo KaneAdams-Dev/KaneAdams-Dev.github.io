@@ -254,7 +254,11 @@ button {
     box-sizing: border-box;
 }
 
-.iframe-webgl{
+.embedded-game { 
+    max-width: 80rem;
+}
+
+.iframe-webgl {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +276,7 @@ button {
     height: auto;
 }
 
-.iframe-hotbar{
+.iframe-hotbar {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #505050;
