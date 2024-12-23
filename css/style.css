@@ -260,6 +260,7 @@ button {
 
 .iframe-webgl {
     display: flex;
+    flex-direction: column;     /* Stack children vertically */
     justify-content: center;
     align-items: center;
 
@@ -277,20 +278,15 @@ button {
 }
 
 .iframe-hotbar {
-    max-width: 80rem;
-    padding-top: 5px;
-    padding-bottom: 5px;display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #505050;
     width: 100%;
-    display: inline-block;
+    max-width: 80rem;
+    min-height: 1.5rem;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #505050;
+    
     position: relative;
-    
-    
-
-    /* border-top: 5px solid #505050;
-    border-bottom: 5px solid #505050; */
 }
 
 .iframe-hotbar button {
