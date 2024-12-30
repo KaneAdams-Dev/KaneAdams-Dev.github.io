@@ -280,14 +280,14 @@ button {
 }
 
 @media screen and (max-width: 45rem){
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon {
+    #top-nav.responsive {position: relative;}
+    #top-nav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
     
-    .navbar.responsive a {
+    #top-nav.responsive a {
         float: none;
         display: block;
         text-align: left;
