@@ -272,7 +272,7 @@ button {
         font-size: 2rem;
     }
     
-    #top-nav a:not(:first-child) {display: none;}
+    /* #top-nav a:not(:first-child) {display: none;} */
     #top-nav a.icon {
         float: right;
         display: block;
@@ -285,6 +285,10 @@ button {
         position: absolute;
         right: 0;
         top: 0;
+    }
+
+    #top-nav.responsive a:not(:first-child) {
+        display: block; /* Show hidden links */
     }
     
     #top-nav.responsive a {
