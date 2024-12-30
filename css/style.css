@@ -62,7 +62,7 @@ p {
 }
 
 #top-nav {
-    position: absolute;
+    position: fixed;
 }
 
 #top-nav .icon {
