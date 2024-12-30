@@ -61,6 +61,10 @@ p {
     text-decoration: none;
 }
 
+#top-nav {
+    position: absolute;
+}
+
 #top-nav .icon {
     display: none;
 }
@@ -272,7 +276,7 @@ button {
         font-size: 2rem;
     }
     
-    /* #top-nav a:not(:first-child) {display: none;} */
+     #top-nav a:not(:first-child) {display: none;} 
     #top-nav a.icon {
         float: right;
         display: block;
@@ -308,6 +312,11 @@ button {
 
     .photo-gallery {
         max-width: 100%;
+    }
+
+    .main{
+        height: 1000px;
+        padding-top: 32px;
     }
 }
 
