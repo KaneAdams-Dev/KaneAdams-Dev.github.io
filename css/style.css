@@ -70,6 +70,14 @@ p {
     display: none;
 }
 
+#synopse{
+    margin: 10px;
+}
+
+#synopse p {
+    text-align: center;
+}
+
 .main {
     margin-top: 64px;
 }
