@@ -293,7 +293,7 @@ button {
 }
 
 @media screen and (max-width: 45rem){
-    #top-nav.responsive {position: relative;}
+    /*#top-nav.responsive {position: relative;}*/
     #top-nav.responsive a.icon {
         position: absolute;
         right: 0;
