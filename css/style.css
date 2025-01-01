@@ -70,11 +70,12 @@ p {
     display: none;
 }
 
-#synopse{
-    margin: 10px;
+#bottom-nav {
+    margin-top: 10px;
 }
 
-#synopse p {
+#synopse{
+    margin: 10px;
     text-align: center;
 }
 
