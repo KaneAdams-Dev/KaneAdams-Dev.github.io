@@ -201,9 +201,15 @@ img {
 }
 
 video {
-    max-width: 100%;
-    max-height: 100%;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 80rem;
+
+    display: block;
+    margin: auto;
+    height: auto;
 }
+
 
 button {
     color: #333b3a;
