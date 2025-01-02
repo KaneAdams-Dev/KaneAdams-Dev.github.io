@@ -29,7 +29,6 @@ h1 {
 p {
     font-size: 1rem;
     color: #FFFFFF;
-    margin: 2rem;
 }
 
 #page-container {
@@ -56,7 +55,7 @@ p {
     padding: 16px 16px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background: #ddd;
     color: black;
     text-decoration: none;
@@ -74,14 +73,16 @@ p {
     margin-top: 10px;
 }
 
-#synopse{
+#synopse {
     margin: 10px;
     text-align: center;
 }
 
 .main {
     margin-top: 64px;
+    margin-left: 1rem;
 }
+
 
 .iframe-container {
     position: relative;
@@ -92,15 +93,15 @@ p {
 
 .iframe-container iframe {
     position: absolute;
-    
+
     top: 0;
-    left: 0;  
+    left: 0;
     bottom: 0;
     right: 0;
-    
+
     width: 100%;
     height: 100%;
-    
+
     border: 1rem solid #191919;
 }
 
@@ -112,7 +113,7 @@ p {
 
 /* Collapsibles */
 
-.collapsible{
+.collapsible {
     background-color: #404040;
     color: #cfcece;
     cursor: pointer;
@@ -124,11 +125,12 @@ p {
     font-size: 1rem;
 }
 
-.collapsible p{
+.collapsible p {
     color: #f1f1f1;
 }
 
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
     background-color: #505050;
 }
 
@@ -140,7 +142,7 @@ p {
     transition: max-height 0.2s ease-out;
 }
 
-.collapsible::after{
+.collapsible::after {
     content: '\02795';
     font-size: 0.8rem;
     color: white;
@@ -148,19 +150,21 @@ p {
     margin-left: 0.5rem;
 }
 
-.collapsible.active::after{
+.collapsible.active::after {
     content: '\2796';
 }
 
 .collapsible-content p {
-    color:#f1f1f1;
+    color: #f1f1f1;
 }
 
 .collapsible-content img {
     position: center;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 2rem;
     height: 0.25rem;
     background-color: white;
@@ -168,18 +172,16 @@ p {
     transition: 0.4s;
 }
 
-.change .bar1{
-    transform: translate(0, 0.64rem)
-    rotate(-45deg);
+.change .bar1 {
+    transform: translate(0, 0.64rem) rotate(-45deg);
 }
 
-.change .bar2{
+.change .bar2 {
     opacity: 0;
 }
 
-.change .bar3{
-    transform: translate(0, -0.64rem)
-    rotate(45deg);
+.change .bar3 {
+    transform: translate(0, -0.64rem) rotate(45deg);
 }
 
 ul .posts {
@@ -203,7 +205,7 @@ video {
 }
 
 button {
-    color:#333b3a;
+    color: #333b3a;
     background-color: #A5FFEE;
 }
 
@@ -217,7 +219,7 @@ button {
     overflow: hidden;
     border: 10px solid rgba(0, 0, 0, 0);
 } */
- 
+
 .content-pair {
     display: flex;
     flex-wrap: wrap;
@@ -246,7 +248,8 @@ button {
 
 .iframe-webgl {
     display: flex;
-    flex-direction: column;     /* Stack children vertically */
+    flex-direction: column;
+    /* Stack children vertically */
     justify-content: center;
     align-items: center;
 
@@ -259,7 +262,7 @@ button {
     aspect-ratio: 16 / 9;
     width: 100%;
     max-width: 80rem;
-    
+
     height: auto;
 }
 
@@ -267,11 +270,11 @@ button {
     width: 100%;
     max-width: 80rem;
     min-height: 1.5rem;
-    
+
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #505050;
-    
+
     position: relative;
 }
 
@@ -293,15 +296,19 @@ button {
     #top-nav a {
         font-size: 2rem;
     }
-    
-     #top-nav a:not(:first-child) {display: none;} 
+
+    #top-nav a:not(:first-child) {
+        display: none;
+    }
+
     #top-nav a.icon {
         float: right;
         display: block;
     }
 }
 
-@media screen and (max-width: 45rem){
+@media screen and (max-width: 45rem) {
+
     /*#top-nav.responsive {position: relative;}*/
     #top-nav.responsive a.icon {
         position: absolute;
@@ -310,9 +317,10 @@ button {
     }
 
     #top-nav.responsive a:not(:first-child) {
-        display: block; /* Show hidden links */
+        display: block;
+        /* Show hidden links */
     }
-    
+
     #top-nav.responsive a {
         float: none;
         display: block;
@@ -332,18 +340,18 @@ button {
         max-width: 100%;
     }
 
-    .main{
+    .main {
         /* height: 1000px; */
-        margin-top: 64px; 
-    } 
+        margin-top: 64px;
+    }
 }
 
-@media screen and ((max-width: 60rem) and (max-height > max-width)){
-     .iframe-webgl{
+@media screen and ((max-width: 60rem) and (max-height > max-width)) {
+    .iframe-webgl {
         padding: 5px;
-     }
+    }
 
-     .iframe-webgl iframe {
+    .iframe-webgl iframe {
         aspect-ratio: 4 / 3;
-     }
+    }
 }
