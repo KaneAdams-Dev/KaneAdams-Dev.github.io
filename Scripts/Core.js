@@ -1,62 +1,62 @@
-function MenuIconClicked(a_icon){
+function MenuIconClicked(a_icon) {
     var bar = document.getElementById("top-nav");
-    if (bar.className === "navbar"){
+    if (bar.className === "navbar") {
         bar.className += " responsive";
-    }else{
+    } else {
         bar.className = "navbar";
     }
 
     a_icon.classList.toggle("change");
 }
 
-function ChangeIcon(x){
-    
+function ChangeIcon(x) {
+
 }
 
-function goFullscreen(a_id){
+function goFullscreen(a_id) {
     var element = document.getElementById(a_id);
-    if (element.mozRequestFullScreen){
+    if (element.mozRequestFullScreen) {
         element.mozRequestFullScreen();
-    }else if (element.webkitRequestFullScreen){
+    } else if (element.webkitRequestFullScreen) {
         element.webkitRequestFullScreen();
     }
 }
 
-function initialiseCollapsibles(){
+function initialiseCollapsibles() {
     var coll = document.getElementsByClassName("collapsible");
-    
-    for (var i = 0; i < coll.length; i++){
-        if (i === 0){
+
+    for (var i = 0; i < coll.length; i++) {
+        if (i === 0) {
             expandCollapsibles(coll[i]);
         }
 
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
             expandCollapsibles(this);
         });
     }
 }
 
-function expandCollapsibles(a_coll){
+function expandCollapsibles(a_coll) {
     a_coll.classList.toggle("active");
     var content = a_coll.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
         content.style.maxHeight = null;
-        
+
     } else {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 }
 
-function copyToClipboard(a_stringToCopy){
+function copyToClipboard(a_stringToCopy) {
     var copyText = document.getElementById(a_stringToCopy);
 
     // copyText.select();
     // copyText.setSelectRange(0, 99999);  // For mobile devices
 
     var gameUrl = copyText.src; // Get the URL of the iframe
-        navigator.clipboard.writeText(gameUrl).then(() => {
-            alert('Game link copied to clipboard!');
-        }).catch(err => {
-            console.error('Failed to copy text: ', err);
-        });
+    navigator.clipboard.writeText(gameUrl).then(() => {
+        alert('Game link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
 }

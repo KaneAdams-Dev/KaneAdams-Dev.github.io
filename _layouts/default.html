@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>{{ page.title }}</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Link to main stylesheet -->
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <script type="text/javascript" src="Scripts/Core.js"></script>
-    </head>
 
-    <body>
-        <div id="page-container">
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="Scripts/Core.js"></script>
+</head>
+
+<body>
+    <div id="page-container">
         <div class="navbar" id="top-nav">
             <a href="/">Home</a>
             <a href="/aboutme.html">About Me</a>
@@ -22,19 +23,20 @@
                 <div class="bar3"></div>
             </a>
         </div>
-        
+
         <br>
 
         <div class="main">
             {{ content }}
         </div>
 
-            <div class="navbar" id="bottom-nav">
-                <a href="mailto:kaneadams.ka23@gmail.com">Email</a>
-                <a href="https://github.com/KaneAdams-Dev" target="_blank">GitHub</a>
-                <a href="https://www.youtube.com/channel/UCK9Jozfs4ThaKUh_O-RmPmw" target="_blank">YouTube</a>
-                <a href="/docs/Kane_Adams_CV.pdf" download="KaneAdamsCV">Download CV</a>
-            </div>
+        <div class="navbar" id="bottom-nav">
+            <a href="mailto:kaneadams.ka23@gmail.com">Email</a>
+            <a href="https://github.com/KaneAdams-Dev" target="_blank">GitHub</a>
+            <a href="https://www.youtube.com/channel/UCK9Jozfs4ThaKUh_O-RmPmw" target="_blank">YouTube</a>
+            <a href="/docs/Kane_Adams_CV.pdf" download="KaneAdamsCV">Download CV</a>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
