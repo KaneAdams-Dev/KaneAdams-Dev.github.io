@@ -82,8 +82,6 @@ p {
     margin-top: 64px;
     margin-left: 1rem;
     margin-right: 1rem;
-
-    padding: 10px;
 }
 
 
@@ -251,6 +249,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    margin: 0 auto; /* Center the container */
+    max-width: 80rem; /* Match the max-width of the video previews or iframe */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .photo-gallery {
