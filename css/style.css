@@ -82,6 +82,8 @@ p {
     margin-top: 64px;
     margin-left: 1rem;
     margin-right: 1rem;
+
+    padding: 10px;
 }
 
 
@@ -141,6 +143,24 @@ p {
     overflow: hidden;
     background-color: #505050;
     transition: max-height 0.2s ease-out;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.collapsible-content image {
+    flex: 0 0 50%;
+    max-width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.collapsible-content p {
+    flex: 1;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .collapsible::after {
