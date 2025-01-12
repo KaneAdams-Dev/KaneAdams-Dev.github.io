@@ -61,8 +61,8 @@ function copyToClipboard(a_stringToCopy) {
     });
 }
 
-let slideIndex = 1;
-
+let slideIndex = 0;
+showSlide(slideIndex);
 
 function changeSlide(a_dir){
     showSlide(slideIndex += a_dir);
@@ -73,19 +73,19 @@ function showSlide(a_newSlide){
     let slides = document.getElementsByClassName("slides");
 
     // Loops around slides
-    if (a_newSlide > slides.length){
-        slideIndex = 1;
+    if (a_newSlide > slides.length - 1){
+        slideIndex = 0;
     }
-    if (a_newSlide < 1){
-        slideIndex = slides.length;
+    if (a_newSlide < 0){
+        slideIndex = slides.length - 1;
     }
 
     // Shows only current slide, hides all rest
     for (i = 0; i < slides.length; i++){
         if (i == slideIndex){
-            slides[slideIndex - 1].style.display = block;
+            slides[i].style.display = "block";
         }else{
-            slides[slideIndex - 1].style.display = none;
+            slides[i].style.display = "none";
         }
     }
 }
