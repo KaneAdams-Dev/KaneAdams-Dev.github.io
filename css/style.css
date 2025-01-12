@@ -283,7 +283,7 @@ button {
 
 }
 
-.photo-gallery img {
+.photo-gallery img, video {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -291,6 +291,7 @@ button {
     max-height: 100%; /* Ensures the image fits within the container */
     object-fit: contain; /* Maintains the aspect ratio without cropping */
 }
+
 
 .slides {
     display: none;
