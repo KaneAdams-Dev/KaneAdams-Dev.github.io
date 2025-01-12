@@ -306,7 +306,7 @@ button {
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size:20px;
+    font-size: 24px;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
@@ -428,9 +428,7 @@ button {
 
 @media screen and (max-width: 60rem) {
     .content-pair {
-        /* float:none;
-        display:block;
-        width: 100%; */
+
         flex-direction: column;
     }
 
@@ -445,8 +443,13 @@ button {
     }
 
     .photo-gallery img {
-        max-width: 100%;
         height: auto;
+    }
+
+    .breakdown {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
     }
 
     .main {
