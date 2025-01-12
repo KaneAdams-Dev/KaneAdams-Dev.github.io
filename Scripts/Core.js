@@ -62,7 +62,6 @@ function copyToClipboard(a_stringToCopy) {
 }
 
 let slideIndex = 0;
-showSlide(slideIndex);
 
 function changeSlide(a_dir){
     showSlide(slideIndex += a_dir);
