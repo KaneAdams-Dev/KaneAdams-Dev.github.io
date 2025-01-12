@@ -60,3 +60,32 @@ function copyToClipboard(a_stringToCopy) {
         console.error('Failed to copy text: ', err);
     });
 }
+
+let slideIndex = 1;
+
+
+function changeSlide(a_dir){
+    showSlide(slideIndex += a_dir);
+}
+
+function showSlide(a_newSlide){
+    let i;
+    let slides = document.getElementsByClassName("slides");
+
+    // Loops around slides
+    if (a_newSlide > slides.length){
+        slideIndex = 1;
+    }
+    if (a_newSlide < 1){
+        slideIndex = slides.length;
+    }
+
+    // Shows only current slide, hides all rest
+    for (i = 0; i < slides.length; i++){
+        if (i == slideIndex){
+            slides[slideIndex - 1].style.display = block;
+        }else{
+            slides[slideIndex - 1].style.display = none;
+        }
+    }
+}
