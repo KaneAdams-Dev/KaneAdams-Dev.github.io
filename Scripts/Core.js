@@ -89,11 +89,13 @@ function showSlide(a_newSlide) {
     }
 }
 
-function autoPlay() {
+function timedSlideChange(a_waitLength) {
     setTimeout(() => {
-        console.log("Waited for 5 seconds");
-    }, 5000);
+        // console.log("Waited for 5 seconds");
+        changeSlide(1);
+        timedSlideChange(5);
+    }, (a_waitLength * 1000));
     console.log("New slide!");
 
-    changeSlide(1);
+    // changeSlide(1);
 }
