@@ -283,7 +283,7 @@ button {
 
 }
 
-.photo-gallery img, video {
+.photo-gallery img, .photo-gallery video {
     max-width: 100%;
     height: auto;
     object-fit: cover;
