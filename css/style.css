@@ -300,6 +300,15 @@ button {
     /* Maintains the aspect ratio without cropping */
 }
 
+.photo-gallery iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9; /* Ensure the iframe maintains the same aspect ratio as other media */
+   
+}
+
+
 
 .slides {
     display: none;
