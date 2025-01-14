@@ -308,8 +308,6 @@ button {
    
 }
 
-
-
 .slides {
     display: none;
 }
@@ -456,7 +454,7 @@ button {
     } */
 
     .photo-gallery {
-        max-width: 90%;
+        width: 90%;
         /* Restrict width on smaller screens */
         margin: auto;
         /* Center gallery on the screen */
@@ -466,10 +464,17 @@ button {
     }
 
     .photo-gallery img,
-    .photo-gallery video,
-    .photo-gallery iframe {
+    .photo-gallery video {
         height: auto;
         max-width: 100%;
+    }
+
+    .photo-gallery iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9; /* Ensure the iframe maintains the same aspect ratio as other media */
+       
     }
 
     .breakdown {
