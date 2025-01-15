@@ -1,3 +1,4 @@
+// Navbar
 function MenuIconClicked(a_icon) {
     var bar = document.getElementById("top-nav");
     if (bar.className === "navbar") {
@@ -13,6 +14,21 @@ function ChangeIcon(x) {
 
 }
 
+// WEBGL Hotbar
+function copyToClipboard(a_stringToCopy) {
+    var copyText = document.getElementById(a_stringToCopy);
+
+    // copyText.select();
+    // copyText.setSelectRange(0, 99999);  // For mobile devices
+
+    var gameUrl = copyText.src; // Get the URL of the iframe
+    navigator.clipboard.writeText(gameUrl).then(() => {
+        alert('Game link copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
 function goFullscreen(a_id) {
     var element = document.getElementById(a_id);
     if (element.mozRequestFullScreen) {
@@ -22,6 +38,7 @@ function goFullscreen(a_id) {
     }
 }
 
+// Collapsibles
 function initialiseCollapsibles() {
     var coll = document.getElementsByClassName("collapsible");
 
@@ -47,20 +64,8 @@ function expandCollapsibles(a_coll) {
     }
 }
 
-function copyToClipboard(a_stringToCopy) {
-    var copyText = document.getElementById(a_stringToCopy);
 
-    // copyText.select();
-    // copyText.setSelectRange(0, 99999);  // For mobile devices
-
-    var gameUrl = copyText.src; // Get the URL of the iframe
-    navigator.clipboard.writeText(gameUrl).then(() => {
-        alert('Game link copied to clipboard!');
-    }).catch(err => {
-        console.error('Failed to copy text: ', err);
-    });
-}
-
+// Gallery Slideshow
 let slideIndex = 0;
 
 function changeSlide(a_dir) {
