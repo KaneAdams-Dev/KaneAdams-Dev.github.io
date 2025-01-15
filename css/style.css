@@ -177,10 +177,6 @@ img {
     margin-left: 0.5rem;
 }
 
-.content-pair {
-    flex-direction: column;
-}
-
 .collapsible.active::after {
     content: '\2796';
 }
