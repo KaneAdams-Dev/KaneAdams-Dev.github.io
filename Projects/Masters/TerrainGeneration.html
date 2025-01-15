@@ -8,7 +8,11 @@ title: Terrain Generator | Lead Programmer
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script type="text/javascript" src="/Scripts/Core.js" defer></script>
+
+    <!-- <script type="text/javascript" src="/scripts/Core.js" defer></script> -->
+    <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
+    <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
+    <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
 </head>
 
 <body onload="initialiseCollapsibles(), showSlide(0)"><!--, timedSlideChange(5)">-->
@@ -52,13 +56,16 @@ title: Terrain Generator | Lead Programmer
                     <div class="slides">
                         <!-- <div class="numbertext">5 / 5</div> -->
                         <video controls autoplay>
-                          <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4">
+                            <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4">
                         </video>
                         <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
-                    
+
                     <div class="slides">
-                        <iframe src="https://www.youtube.com/embed/aClQwNeTDvI?si=vfc8LOZlRJL-wxcV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/aClQwNeTDvI?si=vfc8LOZlRJL-wxcV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
                     <a class="prev" onclick="changeSlide(-1)">«</a>
@@ -69,7 +76,7 @@ title: Terrain Generator | Lead Programmer
                     </div>
 
                     <div></div>
-                    
+
                 </div>
 
                 <div class="breakdown">
