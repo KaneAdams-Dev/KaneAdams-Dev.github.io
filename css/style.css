@@ -160,7 +160,6 @@ img {
     max-width: 75%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    left:0;
 }
 
 .collapsible-content p {
@@ -168,7 +167,6 @@ img {
     max-width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    right:0;
 }
 
 .collapsible::after {
@@ -177,6 +175,10 @@ img {
     color: white;
     float: right;
     margin-left: 0.5rem;
+}
+
+.content-pair {
+    flex-direction: column;
 }
 
 .collapsible.active::after {
