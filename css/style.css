@@ -460,7 +460,6 @@ button {
         /* Center gallery on the screen */
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .photo-gallery img,
