@@ -151,11 +151,9 @@ img {
     align-items: center;
 }
 
-.content-pair {
-    clear:both;
-    display: flex;
-    align-items: flex-start; /* Align items at the start of the row */
-    margin-bottom: 2rem; /* Add space between content pairs */
+.content-break{
+    flex-basis: 100%;
+    height: 0;
 }
 
 .collapsible-content img {
