@@ -151,10 +151,12 @@ img {
     align-items: center;
 }
 
+.content-pair {
+    display: block;
+}
 
 .collapsible-content img {
     border: 4px;
-    /* border-radius: 0.5rem;  */
     margin-bottom: 1rem;
     display: block;
     max-width: 75%;
