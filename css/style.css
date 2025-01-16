@@ -152,7 +152,9 @@ img {
 }
 
 .content-pair {
-    display: block;
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the row */
+    margin-bottom: 2rem; /* Add space between content pairs */
 }
 
 .collapsible-content img {
