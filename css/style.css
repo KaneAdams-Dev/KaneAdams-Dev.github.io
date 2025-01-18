@@ -118,7 +118,16 @@ img {
 
 /* Collapsibles */
 
+.Responsibilities {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .collapsible {
+    max-width: 80rem;
     background-color: #404040;
     color: #cfcece;
     cursor: pointer;
@@ -128,6 +137,8 @@ img {
     text-align: left;
     outline: none;
     font-size: 1rem;
+    
+    align-items: center;
 }
 
 .collapsible p {
@@ -140,7 +151,7 @@ img {
 }
 
 .collapsible-content {
-    padding: 0 1.2rem;
+    max-width: 80rem;
     max-height: 0;
     overflow: hidden;
     background-color: #505050;
@@ -156,9 +167,13 @@ img {
     height: 0;
 }
 
+.collapsible::content{
+    color: blue;
+}
+
 .collapsible-content img {
     border: 4px;
-    margin-bottom: 1rem;
+    margin: 1rem;
     display: block;
     max-width: 75%;
     height: auto;
@@ -176,8 +191,12 @@ img {
     content: '\02795';
     font-size: 0.8rem;
     color: white;
-    float: right;
+    float: left;
     margin-left: 0.5rem;
+}
+
+.collapsible:hover::after{
+    color: pink;
 }
 
 .collapsible.active::after {
