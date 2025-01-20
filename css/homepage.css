@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-    max-width: 80rem;
-    margin: auto;
-}
-
 .projects-gallery {
     max-width: 80rem;
 }
