@@ -23,7 +23,19 @@ body {
 }
 
 .project-title {
-    margin-top: -10px;
+    
+        background-color: rgb(48, 48, 48);
+        padding: 10px;
+      
+}
+
+.project-title h3 {
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+.project-title p {
+    font-size: 0.8rem;
 }
 
 .projects-gallery:after {
