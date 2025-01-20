@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.projects-gallery {
+    max-width: 80rem;
+}
+
+.projects-gallery,
+.projects-gallery > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.project-title {
+    margin-top: -10px;
+}
+
+.projects-gallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
