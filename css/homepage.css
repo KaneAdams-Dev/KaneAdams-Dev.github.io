@@ -1,14 +1,16 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .projects-gallery {
     max-width: 80rem;
+    margin: auto;
 }
 
 .projects-gallery,
-.projects-gallery > .column {
+.projects-gallery>.column {
     padding: 8px;
+
 }
 
 .column {
@@ -18,19 +20,19 @@
 }
 
 .project-title {
-    
-        background-color: rgb(48, 48, 48);
-        padding: 10px;
-      
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
 }
 
 .project-title h3 {
+    margin-top: -1px;
     padding: 0;
     margin-bottom: -5px;
 }
 
 .project-title p {
     font-size: 0.8rem;
+    margin-bottom: -1px;
 }
 
 .projects-gallery:after {
