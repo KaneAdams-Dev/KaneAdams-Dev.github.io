@@ -1,20 +1,16 @@
 currentThumbnail;
 
-
-
-function GetRandomPreview(a_id){
+function GetRandomPreview(a_id) {
     console.log(a_id);
 
     const videoOptions = {
-        Mobbers: "/Images/Mobbers/Lib.gif"
+        Mobbers: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        Rambleon: []
+
     };
-    console.log(a_id in videoOptions);
+    const gifs = videoOptions.Mobbers;
 
-    let keyExist = Object.keys(videoOptions).some(key => key === a_id);
-    console.log(keyExist);
-    const gifs = videoOptions[a_id];
-
-    return videoOptions.Mobbers;//gifs ? gifs[Math.floor(Math.random() * gifs.length)] : null;
+    return videoOptions.Mobbers[Math.floor(Math.random() * gifs.length)];//gifs ? gifs[Math.floor(Math.random() * gifs.length)] : null;
 }
 
 function PlayPreview(a_id) {
@@ -22,16 +18,9 @@ function PlayPreview(a_id) {
 
     console.log(a_id);
     currentThumbnail = x.src;
-    // if ('Mobbers' in videoOptions) {
-    //     x.src = "/Images/Mobbers/Lib.gif";
-    // }
+
     let chosenGIF = GetRandomPreview(a_id);
-    //if (chosenGIF != null){
-        x.src = chosenGIF;
-    //}else {
-        //x.style.width = "10px";
-    //}
-    
+    x.src = chosenGIF;
 }
 
 function StopPreview(a_id) {
