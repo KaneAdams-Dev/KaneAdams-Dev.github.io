@@ -1,8 +1,14 @@
-function PlayPreview(a_id){
-    document.getElementById("Mobbers").src = "/Videos/Mobbers/Library.mp4"
+currentThumbnail;
+
+function PlayPreview(a_id) {
+    let x = document.getElementById(a_id);
+
+    currentThumbnail = x.src;
+    x.src = "/Images/Mobbers/Lib.gif"
 }
 
-function size(x){
-    x.style.height = "64px";
-    x.style.width = "64px";
+function StopPreview(a_id) {
+    let x = document.getElementById(a_id);
+
+    x.src = currentThumbnail;
 }

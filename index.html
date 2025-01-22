@@ -10,14 +10,14 @@ title: Kane's Blog | Kane Adams, Games Programmer
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
 
-    <link type="text/javascript" src="/scripts/projects.js">
+    <script type="text/javascript" src="/scripts/projects.js" defer></script>
 </head>
 
 <body>
     <div class="projects-gallery">
 
-        <div class="column">
-            <img src="/Images/Zombeez/SH_AKBoss.PNG" alt="Mobbers Thumbnail" id="Mobbers" href="#popup1" onmouseover="size(this)">
+        <div class="column" onmouseenter="PlayPreview('Mobbers')" onmouseleave="StopPreview('Mobbers')">
+            <img src="/Images/Zombeez/SH_AKBoss.PNG" alt="Mobbers Thumbnail" id="Mobbers" href="#popup1">
             <div class="project-title">
                 <h3>asda</h3>
                 <p>Roguelike where you play as the mobs of the dungeon</p>
