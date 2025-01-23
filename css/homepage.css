@@ -8,15 +8,22 @@
 }
 
 .projects-gallery,
-.projects-gallery>.column {
+.projects-gallery>.project-card {
     padding: 8px;
 
 }
 
-.column {
+.project-card {
     float: left;
     width: 25%;
     margin: 0 auto;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .project-title {
@@ -43,19 +50,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .column {
+    .project-card {
         width: 33%;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .column {
+    .project-card {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .column {
+    .project-card {
         width: 100%;
     }
 }
