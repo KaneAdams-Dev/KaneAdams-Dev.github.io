@@ -423,7 +423,7 @@ button {
 }
 
 .popup-card {
-    display: none;
+    /* display: none; */
 
     position: fixed;
     z-index: 1;
@@ -437,11 +437,14 @@ button {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.card-content {
-    margin: auto;
-    display: block;
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    padding: 20px;
     width: 80%;
-    max-width: 720px;
 }
 
 .card-content {
@@ -570,5 +573,41 @@ button {
 
     .iframe-webgl iframe {
         aspect-ratio: 4 / 3;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .popup-content .content-pair {
+
+        flex-direction: column;
+    }
+
+    /* .photo-gallery {
+        max-width: 100%;
+        justify-self: center;
+    } */
+
+    .popup-content .photo-gallery {
+        width: 90%;
+        /* Restrict width on smaller screens */
+        margin: auto;
+        /* Center gallery on the screen */
+        display: flex;
+        justify-content: center;
+    }
+
+    .popup-content .photo-gallery img,
+    .popup-content .photo-gallery video {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .popup-content .photo-gallery iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9; /* Ensure the iframe maintains the same aspect ratio as other media */
+       
     }
 }
