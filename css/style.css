@@ -566,6 +566,10 @@ button {
         /* height: 1000px; */
         margin-top: 64px;
     }
+
+    .popup-card {
+        margin-top: 64px;
+    }
 }
 
 @media screen and ((max-width: 48rem) and (max-height > max-width)) {
