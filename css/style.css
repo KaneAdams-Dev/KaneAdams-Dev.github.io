@@ -427,6 +427,7 @@ button {
 
     position: fixed;
     z-index: 1;
+    margin-top: 63px;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -469,7 +470,6 @@ button {
     position: absolute;
     top: 15px;
     right: 35px;
-    margin-top: 64px;
     color: #f1f1f1;
     font-size:40px;
     font-weight: bold;
