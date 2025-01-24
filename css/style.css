@@ -469,6 +469,7 @@ button {
     position: absolute;
     top: 15px;
     right: 35px;
+    margin-top: 64px;
     color: #f1f1f1;
     font-size:40px;
     font-weight: bold;
