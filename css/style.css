@@ -443,7 +443,8 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #191919;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 80%;
 }
 
