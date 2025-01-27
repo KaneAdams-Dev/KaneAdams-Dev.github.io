@@ -17,12 +17,14 @@ currentImageID;
 
 function PopulateProjects(){
     Object.keys(projects).forEach(projectID => {
-       ApplyProjectData(projectID); 
+       ApplyProjectData(projectID);
+       console.log(projectID); 
     });
 }
 
 function ApplyProjectData(a_id){
-    
+    card = document.getElementById(a_id);
+    console.log(card.children[0]);
 }
 
 // function GetRandomPreview(a_id) {
