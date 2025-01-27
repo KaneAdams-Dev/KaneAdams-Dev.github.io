@@ -346,7 +346,6 @@ button {
     border-radius: 0 3px 3px 0;
     user-select: none;
 
-    
     transition: transform 0.3s ease;
 }
 
@@ -428,7 +427,7 @@ button {
 }
 
 .popup-card {
-    display: none;
+    /* display: none; */
 
     position: fixed;
     z-index: 1;
