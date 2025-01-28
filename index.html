@@ -12,27 +12,29 @@ title: Kane's Blog | Kane Adams, Games Programmer
 
     <script type="text/javascript" src="/scripts/project-cards.js" defer></script>
     <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
-    <script type="text/javascript" src="/Scripts/popups.js" defer></script>
 </head>
 
 <body onload="showSlide(0), PopulateProjects()">
     <div class="projects-gallery">
 
-        <div class="project-card" id="Mobbers" onmouseenter="PlayPreview('Mobbers')" onmouseleave="StopPreview('Mobbers')" onclick="OpenPopup('MobbersPopup')">
-            <img class="thumbnail" src="/Images/Zombeez/SH_AKBoss.PNG" alt="Mobbers Thumbnail"  href="#popup1">
+        <div class="project-card" id="Mobbers" onmouseenter="PlayPreview('Mobbers')"
+            onmouseleave="StopPreview('Mobbers')" onclick="OpenPopup('Mobbers')">
+            <img class="thumbnail" src="/Images/Zombeez/SH_AKBoss.PNG" alt="Mobbers Thumbnail" href="#popup1">
             <div class="project-title">
                 <h3 class="title">fg fsdgfd</h3>
                 <p class="description">f sdF</p>
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" id="Mobberville" onmouseenter="PlayPreview('Mobberville')"
+        onmouseleave="StopPreview('Mobberville')" onclick="OpenPopup('Mobberville')">
             <img class="thumbnail" src="/Images/Zombeez/SH_AKBoss.PNG" href="#popup2">
             <div class="project-title">
-                <h3>Mobberville</h3>
-                <p>Farming game where you play... as the mobs of a dungeon... huh...</p>
+                <h3 class="title">Mobberville</h3>
+                <p class="description">Farming game where you play... as the mobs of a dungeon... huh...</p>
             </div>
         </div>
+
         <div class="project-card">
             <img src="/Images/Zombeez/SH_AKBoss.PNG" href="#popup3">
             <div class="project-title">
@@ -96,8 +98,8 @@ title: Kane's Blog | Kane Adams, Games Programmer
     </div>
 
 
-    <div id="MobbersPopup" class="popup-card">
-        <span class="close" onclick="ClosePopup('MobbersPopup')">&times;</span>
+    <div id="Popup" class="popup-card">
+        <span class="close" onclick="ClosePopup()">&times;</span>
         <div class="popup-content">
             <div class="content-pair">
                 <div class="photo-gallery">
