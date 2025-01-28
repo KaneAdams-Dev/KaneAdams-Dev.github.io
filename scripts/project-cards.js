@@ -15,49 +15,84 @@ const projects = {
 currentThumbnail;
 currentImageID;
 
-function PopulateProjects(){
+function PopulateProjects() {
     Object.keys(projects).forEach(projectID => {
-       ApplyProjectData(projectID);
-       console.log(projectID); 
+        ApplyProjectData(projectID);
+        console.log(projectID);
     });
 }
 
-function ApplyProjectData(a_id){
-    card = document.getElementById(a_id);
-    console.log(card.children[0]);
+function ApplyProjectData(a_id) {
+    const project = projects[a_id];
+    if (!project) {
+        console.error(`ProjectLink ' {
+            childElement.href = project[key];${a_id}' not found.`);
+        return
+    }
+
+    const projectElement = document.getElementById(a_id);
+    if (!projectElement) {
+        console.error(`Element with ID '${a_id}'not found.`);
+        return;
+    }
+
+    Object.keys(project).forEach(key => {
+        const childElement = projectElement.querySelector(`.${key}`);
+
+        if (childElement) {
+            if (key === "thumbnail") {
+                childElement.src = project[key];
+            } else if (key === "ProjectLink") {
+                childElement.href = project[key];
+            } else {
+                childElement.textContent = project[key];
+            }
+        }
+    });
 }
 
-// function GetRandomPreview(a_id) {
-//     console.log(currentImageID.id); const videoOptions = {
-//             Mobbers: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
-//             Rambleon: []
-//         };
+function GetRandomPreview(a_projectID) {
+    if (a_projectID in projects) {
+        const clips = projects[a_projectID].previews;
 
+        return clips[Math.floor(Math.random() * clips.length)];
 
-        
-//         if(currentImageID.id in videoOptions) {
-//             const gifs = videoOptions[currentImageID.id];
-//     console.log(gifs.length)
+    } else {
+        console.error(`'${a_projectID}' does not exist in projects`);
+    }
+}
 
-//     return gifs[Math.floor(Math.random() * gifs.length)];//gifs ? gifs[Math.floor(Math.random() * gifs.length)] : null;
+function PlayPreview(a_projectID) {
+    const projectCard = document.getElementById(a_projectID);
+    currentImageID = projectCard.querySelector('.thumbnail');
 
-// } else {
-//     console.log("Oops");
-// }
-// }
-
-function PlayPreview(a_id) {
-    currentImageID = document.getElementById(a_id);
-
-    console.log(a_id);
     currentThumbnail = currentImageID.src;
 
-    let chosenGIF = GetRandomPreview(currentThumbnail);
-    if (chosenGIF != null) {
-        currentImageID.src = chosenGIF;
+    let chosenClip = GetRandomPreview(a_projectID);
+
+    if (!chosenClip) {
+        console.error("No clip chosen.");
+        return;
     }
+
+    currentImageID.src = chosenClip;
 }
 
 function StopPreview() {
     currentImageID.src = currentThumbnail;
+}
+
+function OpenPopup(a_id) {
+    let card = document.getElementById(a_id);
+    card.style.display = "block";
+    UpdatePopup(card);
+}
+
+function ClosePopup(a_id) {
+    let card = document.getElementById(a_id);
+    card.style.display = "none";
+}
+
+function UpdatePopup(a_card){
+    
 }
