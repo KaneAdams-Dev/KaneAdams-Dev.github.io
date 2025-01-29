@@ -23,7 +23,72 @@ const projects = {
         tools: "Unreal Engine 5, C++, GitHub, Premiere Pro",
         timeline: "June 2023 to August 2023",
         ProjectLink: "Projects/Mobbers.html",
-    }
+    }, 
+
+    TerrainGenerator: {
+        title: "Terrain Generator",
+        description: "Terrain generation with demos on specific procedural demos",
+        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        summary: "MSc Procedural Generation project ",
+        role: "Procedural Programmer",
+        size: "1",
+        tools: "Unity, C#, GitHub",
+        timeline: "September 2022 to December 2022",
+        ProjectLink: "",
+    }, 
+
+    Zombeez: {
+        title: "Survival Horde",
+        description: "Survive the horde of zombies, and meet some friends along the way!",
+        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        summary: "Game Jam submission with the objective to get the survivors from",
+        role: "Unity Developer",
+        size: "Solo",
+        tools: "Unity, C#, GitHub, Asperite",
+        timeline: "June 2024",
+        ProjectLink: "",
+    },
+
+    AiO: {
+        title: "Art Is Opinion",
+        description: "Paint what you can see... literally!",
+        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        summary: "BSc Second year group project",
+        role: "Programmer",
+        size: "4",
+        tools: "Unity, C#, GitHub, Tobii",
+        timeline: "December 2019 to August 2021",
+        ProjectLink: "",
+    }, 
+
+    Rambleon: {
+        title: "Tales of Rableon",
+        description: "Pixelart Metroidvania with RPG elements where you play as a chosen.",
+        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        summary: "Final year group project where ",
+        role: "Programmer",
+        size: "4",
+        tools: "Unity, C#, GitHub, Inkle",
+        timeline: "January 2023 to June 2023",
+        ProjectLink: "",
+    },
+
+    ML: {
+        title: "Machine Learning",
+        description: "Created a Machine .",
+        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        summary: "Final year group project where ",
+        role: "Programmer",
+        size: "4",
+        tools: "Unity, C#, GitHub, Inkle",
+        timeline: "January 2023 to June 2023",
+        ProjectLink: "",
+    },
 };
 
 currentThumbnail;
@@ -52,6 +117,8 @@ function ApplyProjectData(a_id) {
         return false;
     }
 
+    // CreateCard(a_id);
+
     const projectElement = document.getElementById(a_id);
     if (!projectElement) {
         console.error(`Element with ID '${a_id}'not found.`);
@@ -73,6 +140,24 @@ function ApplyProjectData(a_id) {
     });
 
     return true;
+}
+
+function CreateCard(a_id){
+    let cat = document.createElement("div")
+    cat.id = a_id;
+    cat.class="project-card";
+    // card.setAttribute()
+
+    cat.innerHTML = `
+    <img class="thumbnail" src="/Images/Zombeez/SH_AKBoss.PNG" href="#popup2">
+            <div class="project-title">
+                <h3 class="title">Mobberville</h3>
+                <p class="description">Farming game where you play... as the mobs of a dungeon... huh...</p>
+            </div>
+    `
+
+    const currentDiv = document.getElementById("projects-gallery");
+    document.body.insertBefore(card, currentDiv);
 }
 
 function GetRandomPreview(a_projectID) {

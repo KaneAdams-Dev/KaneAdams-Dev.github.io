@@ -3,6 +3,10 @@
 }
 
 .projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
     max-width: 80rem;
     margin: auto;
 }
@@ -14,16 +18,18 @@
 }
 
 .project-card {
-    float: left;
+    /* float: left;
     width: 25%;
-    margin: 0 auto;
+    margin: 0 auto; */
 
     transition: transform 0.3s ease;
+    
+    cursor: pointer;
 }
 
-.project-card:hover{
-    cursor: pointer;
+.project-card:hover {
     transform: scale(1.1);
+    transform-origin: center;
 }
 
 .project-title {
@@ -50,19 +56,22 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .project-card {
-        width: 33%;
+    .projects-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .project-card {
-        width: 50%;
+    .projects-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .project-card {
-        width: 100%;
+    .projects-gallery {
+        grid-template-columns: 1fr;
+        gap: 6px
     }
 }
