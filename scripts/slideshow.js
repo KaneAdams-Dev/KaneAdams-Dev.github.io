@@ -39,9 +39,12 @@ function timedSlideChange() {
     // console.log("New slide!");
 
     changeSlide(1);
-
-    timer = setTimeout(timedSlideChange, 5000)
+    resetTimer();
     // changeSlide(1);
+}
+
+function resetTimer() {
+    timer = setTimeout(timedSlideChange, 5000);
 }
 
 function PauseAutoSlide(){

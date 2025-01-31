@@ -18,7 +18,7 @@ title: Kane Adams, Games Programmer
     <div class="projects-gallery">
 
         <div class="project-card" id="Mobbers" onmouseenter="PlayPreview('Mobbers')"
-            onmouseleave="StopPreview('Mobbers')" onclick="OpenPopup('Mobbers')">
+            onmouseleave="StopPreview('Mobbers')" onclick="OpenPopup('Mobbers'), showSlide(0), resetTimer()">
             <img class="thumbnail" src="/Images/Zombeez/SH_AKBoss.PNG" alt="Mobbers Thumbnail" href="#popup1">
             <div class="project-title">
                 <h3 class="title"></h3>
@@ -73,11 +73,11 @@ title: Kane Adams, Games Programmer
     </div>
 
 
-    <div id="Popup" class="popup-card" onmouseenter="PauseAutoSlide()" onmouseleave="showSlide(0), timedSlideChange()">
+    <div id="Popup" class="popup-card" >
         <span class="close" onclick="ClosePopup()">&times;</span>
         <div class="popup-content">
             <div class="content-pair">
-                <div class="photo-gallery">
+                <div class="photo-gallery" onmouseenter="PauseAutoSlide()" onmouseleave="showSlide(0), resetTimer()">
                     <div class="slides">
                         <img src="/Images/Screenshot 2024-10-25 135240.png" />
                     </div>
