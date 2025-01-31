@@ -24,6 +24,7 @@ const projects = {
         tools: "Unreal Engine 5, C++, GitHub, Premiere Pro",
         timeline: "June 2023 to August 2023",
         ProjectLink: "Projects/Mobbers.html",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
     TerrainGenerator: {
@@ -37,6 +38,7 @@ const projects = {
         tools: "Unity, C#, GitHub",
         timeline: "September 2022 to December 2022",
         ProjectLink: "Projects/TerrainGeneration.html",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
     Zombeez: {
@@ -50,6 +52,7 @@ const projects = {
         tools: "Unity, C#, GitHub, Asperite",
         timeline: "June 2024",
         ProjectLink: "",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
     AiO: {
@@ -63,6 +66,7 @@ const projects = {
         tools: "Unity, C#, GitHub, Tobii",
         timeline: "December 2019 to August 2021",
         ProjectLink: "",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
     Rambleon: {
@@ -76,6 +80,7 @@ const projects = {
         tools: "Unity, C#, GitHub, Inkle",
         timeline: "January 2023 to June 2023",
         ProjectLink: "",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
     ML: {
@@ -89,6 +94,7 @@ const projects = {
         tools: "Unity, C#, GitHub, Inkle",
         timeline: "January 2023 to June 2023",
         ProjectLink: "",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 };
 

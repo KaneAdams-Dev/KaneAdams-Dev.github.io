@@ -40,7 +40,7 @@ function timedSlideChange() {
 
     changeSlide(1);
 
-    setTimeout(timedSlideChange, 5000)
+    timer = setTimeout(timedSlideChange, 5000)
     // changeSlide(1);
 }
 
