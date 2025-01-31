@@ -2,6 +2,8 @@
 
 let slideIndex = 0;
 
+timer = 0;
+
 function changeSlide(a_dir) {
     showSlide(slideIndex += a_dir);
 }
@@ -28,13 +30,20 @@ function showSlide(a_newSlide) {
     }
 }
 
-function timedSlideChange(a_waitLength) {
-    setTimeout(() => {
-        // console.log("Waited for 5 seconds");
-        changeSlide(1);
-        timedSlideChange(5);
-    }, (a_waitLength * 1000));
-    console.log("New slide!");
+function timedSlideChange() {
+    // timer = setTimeout(() => {
+    //     // console.log("Waited for 5 seconds");
+    //     changeSlide(1);
+    //     timedSlideChange(5);
+    // }, (a_waitLength * 1000));
+    // console.log("New slide!");
 
+    changeSlide(1);
+
+    setTimeout(timedSlideChange, 5000)
     // changeSlide(1);
+}
+
+function PauseAutoSlide(){
+    clearTimeout(timer);
 }

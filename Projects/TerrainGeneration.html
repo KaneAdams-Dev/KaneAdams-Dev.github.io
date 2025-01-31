@@ -10,9 +10,11 @@ title: Terrain Generator | Lead Programmer
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <!-- <script type="text/javascript" src="/scripts/Core.js" defer></script> -->
-    <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
-    <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
+     
     <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
+    <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
+    <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
+    <script type="text/javascript" src="/Scripts/project-cards.js" defer></script>
 </head>
 
 <body onload="initialiseCollapsibles(), showSlide(0)"><!--, timedSlideChange(5)">-->
@@ -70,13 +72,6 @@ title: Terrain Generator | Lead Programmer
 
                     <a class="prev" onclick="changeSlide(-1)">«</a>
                     <a class="next" onclick="changeSlide(1)">»</a>
-
-                    <div class="caption-container">
-                        <p id="caption"></p>
-                    </div>
-
-                    <div></div>
-
                 </div>
 
                 <div class="breakdown">
@@ -91,6 +86,7 @@ title: Terrain Generator | Lead Programmer
                     <b>Timeline: </b> September 2022 to December 2022
                     <br><br>
                     <a href="https://store.steampowered.com/app/2452590/Mobbers/"><button>Steam page</button></a>
+                    <button onclick="OpenPopup('Mobbers')">Demo</button>
                 </div>
             </div>
         </div> <!-- Overview -->
@@ -108,17 +104,22 @@ title: Terrain Generator | Lead Programmer
         </div>
 
         <br>
-
-        <div class="iframe-webgl">
-            <iframe id="PerlinNoise" mozallowfullscreen="true"
-                src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no" frameborder="0"></iframe>
-            <div class="iframe-hotbar">
-                <button class="left-button" onclick="copyToClipboard('PerlinNoise');">Share</button>
-                <button class="right-button" onclick="goFullscreen('PerlinNoise'); return false">FullScreen</button>
+        <div id="Popup" class="demo-card" onmouseenter="PauseAutoSlide()"
+            onmouseleave="showSlide(0), timedSlideChange()">
+            <span class="close" onclick="ClosePopup()">&times;</span>
+            <div class="demo-popup">
+                <div class="iframe-webgl">
+                    <iframe id="PerlinNoise" mozallowfullscreen="true"
+                        src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no"
+                        frameborder="0"></iframe>
+                    <div class="iframe-hotbar">
+                        <button class="left-button" onclick="copyToClipboard('PerlinNoise');">Share</button>
+                        <button class="right-button"
+                            onclick="goFullscreen('PerlinNoise'); return false">FullScreen</button>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <br>
 
         <div class="Responsibilities">
             <button type="button" class="collapsible">
@@ -131,7 +132,7 @@ title: Terrain Generator | Lead Programmer
                         I created the neccessary stuff to make this character work without problems.
                     </p>
                 </div>
-                
+
                 <div class="content-break"></div>
 
                 <div class="content-pair">

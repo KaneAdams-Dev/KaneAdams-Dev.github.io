@@ -10,6 +10,7 @@ const projects = {
         tools: "Unity, C#, GitHub",
         timeline: "September 2022 to December 2022",
         ProjectLink: "Projects/Mobbers.html",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
     Mobberville: {
@@ -23,7 +24,7 @@ const projects = {
         tools: "Unreal Engine 5, C++, GitHub, Premiere Pro",
         timeline: "June 2023 to August 2023",
         ProjectLink: "Projects/Mobbers.html",
-    }, 
+    },
 
     TerrainGenerator: {
         title: "Terrain Generator",
@@ -35,8 +36,8 @@ const projects = {
         size: "1",
         tools: "Unity, C#, GitHub",
         timeline: "September 2022 to December 2022",
-        ProjectLink: "",
-    }, 
+        ProjectLink: "Projects/TerrainGeneration.html",
+    },
 
     Zombeez: {
         title: "Survival Horde",
@@ -62,7 +63,7 @@ const projects = {
         tools: "Unity, C#, GitHub, Tobii",
         timeline: "December 2019 to August 2021",
         ProjectLink: "",
-    }, 
+    },
 
     Rambleon: {
         title: "Tales of Rableon",
@@ -97,13 +98,13 @@ currentImageID;
 function PopulateProjects() {
     let projectCount = 0;
     Object.keys(projects).forEach(projectID => {
-        if (projectCount >= 12){
+        if (projectCount >= 12) {
             console.warn("Maximum number of projects reached");
             return;
         }
 
         let isAdded = ApplyProjectData(projectID);
-        if (isAdded){
+        if (isAdded) {
             projectCount++;
         }
     });
@@ -142,13 +143,13 @@ function ApplyProjectData(a_id) {
     return true;
 }
 
-function CreateCard(a_id){
-    let cat = document.createElement("div")
-    cat.id = a_id;
-    cat.class="project-card";
+function CreateCard(a_id) {
+    let popup_card = document.createElement("div")
+    popup_card.id = a_id;
+    popup_card.class = "project-card";
     // card.setAttribute()
 
-    cat.innerHTML = `
+    popup_card.innerHTML = `
     <img class="thumbnail" src="/Images/Zombeez/SH_AKBoss.PNG" href="#popup2">
             <div class="project-title">
                 <h3 class="title">Mobberville</h3>
@@ -213,6 +214,31 @@ function UpdatePopup(a_card, a_projectID) {
     <br><br>
     <b>Timeline: </b> ${projects[a_projectID].timeline}
     <br><br>
-    <a href="${projects[a_projectID].ProjectLink}"><button>Got To Page</button></a>
+    <a href="${projects[a_projectID].ProjectLink}"><button>Go To Page</button></a>
+    `;
+
+    let popup_slideshow = a_card.querySelector('.photo-gallery');
+
+    popup_slideshow.innerHTML = `
+        <div class="slides">
+            <img src="${projects[a_projectID].slideshow[0]}" />
+        </div>
+        <div class="slides">
+            <img src="${projects[a_projectID].slideshow[1]}" />
+        </div>
+        <div class="slides">
+            <img src="${projects[a_projectID].slideshow[2]}" />
+        </div>
+        <div class="slides">
+            <img src="${projects[a_projectID].slideshow[3]}" />
+        </div>
+        <div class="slides">
+            <video controls>
+                <source src="${projects[a_projectID].slideshow[4]}">
+            </video>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">«</a>
+        <a class="next" onclick="changeSlide(1)">»</a>
     `;
 }

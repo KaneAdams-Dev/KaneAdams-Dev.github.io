@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kane's Blog | Kane Adams, Games Programmer
+title: Kane Adams, Games Programmer
 ---
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ title: Kane's Blog | Kane Adams, Games Programmer
     <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
 </head>
 
-<body onload="PopulateProjects(), showSlide(0)">
+<body onload="PopulateProjects()">
     <div class="projects-gallery">
 
         <div class="project-card" id="Mobbers" onmouseenter="PlayPreview('Mobbers')"
@@ -73,49 +73,30 @@ title: Kane's Blog | Kane Adams, Games Programmer
     </div>
 
 
-    <div id="Popup" class="popup-card">
+    <div id="Popup" class="popup-card" onmouseenter="PauseAutoSlide()" onmouseleave="showSlide(0), timedSlideChange()">
         <span class="close" onclick="ClosePopup()">&times;</span>
         <div class="popup-content">
             <div class="content-pair">
                 <div class="photo-gallery">
                     <div class="slides">
-                        <!-- <div class="numbertext">1 / 5</div> -->
                         <img src="/Images/Screenshot 2024-10-25 135240.png" />
-                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
-                        <!-- <div class="numbertext">2 / 5</div> -->
                         <img src="/Images/Screenshot 2024-10-30 133532.png" />
-                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
-                        <!-- <div class="numbertext">3 / 5</div> -->
                         <img src="/Images/Screenshot 2024-10-30 133556.png" />
-                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
-                        <!-- <div class="numbertext">4 / 5</div> -->
                         <img src="/Images/Screenshot 2024-12-11 114208.png" />
-                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
-                        <!-- <div class="numbertext">5 / 5</div> -->
                         <img src="/Images/Screenshot 2024-07-11 162900.png" />
-                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
-                        <!-- <div class="numbertext">5 / 5</div> -->
                         <video controls>
                             <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4">
                         </video>
-                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
-                    </div>
-
-                    <div class="slides">
-                        <iframe src="https://www.youtube.com/embed/aClQwNeTDvI?si=vfc8LOZlRJL-wxcV"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
 
                     <a class="prev" onclick="changeSlide(-1)">«</a>
