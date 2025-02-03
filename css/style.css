@@ -8,7 +8,10 @@ body {
     background-color: #191919;
     color: #FFFFFF;
     font-family: Helvetica, Arial, Sans-Serif;
-    min-height: 1000vh; 
+    min-height: 100vh; 
+
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
 }
 
 a {
@@ -36,7 +39,9 @@ img {
 }
 
 #page-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 #content-wrap {
@@ -86,6 +91,8 @@ img {
     margin-top: 64px;
     margin-left: 1rem;
     margin-right: 1rem;
+    flex: 1; /* Allow content to fill available space */
+    padding-bottom: 4rem; /* Space for bottom navbar */
 }
 
 
