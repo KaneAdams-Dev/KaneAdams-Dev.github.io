@@ -8,10 +8,11 @@ body {
     background-color: #191919;
     color: #FFFFFF;
     font-family: Helvetica, Arial, Sans-Serif;
-    min-height: 100vh; 
+    min-height: 100vh;
 
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
+    /* Stack content vertically */
 }
 
 a {
@@ -91,8 +92,10 @@ img {
     margin-top: 64px;
     margin-left: 1rem;
     margin-right: 1rem;
-    flex: 1; /* Allow content to fill available space */
-    padding-bottom: 4rem; /* Space for bottom navbar */
+    flex: 1;
+    /* Allow content to fill available space */
+    padding-bottom: 4rem;
+    /* Space for bottom navbar */
 }
 
 
@@ -131,6 +134,52 @@ img {
     align-items: center;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #0dbe9d;
+    color: #f1f1f1;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #404040;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #f1f1f1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #505050;
+}
+
+.dropdown-content a:active {
+    background-color: #191919;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .collapsible {
     max-width: 80rem;
     background-color: #404040;
@@ -142,7 +191,7 @@ img {
     text-align: left;
     outline: none;
     font-size: 1rem;
-    
+
     align-items: center;
 }
 
@@ -167,12 +216,12 @@ img {
     align-items: center;
 }
 
-.content-break{
+.content-break {
     flex-basis: 100%;
     height: 0;
 }
 
-.collapsible::content{
+.collapsible::content {
     color: blue;
 }
 
@@ -200,7 +249,7 @@ img {
     margin-left: 0.5rem;
 }
 
-.collapsible:hover::after{
+.collapsible:hover::after {
     color: pink;
 }
 
@@ -331,8 +380,9 @@ button {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    aspect-ratio: 16 / 9; /* Ensure the iframe maintains the same aspect ratio as other media */
-   
+    aspect-ratio: 16 / 9;
+    /* Ensure the iframe maintains the same aspect ratio as other media */
+
 }
 
 .slides {
@@ -491,13 +541,23 @@ button {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform: scale(1)}
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .close {
@@ -505,13 +565,14 @@ button {
     top: 25px;
     right: 35px;
     color: #f1f1f1;
-    font-size:40px;
+    font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
     transition: transform 0.3s ease;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -588,8 +649,9 @@ button {
         width: 100%;
         height: 100%;
         max-width: 100%;
-        aspect-ratio: 16 / 9; /* Ensure the iframe maintains the same aspect ratio as other media */
-       
+        aspect-ratio: 16 / 9;
+        /* Ensure the iframe maintains the same aspect ratio as other media */
+
     }
 
     .breakdown {
@@ -649,7 +711,8 @@ button {
         width: 100%;
         height: 100%;
         max-width: 100%;
-        aspect-ratio: 16 / 9; /* Ensure the iframe maintains the same aspect ratio as other media */
-       
+        aspect-ratio: 16 / 9;
+        /* Ensure the iframe maintains the same aspect ratio as other media */
+
     }
 }
