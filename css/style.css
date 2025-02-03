@@ -8,7 +8,7 @@ body {
     background-color: #191919;
     color: #FFFFFF;
     font-family: Helvetica, Arial, Sans-Serif;
-    /* height: 1000vh; */
+    min-height: 1000vh; 
 }
 
 a {
