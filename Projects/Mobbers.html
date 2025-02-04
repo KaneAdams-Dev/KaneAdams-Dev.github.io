@@ -8,65 +8,154 @@ title: Mobbers | Lead Programmer
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script type="text/javascript" src="/Scripts/Core.js"></script>
+
+    <!-- <script type="text/javascript" src="/scripts/Core.js" defer></script> -->
+     
+    <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
+    <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
+    <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
+    <script type="text/javascript" src="/scripts/project-cards.js" defer></script>
 </head>
 
-<body onload="initialiseCollapsibles()">
+<body onload="initialiseCollapsibles(), showSlide(0), timedSlideChange()">
     <section id="main-content">
-        <h1>Mobbers</h1>
-        <div class="VideoPreview">
-            <video controls width="100%">
-                <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4" />
-            </video>
-            <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/J1MvMSvuErI?si=5BI2iBIFecbJvARB" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="iframe-webgl">
-
-                <iframe class="embedded-game" id="embeddedGame" mozallowfullscreen="true"
-                    src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no" frameborder="0"></iframe>
-
-            </div>
-            <div>
-                <br>
-                <button onclick="goFullscreen('embeddedGame'); return false">FullScreen</button>
-            </div>
+        <div id="synopse">
+            <h1>Mobbers</h1>
+            <p>
+                Collect loot and fight through the dungeon, but watch out for heroes! 
+            </p>
+            <p>
+                Roguelike where you play as the mobs in the dungeon. Masters degree project turned into demo on Steam.
+            </p>
         </div>
-
-        <br>
 
         <div id="overview">
             <div class="content-pair">
-                <figure class="photo-gallery">
-                    <img src="/Images/Screenshot 2024-07-11 162900.png" />
-                    <figcaption>Images</figcaption>
-                </figure>
+                <div class="photo-gallery">
+                    <div class="slides">
+                        <!-- <div class="numbertext">1 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-10-25 135240.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">2 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-10-30 133532.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">3 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-10-30 133556.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">4 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-12-11 114208.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">5 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-07-11 162900.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">5 / 5</div> -->
+                        <video controls>
+                            <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4">
+                        </video>
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+
+                    <div class="slides">
+                        <iframe src="https://www.youtube.com/embed/aClQwNeTDvI?si=vfc8LOZlRJL-wxcV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <a class="prev" onclick="changeSlide(-1)">«</a>
+                    <a class="next" onclick="changeSlide(1)">»</a>
+                </div>
 
                 <div class="breakdown">
-                    <b>Summary: </b> Roguelike where you play as the Mobs in a dungeon and want out
-                    <br><br>
+                    <!-- <b>Summary: </b> Roguelike where you play as the Mobs in a dungeon and want out
+                        <br><br>  -->
                     <b>Role: </b> Lead Programmer
                     <br><br>
                     <b>Team Size: </b> 6-12
                     <br><br>
-                    <b>Tools: </b> Unity, C#, Asperite, GitHub
+                    <b>Tools: </b> Unity, C#, GitHub, HackNPlan, Aseprite
                     <br><br>
                     <b>Timeline: </b> September 2022 to Present
                     <br><br>
-                    <a href="https://store.steampowered.com/app/2452590/Mobbers/"><button>Steam page</button></a>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn"><b>Explore More!</b></button>
+                    <div class="dropdown-content"
+                    ><a href="https://github.com/KaneAdams-Dev/CT7120-Procedural-Content-Generation">GitHub Repo</a>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div> <!-- Overview -->
-        <br />
+
+
+        <div class="VideoPreview">
+            <video controls>
+                <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4" />
+            </video>
+            <!-- <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/J1MvMSvuErI?si=5BI2iBIFecbJvARB" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div> -->
+        </div>
+
+        <br>
+        <div id="Popup" class="demo-card" onmouseenter="PauseAutoSlide()"
+            onmouseleave="showSlide(0), timedSlideChange()">
+            <span class="close" onclick="ClosePopup()">&times;</span>
+            <div class="demo-popup">
+                <div class="iframe-webgl">
+                    <iframe id="PerlinNoise" mozallowfullscreen="true"
+                        src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no"
+                        frameborder="0"></iframe>
+                    <div class="iframe-hotbar">
+                        <button class="left-button" onclick="copyToClipboard('PerlinNoise');">Share</button>
+                        <button class="right-button"
+                            onclick="goFullscreen('PerlinNoise'); return false">FullScreen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="Responsibilities">
             <button type="button" class="collapsible">
                 I created the work neccessary to work.
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+
+                <div class="content-break"></div>
+
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                 <p>
                     I created the neccessary stuff to make this character work without problems.
                 </p>
@@ -76,17 +165,7 @@ title: Mobbers | Lead Programmer
                 I created the work neccessary to work.
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png">
-                <p>
-                    I created the neccessary stuff to make this character work without problems.
-                </p>
-            </div>
-
-            <button type="button" class="collapsible">
-                I created the work neccessary to work.
-            </button>
-            <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                 <p>
                     I created the neccessary stuff to make this character work without problems.
                 </p>

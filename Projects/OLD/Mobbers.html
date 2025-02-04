@@ -1,0 +1,98 @@
+---
+layout: default
+title: Mobbers | Lead Programmer
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="/Scripts/Core.js"></script>
+</head>
+
+<body onload="initialiseCollapsibles()">
+    <section id="main-content">
+        <h1>Mobbers</h1>
+        <div class="VideoPreview">
+            <video controls width="100%">
+                <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4" />
+            </video>
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/J1MvMSvuErI?si=5BI2iBIFecbJvARB" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="iframe-webgl">
+
+                <iframe class="embedded-game" id="embeddedGame" mozallowfullscreen="true"
+                    src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no" frameborder="0"></iframe>
+
+            </div>
+            <div>
+                <br>
+                <button onclick="goFullscreen('embeddedGame'); return false">FullScreen</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="overview">
+            <div class="content-pair">
+                <figure class="photo-gallery">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" />
+                    <figcaption>Images</figcaption>
+                </figure>
+
+                <div class="breakdown">
+                    <b>Summary: </b> Roguelike where you play as the Mobs in a dungeon and want out
+                    <br><br>
+                    <b>Role: </b> Lead Programmer
+                    <br><br>
+                    <b>Team Size: </b> 6-12
+                    <br><br>
+                    <b>Tools: </b> Unity, C#, Asperite, GitHub
+                    <br><br>
+                    <b>Timeline: </b> September 2022 to Present
+                    <br><br>
+                    <a href="https://store.steampowered.com/app/2452590/Mobbers/"><button>Steam page</button></a>
+                </div>
+            </div>
+        </div> <!-- Overview -->
+        <br />
+
+        <div class="Responsibilities">
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
