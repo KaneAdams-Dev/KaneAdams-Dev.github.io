@@ -199,9 +199,9 @@ function OpenPopup(a_id) {
     let card = document.getElementById('Popup');
     card.style.display = "block";
 
-    if (a_id) {
+    // if (a_id != null) {
         UpdatePopup(card, a_id);
-    }
+    // }
 }
 
 function ClosePopup() {
@@ -212,11 +212,11 @@ function ClosePopup() {
 
 function UpdatePopup(a_card, a_projectID) {
 
-    if (document.location.href != "kaneadams-dev.github.io/"){
-        let demo =  a_card.querySelector(`#${a_projectID}`);
-        demo.style.display = "block";
-        return;
-    }
+    // if (document.location.href != "kaneadams-dev.github.io/"){
+    //     let demo =  a_card.querySelector(`#${a_projectID}`);
+    //     demo.style.display = "block";
+    //     return;
+    // }
 
     let breakdown = a_card.querySelector('.breakdown');
 
