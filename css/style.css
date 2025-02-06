@@ -628,7 +628,7 @@ button {
     }
 }
 
-@media screen and (max-width: 48rem) {
+@media screen and (max-width: 60rem) {
     .content-pair {
 
         flex-direction: column;
