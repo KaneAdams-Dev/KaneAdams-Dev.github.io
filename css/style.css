@@ -689,6 +689,23 @@ button {
     }
 }
 
+@media screen and (max-width: 1080px) and (orientation: landscape) {
+    .popup-card {
+        padding-top: 10px; /* Reduce top padding */
+        height: 100vh; /* Ensure it fits within the viewport */
+    }
+
+    .popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        max-height: 90vh; /* Prevent it from being too tall */
+        overflow-y: auto; /* Allow scrolling if content is too large */
+        width: 90%;
+    }
+}
+
 
 @media screen and (max-width: 1080px) {
     .popup-content .content-pair {
