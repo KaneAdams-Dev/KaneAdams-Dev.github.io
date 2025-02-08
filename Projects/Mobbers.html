@@ -139,9 +139,34 @@ title: Mobbers | Lead Programmer
                 <div class="content-pair">
                     <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                     <p>
-                        A level consists of multiple rooms that the players can tranverse between. 
+                        A level consists of multiple rooms that the players can tranverse between.
+                         
+                        <br><br>
+                        
+                        For the placement of rooms I use a grid and from the central point place a start room that only has a north entrance. From this initial room, potential rooms are branched off and checks whether there is already a room there. This continues more branches are created either a desired number of rooms or created or there has been enough attempts to place a room.
+                    </p>
 
-                        For the placement of rooms I use a grid and from the central point place a start room that only has a north entrance. From this initial room, potential rooms are branched off and checks whether there is already a room there. This continues more branches are created either a desired number of rooms or created or there has been enough attempts to place a room. 
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        Once a layout is chosen, neigbouring rooms would be counted and the room would be assigned its room oriantation with doors representing a direction on a compass (NESW).
+
+                        <br><br>
+
+                        With the room oriantations, rooms can be selected from a folder labelled with the appropriate directions, with these rooms being stored as 64x64 files team members can make with colours representing what type of object is placed, such as black and greys used for walls and corners, blues used for flooring, and red for traps.
+                    </p>
+
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        When generating a room, the generator stores all the pixels and checks each one to a corresponding colour in a dictionary and spawns a prefab of that type, if it is an obstacle then a random one is chosen.
+
+                        <br><br>
+
+                        Once the prefab is spawned, the generator checks neighbouring objects and rotates appropriately. 
+                    </p>
+
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                       
                     </p>
                 </div>
 
@@ -156,7 +181,7 @@ title: Mobbers | Lead Programmer
             </div>
 
             <button type="button" class="collapsible">
-                I created the work neccessary to work.
+                UI/UX Implementation
             </button>
             <div class="collapsible-content">
                 <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
@@ -166,7 +191,7 @@ title: Mobbers | Lead Programmer
             </div>
 
             <button type="button" class="collapsible">
-                I created the work neccessary to work.
+                Gameplay Loop
             </button>
             <div class="collapsible-content">
                 <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
@@ -174,6 +199,107 @@ title: Mobbers | Lead Programmer
                     I created the neccessary stuff to make this character work without problems.
                 </p>
             </div>
+
+            <button type="button" class="collapsible">
+                Item System
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Enemies
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Obstacles
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Traps
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Lighting
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Animation Implementation
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Audio
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Lead Programmer Responsibilities
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Releasing onto Steam
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                Game Marketing
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
         </div>
     </section>
 </body>
