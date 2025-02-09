@@ -230,6 +230,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .content-break {
@@ -500,6 +501,24 @@ button {
     margin-right: 5px;
     position: absolute;
     right: 0;
+}
+
+.audio-box {
+    width: 75%;
+    max-width: 600px; /* Match image size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040; /* Match the collapsible background */
+    padding: 1rem;
+    margin: 1rem auto 1rem 2rem; /* Align with images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.audio-box audio {
+    width: 100%;
+    margin: 0.5rem 0;
 }
 
 .popup-card {
