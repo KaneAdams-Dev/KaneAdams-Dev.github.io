@@ -10,7 +10,7 @@ title: Mobbers | Lead Programmer
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <!-- <script type="text/javascript" src="/scripts/Core.js" defer></script> -->
-     
+
     <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
     <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
     <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
@@ -22,13 +22,17 @@ title: Mobbers | Lead Programmer
         <div id="synopse">
             <h1>Mobbers</h1>
             <p>
-                Mobbers is a roguelike dungeon shooter with randomised items, rooms, and enemies. Choose to play as the Goblin, Skeleton, Slime or Kobold and turn against the other mobs in the dungeon to escape the ever approaching heroes trying to loot your home.
-            <br>
-            <br>
-            Masters degree project turned into demo on Steam under the company Septagram Games.
-            <br>
-            <br>
-                I am the lead programmer and co-founder of Septagram Games. My core responsibilities on Mobbers is communication between the different disciplines, providing technical advice & support, and creating game functionality such as gameplay, UI/UX, and dungeon generation.
+                Mobbers is a roguelike dungeon shooter with randomised items, rooms, and enemies. Choose to play as the
+                Goblin, Skeleton, Slime or Kobold and turn against the other mobs in the dungeon to escape the ever
+                approaching heroes trying to loot your home.
+                <br>
+                <br>
+                Masters degree project turned into demo on Steam under the company Septagram Games.
+                <br>
+                <br>
+                I am the lead programmer and co-founder of Septagram Games. My core responsibilities on Mobbers is
+                communication between the different disciplines, providing technical advice & support, and creating game
+                functionality such as gameplay, UI/UX, and dungeon generation.
             </p>
         </div>
 
@@ -90,14 +94,14 @@ title: Mobbers | Lead Programmer
                     <br><br>
                     <b>Timeline: </b> September 2022 to Present
                     <br><br>
-                    
+
                     <div class="dropdown">
                         <button class="dropbtn"><b>Explore More!</b></button>
-                    <div class="dropdown-content"
-                    ><a href="https://store.steampowered.com/app/2452590/Mobbers/">Steam Page</a>
+                        <div class="dropdown-content"><a
+                                href="https://store.steampowered.com/app/2452590/Mobbers/">Steam Page</a>
+                        </div>
                     </div>
-                    </div>
-                    
+
                 </div>
             </div>
         </div> <!-- Overview -->
@@ -108,7 +112,10 @@ title: Mobbers | Lead Programmer
                 <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4" />
             </video> -->
             <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/J1MvMSvuErI?si=SP7sJZNXNBIgeU6p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/J1MvMSvuErI?si=SP7sJZNXNBIgeU6p" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -140,54 +147,62 @@ title: Mobbers | Lead Programmer
                     <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                     <p>
                         A level consists of multiple rooms that the players can tranverse between.
-                         
+
                         <br><br>
-                        
-                        For the placement of rooms I use a grid and from the central point place a start room that only has a north entrance. From this initial room, potential rooms are branched off and checks whether there is already a room there. This continues more branches are created either a desired number of rooms or created or there has been enough attempts to place a room.
+
+                        For the placement of rooms I use a grid and from the central point place a start room that only
+                        has a north entrance. From this initial room, potential rooms are branched off and checks
+                        whether there is already a room there. This continues more branches are created either a desired
+                        number of rooms or created or there has been enough attempts to place a room.
                     </p>
 
                     <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                     <p>
-                        Once a layout is chosen, neigbouring rooms would be counted and the room would be assigned its room oriantation with doors representing a direction on a compass (NESW).
+                        Once a layout is chosen, neigbouring rooms would be counted and the room would be assigned its
+                        room oriantation with doors representing a direction on a compass (NESW).
 
                         <br><br>
 
-                        With the room oriantations, rooms can be selected from a folder labelled with the appropriate directions, with these rooms being stored as 64x64 files team members can make with colours representing what type of object is placed, such as black and greys used for walls and corners, blues used for flooring, and red for traps.
+                        With the room oriantations, rooms can be selected from a folder labelled with the appropriate
+                        directions, with these rooms being stored as 64x64 files team members can make with colours
+                        representing what type of object is placed, such as black and greys used for walls and corners,
+                        blues used for flooring, and red for traps.
                     </p>
 
                     <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                     <p>
-                        When generating a room, the generator stores all the pixels and checks each one to a corresponding colour in a dictionary and spawns a prefab of that type, if it is an obstacle then a random one is chosen.
+                        When generating a room, the generator stores all the pixels and checks each one to a
+                        corresponding colour in a dictionary and spawns a prefab of that type, if it is an obstacle then
+                        a random one is chosen.
 
                         <br><br>
 
-                        Once the prefab is spawned, the generator checks neighbouring objects and rotates appropriately. 
+                        Once the prefab is spawned, the generator checks neighbouring objects and rotates appropriately.
                     </p>
 
                     <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                     <p>
-                       
+                        Textures are chosen based on the pretermined theme. All available textures are stored on a
+                        single
                     </p>
                 </div>
 
                 <!-- <div class="content-break"></div> -->
 
-                <div class="content-pair">
-                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
-                    <p>
-                        I created the neccessary stuff to make this character work without problems.
-                    </p>
-                </div>
+
             </div>
 
             <button type="button" class="collapsible">
                 UI/UX Implementation
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
-                <p>
-                    I created the neccessary stuff to make this character work without problems.
-                </p>
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+
             </div>
 
             <button type="button" class="collapsible">
@@ -264,11 +279,19 @@ title: Mobbers | Lead Programmer
                 Audio
             </button>
             <div class="collapsible-content">
+                <div class="content-pair">
+                    <audio controls>
+                        <source src="/Audio/AfnerScream.mp3" type="audio/mpeg">
+                    </audio>
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
                 <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
                 <p>
                     I created the neccessary stuff to make this character work without problems.
                 </p>
             </div>
+
 
             <button type="button" class="collapsible">
                 Lead Programmer Responsibilities

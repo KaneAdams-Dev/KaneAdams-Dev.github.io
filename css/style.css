@@ -246,11 +246,20 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.collapsible-content img,
+.collapsible-content audio {
+    width: 75%;
+    max-width: 600px;
+    display: block;
+    margin: 1rem auto 1rem 2rem;
+}
+
 .collapsible-content p {
     flex: 1;
     max-width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    margin-left: 1rem;
 }
 
 .collapsible::after {
@@ -273,6 +282,7 @@ img {
 .collapsible-content img {
     position: center;
 }
+
 
 .bar1,
 .bar2,
