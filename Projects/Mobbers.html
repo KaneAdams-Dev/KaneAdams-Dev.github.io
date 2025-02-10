@@ -41,27 +41,27 @@ title: Mobbers | Lead Programmer
                 <div class="photo-gallery">
                     <div class="slides">
                         <!-- <div class="numbertext">1 / 5</div> -->
-                        <img src="/Images/Screenshot 2024-10-25 135240.png" />
+                        <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-17).png" />
                         <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
                         <!-- <div class="numbertext">2 / 5</div> -->
-                        <img src="/Images/Screenshot 2024-10-30 133532.png" />
+                        <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-39-19).png" />
                         <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
                         <!-- <div class="numbertext">3 / 5</div> -->
-                        <img src="/Images/Screenshot 2024-10-30 133556.png" />
+                        <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-37-56).png" />
                         <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
                         <!-- <div class="numbertext">4 / 5</div> -->
-                        <img src="/Images/Screenshot 2024-12-11 114208.png" />
+                        <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-15-43).png" />
                         <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
                         <!-- <div class="numbertext">5 / 5</div> -->
-                        <img src="/Images/Screenshot 2024-07-11 162900.png" />
+                        <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-05-36).png" />
                         <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
                     </div>
                     <div class="slides">
@@ -73,7 +73,7 @@ title: Mobbers | Lead Programmer
                     </div>
 
                     <div class="slides">
-                        <iframe src="https://www.youtube.com/embed/aClQwNeTDvI?si=vfc8LOZlRJL-wxcV"
+                        <iframe src="https://www.youtube.com/embed/yR2O-X7Xdmo?si=UfjSTYQSfzAHUZYy"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -144,7 +144,7 @@ title: Mobbers | Lead Programmer
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
-                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png" loading="lazy">
                     <p>
                         A level consists of multiple rooms that the players can tranverse between.
 
@@ -156,7 +156,7 @@ title: Mobbers | Lead Programmer
                         number of rooms or created or there has been enough attempts to place a room.
                     </p>
 
-                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-15-23).png" loading="lazy">
                     <p>
                         Once a layout is chosen, neigbouring rooms would be counted and the room would be assigned its
                         room oriantation with doors representing a direction on a compass (NESW).
@@ -169,7 +169,7 @@ title: Mobbers | Lead Programmer
                         blues used for flooring, and red for traps.
                     </p>
 
-                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-13).png" loading="lazy">
                     <p>
                         When generating a room, the generator stores all the pixels and checks each one to a
                         corresponding colour in a dictionary and spawns a prefab of that type, if it is an obstacle then
@@ -180,10 +180,14 @@ title: Mobbers | Lead Programmer
                         Once the prefab is spawned, the generator checks neighbouring objects and rotates appropriately.
                     </p>
 
-                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-45-04).png" loading="lazy">
                     <p>
-                        Textures are chosen based on the pretermined theme. All available textures are stored on a
-                        single
+                        Textures are chosen based on the pretermined theme. All available textures for a theme are stored on texture atlases which is zoomed in and uses random offsets to create unique looking room sections without require lots of textures.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-25-13).png" loading="lazy">
+                    <p>
+                        Textures are chosen based on the pretermined theme. All available textures for a theme are stored on texture atlases which is zoomed in and uses random offsets to create unique looking room sections without require lots of textures.
                     </p>
                 </div>
 
@@ -281,12 +285,15 @@ title: Mobbers | Lead Programmer
             <div class="collapsible-content">
                 <div class="content-pair">
                     <div class="audio-box">
+                        <p>Final Afner Rage Audio</p>
                     <audio controls>
                         <source src="/Audio/AfnerScream.mp3" type="audio/mpeg">
                     </audio>
+                    <p>Raw voice recordings</p>
                     <audio controls>
                         <source src="/Audio/Kane (Afner)_03.wav" type="audio/wav">
                     </audio>
+                    <p>Edited voice recordings</p>
                     <audio controls>
                         <source src="/Audio/Kane (Afner)_03 Bitcrunch.wav" type="audio/wav">
                     </audio>
