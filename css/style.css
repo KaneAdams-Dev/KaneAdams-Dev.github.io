@@ -361,6 +361,11 @@ button {
     /* Match the max-width of the video previews or iframe */
     box-sizing: border-box;
     /* Ensure padding is included in the width */
+    
+}
+
+.text-container {
+    flex: 1;
 }
 
 .photo-gallery {

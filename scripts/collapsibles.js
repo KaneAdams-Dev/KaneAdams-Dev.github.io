@@ -24,3 +24,15 @@ function expandCollapsibles(a_coll) {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 }
+
+window.onresize = function () {
+    var coll = document.getElementsByClassName("collapsible");
+
+    for (var i = 0; i < coll.length; i++) {
+        if (coll[i].classList.contains("active") ) {
+            var content = coll[i].nextElementSibling;
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    };
+
+}
