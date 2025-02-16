@@ -220,6 +220,11 @@ title: Mobbers | Lead Programmer
                         When players are spawned into a room, the neigbouring rooms are generated with the presets already chosen, reducing wait time from generating up to 50 rooms when starting to only generating a maximum of 3 during transition fades. Rooms the player aren't currently in are set inactive.
                     </p>
 
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-56).png">
+                    <p>
+                        To help prevent the player from getting lost in the dungeon, a minimap is available that reveals explored rooms. This map uses the template provided for the room generation and only applies colours for the floors and walls.
+                    </p> 
+
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-25-53).png">
                     <p>
                         Along with randomly room generation, a seed generator is available in editor to allow control of what is generated, allowing ease of testing for bugs by saving the seed and creating specific levels for marketing and playtests.
@@ -229,8 +234,6 @@ title: Mobbers | Lead Programmer
                 </div>
 
                 <!-- <div class="content-break"></div> -->
-
-
             </div>
 
             <button type="button" class="collapsible">
@@ -251,14 +254,27 @@ title: Mobbers | Lead Programmer
                         
                         The main menu consists of animated background panels that are floating vertically, Play game buttons, settings and the exit.
                     </p>
-
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-00-55).png">
+                    
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-48).png">
                     <p>
                         When starting the game, a cutscene plays while the main menu loads along with preparing shaders in advance. The user can watch the whole cutscene or after everything is ready can skip by pressing spacebar on a keyboard, leading to the menu.
                         
                         <br><br>
                         
                         The main menu consists of animated background panels that are floating vertically, Play game buttons, settings and the exit.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-00-55).png">
+                    <p>
+                        The settings menu (found both in the main and pause menus) contains a fullscreen button, allowing to swap between that and window mode, a back button and volume settings. 
+                        
+                        <br><br>
+
+                        The volume you are able to change all volume with 6 levels. You can also the music and game sound effects independently to each other, allowing the player to change a ratio of music to game sounds. The individual volumes are capped to the overall volume.
+
+                        <br><br>
+
+                        When leaving the settings they are immedietely saved to player prefs for future sessions.
                     </p>
                 </div>
 
