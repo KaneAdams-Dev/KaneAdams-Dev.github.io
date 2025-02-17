@@ -217,17 +217,24 @@ title: Mobbers | Lead Programmer
 
                         <br><br>
 
-                        When players are spawned into a room, the neigbouring rooms are generated with the presets already chosen, reducing wait time from generating up to 50 rooms when starting to only generating a maximum of 3 during transition fades. Rooms the player aren't currently in are set inactive.
+                        When players are spawned into a room, the neigbouring rooms are generated with the presets
+                        already chosen, reducing wait time from generating up to 50 rooms when starting to only
+                        generating a maximum of 3 during transition fades. Rooms the player aren't currently in are set
+                        inactive.
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-56).png">
                     <p>
-                        To help prevent the player from getting lost in the dungeon, a minimap is available that reveals explored rooms. This map uses the template provided for the room generation and only applies colours for the floors and walls.
-                    </p> 
+                        To help prevent the player from getting lost in the dungeon, a minimap is available that reveals
+                        explored rooms. This map uses the template provided for the room generation and only applies
+                        colours for the floors and walls.
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-25-53).png">
                     <p>
-                        Along with randomly room generation, a seed generator is available in editor to allow control of what is generated, allowing ease of testing for bugs by saving the seed and creating specific levels for marketing and playtests.
+                        Along with randomly room generation, a seed generator is available in editor to allow control of
+                        what is generated, allowing ease of testing for bugs by saving the seed and creating specific
+                        levels for marketing and playtests.
 
                         Users can use both numbers and words which converts to hashcodes for seed assigning.
                     </p>
@@ -243,39 +250,63 @@ title: Mobbers | Lead Programmer
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-59).png">
                     <p>
-                        I created the UI functionality with both consoles and PC in mind, so the settings can be controlled by controllers, mouse, and keyboard with the latest used device taking control.
+                        I created the UI functionality with both consoles and PC in mind, so the UI can be controlled by
+                        controllers, mouse, and keyboard with the latest used device taking control.
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-19-08).png">
                     <p>
-                        When starting the game, a cutscene plays while the main menu loads along with preparing shaders in advance. The user can watch the whole cutscene or after everything is ready can skip by pressing spacebar on a keyboard, leading to the menu.
+                        When starting the game, a cutscene plays while the main menu loads along with preparing shaders
+                        in advance. The user can watch the whole cutscene or after everything is ready can skip by
+                        pressing spacebar on a keyboard, leading to the menu.
 
                         <br><br>
-                        
-                        The main menu consists of animated background panels that are floating vertically, Play game buttons, settings and the exit.
+
+                        The main menu consists of animated background panels that are floating vertically, Play game
+                        buttons, settings and the exit.
                     </p>
-                    
+
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-48).png">
                     <p>
-                        When starting the game, a cutscene plays while the main menu loads along with preparing shaders in advance. The user can watch the whole cutscene or after everything is ready can skip by pressing spacebar on a keyboard, leading to the menu.
-                        
+                        When starting the game, a cutscene plays while the main menu loads along with preparing shaders
+                        in advance. The user can watch the whole cutscene or after everything is ready can skip by
+                        pressing spacebar on a keyboard, leading to the menu.
+
                         <br><br>
-                        
-                        The main menu consists of animated background panels that are floating vertically, Play game buttons, settings and the exit.
+
+                        The main menu consists of animated background panels that are floating vertically, Play game
+                        buttons, settings and the exit.
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-00-55).png">
                     <p>
-                        The settings menu (found both in the main and pause menus) contains a fullscreen button, allowing to swap between that and window mode, a back button and volume settings. 
-                        
+                        The settings menu (found both in the main and pause menus) contains a fullscreen button,
+                        allowing to swap between that and window mode, a back button and volume settings.
+
                         <br><br>
 
-                        The volume you are able to change all volume with 6 levels. You can also the music and game sound effects independently to each other, allowing the player to change a ratio of music to game sounds. The individual volumes are capped to the overall volume.
+                        The volume you are able to change all volume with 6 levels. You can also the music and game
+                        sound effects independently to each other, allowing the player to change a ratio of music to
+                        game sounds. The individual volumes are capped to the overall volume.
 
                         <br><br>
 
                         When leaving the settings they are immedietely saved to player prefs for future sessions.
                     </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-11-02).png">
+                    <div class="text-container">
+                        <p>
+                            The game can be paused once in a dungeon where it will remove all other UI elements for a
+                            fullscreen pause screen with the options for:
+                        </p>
+                        <ul>
+                            <li>Resuming the game</li>
+                            <li>Resetting the dungeon with a brand new seed</li>
+                            <li>settings (same as the main menu)</li>
+                            <li>Exit to main menu</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -284,9 +315,23 @@ title: Mobbers | Lead Programmer
                 Gameplay Loop
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-11).png">
                 <p>
-                    I created the neccessary stuff to make this character work without problems.
+                    After leaving the starting room in a dungeon. A timer will start that will countdown towards the boss fight, having the players to clear dungeon rooms and collect as much loot and coins as possible to prepare for the inevitable. 
+                </p>
+
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-23-02).png">
+                <p>
+                    When entering a new room, the doors are locked behind the players until all the enemies within the room are all defeated.
+                    
+                    <br><br>
+
+                    Once a room is cleared, the doors are opened and a friendly mimic chest will spawn. After interacting with the mimi, the timer pauses offering a breather to the players to collect any drops and explore further. Once the players enter a new room, including rooms previously explored, the timer starts again until times up or the next chest.
+                </p>
+
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-46-25).png">
+                <p>
+
                 </p>
             </div>
 
