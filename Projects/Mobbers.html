@@ -353,7 +353,7 @@ title: Mobbers | Lead Programmer
                 <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
                 <p>
                     As lead programmer, I took on roles of helping the rest of the programming team by providing help
-                    with researching, debugging, planning item ideas and preparing assets for functionality to be added.
+                    with researching, debugging, planning ideas and preparing assets for functionality to be added.
                     This is mainly the case for the item system.
 
                     <br><br>
@@ -381,7 +381,20 @@ title: Mobbers | Lead Programmer
 
                 <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-45-05).png">
                 <p>
+                    When sent to the shop room, coins earned from the dungeon can be spent on shop pillars. The player gets close to the pillar and if they have enough coins, a UI prompt will appear to interact and buy an item. Once the item is bought, the shop will take a couple of seconds before spawning a new item on the pillar to buy.
                     
+                    <br><br>
+
+                    The pillars are colour coded to fit different tiers and allows a random item of that tier to be spawned on the pillar. These stores are will have different prices as the tiers get better, encouraging players to collect more coins from the dungeon rounds.
+                </p>
+
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-05).png">
+                <p>
+                    Items are initially only found within the mimic chest where after the player picks them up they will unlock within the shop room.
+
+                    <br><br>
+
+                    These items are saved within a binary data file, adding some security to prevent players from altering the file and giving themselves game ending weapons.
                 </p>
             </div>
 
@@ -389,10 +402,47 @@ title: Mobbers | Lead Programmer
                 Enemies
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png">
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-10-39).png">
                 <p>
-                    I created the neccessary stuff to make this character work without problems.
+                    As lead programmer, I took on roles of helping the rest of the programming team by providing help with researching, debugging, planning ideas and preparing assets for functionality to be added. This is mainly the case for the enemies.
+
+                    <br><br>
+
+                    For the work on the enemies, I would use slice spritesheets and keyframe animations and set up the base prefab created by the AI programmer in bulk for functionality to be added.
                 </p>
+
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-24-12).png">
+                <p>
+                    Along with creating the dungeon, I worked alongside the AI prgrammer on having the enemies spawn within the rooms by checking a random spot in a room and checking with there is room to move around and not immedietely attack the player upon entering. 
+                    
+                    <br><br>
+                    
+                    I also helped with initial AI movement setting up nav-meshes to generate within rooms after they have been created, avoiding traps, obstacles and walls. 
+                </p>
+
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-59-37).png">
+                <p>
+                    Enemy difficulty is able to be impacted by outside factors to provide a balance between player enjoyment and challange. 
+
+                    <br><br> 
+
+                    The number of enemies are impacted by both the room size and the number of players. The number of enemies will by between set boundaries based on the number of floor tiles there are, so in small rooms with less than 200 tiles, 1-3 enemies can spawn for a single player and 9-17 spawn in rooms with 2000+ tiles. After getting the range, the number of enemies can be increased by amount of players divided by 2, so with 1 player then no extras, 1 extra with 2-3 players and 2 with all 4 players.
+                </p>
+
+                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-18).png">
+                <div class="text-container">
+                    <p>
+                        Alonside developing, I am heavily involved with the planning of enemy ideas. Enemies I was involved in concepting are: 
+                    </p>
+                    <ul>
+                        <li>Bouncing eyeballs</li>
+                        <li>Barrel Goblins and variants</li>
+                        <li>The Librarion Miniboss</li>
+                    </ul>
+                    <p>
+                        I specifically contributed to the conception of Afner, the demonic barbarion boss fight, having been named and inspired by my DnD character played within our DnD campaign, along with the other heroes.
+                    </p>
+                </div>
             </div>
 
             <button type="button" class="collapsible">
