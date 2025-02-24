@@ -317,131 +317,185 @@ title: Mobbers | Lead Programmer
                 Gameplay Loop
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-11).png">
-                <p>
-                    After leaving the starting room in a dungeon. A timer will start that will countdown towards the
-                    boss fight, having the players to clear dungeon rooms and collect as much loot and coins as possible
-                    to prepare for the inevitable.
-                </p>
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-11).png">
+                    <p>
+                        After leaving the starting room in a dungeon. A timer will start that will countdown towards the
+                        boss fight, having the players to clear dungeon rooms and collect as much loot and coins as
+                        possible
+                        to prepare for the inevitable.
+                    </p>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-23-02).png">
-                <p>
-                    When entering a new room, the doors are locked behind the players until all the enemies within the
-                    room are all defeated.
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-23-02).png">
+                    <p>
+                        When entering a new room, the doors are locked behind the players until all the enemies within
+                        the
+                        room are all defeated.
 
-                    <br><br>
+                        <br><br>
 
-                    Once a room is cleared, the doors are opened and a friendly mimic chest will spawn. After
-                    interacting with the mimi, the timer pauses offering a breather to the players to collect any drops
-                    and explore further. Once the players enter a new room, including rooms previously explored, the
-                    timer starts again until times up or the next chest.
-                </p>
+                        Once a room is cleared, the doors are opened and a friendly mimic chest will spawn. After
+                        interacting with the mimi, the timer pauses offering a breather to the players to collect any
+                        drops
+                        and explore further. Once the players enter a new room, including rooms previously explored, the
+                        timer starts again until times up or the next chest.
+                    </p>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-46-25).png">
-                <p>
-                    Upon the timer reaching 3 seconds left on the count, all the doors lock to indicate that there is no
-                    where to run. At 0 the players are teleported to the shop room where they can buy some final
-                    equipment with the coins they looted before leaving through the only door to fight the boss of the
-                    dungeon.
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-46-25).png">
+                    <p>
+                        Upon the timer reaching 3 seconds left on the count, all the doors lock to indicate that there
+                        is no
+                        where to run. At 0 the players are teleported to the shop room where they can buy some final
+                        equipment with the coins they looted before leaving through the only door to fight the boss of
+                        the
+                        dungeon.
+                    </p>
+                </div>
             </div>
 
             <button type="button" class="collapsible">
                 Item System
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
-                <p>
-                    As lead programmer, I took on roles of helping the rest of the programming team by providing help
-                    with researching, debugging, planning ideas and preparing assets for functionality to be added.
-                    This is mainly the case for the item system.
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
+                    <p>
+                        As lead programmer, I took on roles of helping the rest of the programming team by providing
+                        help
+                        with researching, debugging, planning ideas and preparing assets for functionality to be added.
+                        This is mainly the case for the item system.
 
-                    <br><br>
+                        <br><br>
 
-                    For the work on the item system, I would use the tool provided to create the prefabs for item and
-                    weapon pickups, with animated items having to slice the spritesheets.
-                </p>
+                        For the work on the item system, I would use the tool provided to create the prefabs for item
+                        and
+                        weapon pickups, with animated items having to slice the spritesheets.
+                    </p>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-12-03).png">
-                <p>
-                    Outside of helping on the item system, I worked on adding the item system to the game by allowing
-                    weapons to merge. Before the character gets the new weapon, if they are already got a weapon
-                    equipped then it will check whether the new one is in a dictionary of mergables as a key and would
-                    instead equip the weapon under that key's value.
-                </p>
-                
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-41).png">
-                <p>
-                    I created small health pickups and coins that the player can use to get back some lost health or spend with the shop respectively. These items are dropped by enemies and from breaking certain props within the environment.
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-12-03).png">
+                    <p>
+                        Outside of helping on the item system, I worked on adding the item system to the game by
+                        allowing
+                        weapons to merge. Before the character gets the new weapon, if they are already got a weapon
+                        equipped then it will check whether the new one is in a dictionary of mergables as a key and
+                        would
+                        instead equip the weapon under that key's value.
+                    </p>
 
-                    <br><br>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-41).png">
+                    <p>
+                        I created small health pickups and coins that the player can use to get back some lost health or
+                        spend with the shop respectively. These items are dropped by enemies and from breaking certain
+                        props
+                        within the environment.
 
-                    To prevent a single player hogging all the coins and health, colour coding has been added to these drops to indicate only a specific can pick up these items.
-                </p>
+                        <br><br>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-45-05).png">
-                <p>
-                    When sent to the shop room, coins earned from the dungeon can be spent on shop pillars. The player gets close to the pillar and if they have enough coins, a UI prompt will appear to interact and buy an item. Once the item is bought, the shop will take a couple of seconds before spawning a new item on the pillar to buy.
-                    
-                    <br><br>
+                        To prevent a single player hogging all the coins and health, colour coding has been added to
+                        these
+                        drops to indicate only a specific can pick up these items.
+                    </p>
 
-                    The pillars are colour coded to fit different tiers and allows a random item of that tier to be spawned on the pillar. These stores are will have different prices as the tiers get better, encouraging players to collect more coins from the dungeon rounds.
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-45-05).png">
+                    <p>
+                        When sent to the shop room, coins earned from the dungeon can be spent on shop pillars. The
+                        player
+                        gets close to the pillar and if they have enough coins, a UI prompt will appear to interact and
+                        buy
+                        an item. Once the item is bought, the shop will take a couple of seconds before spawning a new
+                        item
+                        on the pillar to buy.
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-05).png">
-                <p>
-                    Items are initially only found within the mimic chest where after the player picks them up they will unlock within the shop room.
+                        <br><br>
 
-                    <br><br>
+                        The pillars are colour coded to fit different tiers and allows a random item of that tier to be
+                        spawned on the pillar. These stores are will have different prices as the tiers get better,
+                        encouraging players to collect more coins from the dungeon rounds.
+                    </p>
 
-                    These items are saved within a binary data file, adding some security to prevent players from altering the file and giving themselves game ending weapons.
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-05).png">
+                    <p>
+                        Items are initially only found within the mimic chest where after the player picks them up they
+                        will
+                        unlock within the shop room.
+
+                        <br><br>
+
+                        These items are saved within a binary data file, adding some security to prevent players from
+                        altering the file and giving themselves game ending weapons.
+                    </p>
+                </div>
             </div>
 
             <button type="button" class="collapsible">
                 Enemies
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-10-39).png">
-                <p>
-                    As lead programmer, I took on roles of helping the rest of the programming team by providing help with researching, debugging, planning ideas and preparing assets for functionality to be added. This is mainly the case for the enemies.
-
-                    <br><br>
-
-                    For the work on the enemies, I would use slice spritesheets and keyframe animations and set up the base prefab created by the AI programmer in bulk for functionality to be added.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-24-12).png">
-                <p>
-                    Along with creating the dungeon, I worked alongside the AI prgrammer on having the enemies spawn within the rooms by checking a random spot in a room and checking with there is room to move around and not immedietely attack the player upon entering. 
-                    
-                    <br><br>
-                    
-                    I also helped with initial AI movement setting up nav-meshes to generate within rooms after they have been created, avoiding traps, obstacles and walls. 
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-59-37).png">
-                <p>
-                    Enemy difficulty is able to be impacted by outside factors to provide a balance between player enjoyment and challange. 
-
-                    <br><br> 
-
-                    The number of enemies are impacted by both the room size and the number of players. The number of enemies will by between set boundaries based on the number of floor tiles there are, so in small rooms with less than 200 tiles, 1-3 enemies can spawn for a single player and 9-17 spawn in rooms with 2000+ tiles. After getting the range, the number of enemies can be increased by amount of players divided by 2, so with 1 player then no extras, 1 extra with 2-3 players and 2 with all 4 players.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-18).png">
-                <div class="text-container">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-10-39).png">
                     <p>
-                        Alonside developing, I am heavily involved with the planning of enemy ideas. Enemies I was involved in concepting are: 
+                        As lead programmer, I took on roles of helping the rest of the programming team by providing
+                        help
+                        with researching, debugging, planning ideas and preparing assets for functionality to be added.
+                        This
+                        is mainly the case for the enemies.
+
+                        <br><br>
+
+                        For the work on the enemies, I would use slice spritesheets and keyframe animations and set up
+                        the
+                        base prefab created by the AI programmer in bulk for functionality to be added.
                     </p>
-                    <ul>
-                        <li>Bouncing eyeballs</li>
-                        <li>Barrel Goblins and variants</li>
-                        <li>The Librarion Miniboss</li>
-                    </ul>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-24-12).png">
                     <p>
-                        I specifically contributed to the conception of Afner, the demonic barbarion boss fight, having been named and inspired by my DnD character played within our DnD campaign, along with the other heroes.
+                        Along with creating the dungeon, I worked alongside the AI prgrammer on having the enemies spawn
+                        within the rooms by checking a random spot in a room and checking with there is room to move
+                        around
+                        and not immedietely attack the player upon entering.
+
+                        <br><br>
+
+                        I also helped with initial AI movement setting up nav-meshes to generate within rooms after they
+                        have been created, avoiding traps, obstacles and walls.
                     </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-59-37).png">
+                    <p>
+                        Enemy difficulty is able to be impacted by outside factors to provide a balance between player
+                        enjoyment and challange.
+
+                        <br><br>
+
+                        The number of enemies are impacted by both the room size and the number of players. The number
+                        of
+                        enemies will by between set boundaries based on the number of floor tiles there are, so in small
+                        rooms with less than 200 tiles, 1-3 enemies can spawn for a single player and 9-17 spawn in
+                        rooms
+                        with 2000+ tiles. After getting the range, the number of enemies can be increased by amount of
+                        players divided by 2, so with 1 player then no extras, 1 extra with 2-3 players and 2 with all 4
+                        players.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-18).png">
+                    <div class="text-container">
+                        <p>
+                            Alonside developing, I am heavily involved with the planning of enemy ideas. Enemies I was
+                            involved in concepting are:
+                        </p>
+                        <ul>
+                            <li>Bouncing eyeballs</li>
+                            <li>Barrel Goblins and variants</li>
+                            <li>The Librarion Miniboss</li>
+                        </ul>
+                        <p>
+                            I specifically contributed to the conception of Afner, the demonic barbarion boss fight,
+                            having
+                            been named and inspired by my DnD character played within our DnD campaign, along with the
+                            other
+                            heroes. Along with the design I also planned the attack patterns and behaviours he would have when choosing his targets.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -513,14 +567,14 @@ title: Mobbers | Lead Programmer
                 Lead Programmer Responsibilities
             </button>
             <div class="collapsible-content">
-                
+
             </div>
 
             <button type="button" class="collapsible">
                 Releasing onto Steam
             </button>
             <div class="collapsible-content">
-                
+
             </div>
 
             <button type="button" class="collapsible">

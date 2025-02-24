@@ -662,7 +662,7 @@ button {
     }
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 1080px) {
     .content-pair {
 
         flex-direction: column;
@@ -713,7 +713,7 @@ button {
     }
 }
 
-@media screen and ((max-width: 48rem) and (max-height > max-width)) {
+@media screen and ((max-width: 800px) and (max-height > max-width)) {
     .iframe-webgl {
         padding: 5px;
     }
