@@ -501,16 +501,90 @@ title: Mobbers | Lead Programmer
             </div>
 
             <button type="button" class="collapsible">
-                Obstacles
+                Obstacles & Traps
             </button>
             <div class="collapsible-content">
-                <img src="/Images/Screenshot 2024-07-11 162900.png">
-                <p>
-                    I created the neccessary stuff to make this character work without problems.
-                </p>
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
+                    <p>
+                        Within the dungeon generation, props are able to be spawned in the room that can either help the
+                        players or hinder them. These consist of anything from bookshelves that players can destroy,
+                        even traps that can defeat the player, or simply for decoration.
+
+                        <br><br>
+
+                        Objects are spawned into the work using the dungeon generation unique colour codes can choose to
+                        spawn a specific object type, once the type of obstacle is chosen the the game will choose at
+                        random what it will place based on the provided criteria.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
+                    <div class="text-container">
+                        <p>
+                            The most basic obstacles are ones that are just for decoration, add detail to the level but
+                            also can be used to either cause the players to have to go around or provide cover for the
+                            player from enemies.
+
+                            <br><br>
+
+                            These obstacles are able to be 1 unit tall, same as the player and majority of things in the
+                            game, or 2 high where the player can walk behind them. These obstacles consist of:
+                        </p>
+                        <ul>
+                            <li>Rocks</li>
+                            <li>Stone pillars</li>
+                            <li>Metal cages</li>
+                        </ul>
+                    </div>
+
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-43-01).png">
+                    <p>
+                        Light sources can be combined with other object types to help the player to see. These objects
+                        are primarily different types of fires, from candles to bonfires and so are animated as both the
+                        sprite and the flickering of the light.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-46-50).png">
+                    <div class="text-container">
+                        <p>
+                            Breakable objects are able to be shot by both the players and enemies with 4 stages:
+                        </p>
+                        <ol>
+                            <li>Fully repaired</li>
+                            <li>Lightly damaged</li>
+                            <li>Moderately damaged</li>
+                            <li>Rubble</li>
+                        </ol>
+                        <p>When an obstacle is fully destroyed, the players are rewarded health orbs and coins for the
+                            shop. Lightsources that can be destroyed will have their light intensity decrease as these
+                            obstacles are go through the different stages until they will no longer provide light as
+                            rubble.
+                        </p>
+
+                        <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
+                        <div class="text-container">
+                            <p>
+                                Traps provide the most challange for the players as they are the most varied, able to take aspects of all the other obstacle types with the added element of activing trying to stop the players. 
+    
+                                <br><br>
+    
+                                Traps will attempt to stop the players by:
+                            </p>
+                            <ul>
+                                <li>Slowing the player</li>
+                                <li>Push the players into enemies or other traps</li>
+                                <li>Causing damage over time</li>
+                                <li>Instantly killing the players.</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                </div>
             </div>
 
-            <button type="button" class="collapsible">
+            <!-- <button type="button" class="collapsible">
                 Traps
             </button>
             <div class="collapsible-content">
@@ -518,7 +592,7 @@ title: Mobbers | Lead Programmer
                 <p>
                     I created the neccessary stuff to make this character work without problems.
                 </p>
-            </div>
+            </div> -->
 
             <button type="button" class="collapsible">
                 Lighting
