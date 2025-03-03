@@ -637,132 +637,202 @@ title: Mobbers | Lead Programmer
                     </p>
                 </div>
 
+
             </div>
-        </div>
 
-        <button type="button" class="collapsible">
-            Lighting
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
-                <p>
-                    Along creating dungeon generation and gameplay functionality, I was involved in creating the
-                    lighting for the game. As the dungeon is procedural, all the lighting is created in runtime. I
-                    worked on the lighting for the environments, obstacles, and characters in the game.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-41).png">
-                <p>
-                    For environment and ambient lighting, I applied the lighting to the props within the room. Specific
-                    objects that have their own colour can be spawned to allow the designers to choose a minimum amount
-                    of lighting within the room. This includes torches on pillars, bonfires, and candlesticks. Some
-                    traps are also able to provide lighting, such as a red flow from the heating vents, which can help
-                    bring the players' attention to the trap.
-
-                    <br><br>
-
-                    Lighting from flames are able to be animated with a flickering effect to add some realism to the
-                    visuals.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-27).png">
-                <div class="text-container">
+            <button type="button" class="collapsible">
+                Lighting
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
                     <p>
-                        Lighting on characters act like a spotlights and follow them around, colours are used to give
-                        hints on what is being shown, for non players these are:
+                        Along creating dungeon generation and gameplay functionality, I was involved in creating the
+                        lighting for the game. As the dungeon is procedural, all the lighting is created in runtime. I
+                        worked on the lighting for the environments, obstacles, and characters in the game.
                     </p>
-                    <ul>
-                        <li>Red for enemies to mean danger</li>
-                        <li>Yellow/Gold for chest to mean treasure</li>
-                        <li>The main colour of the boss (so purple for Afner, orange for Keebo)</li>
-                    </ul>
-                    <p>
-                        Spotlights on characters are made reactive to show when a character has taken damage or has been
-                        defeated by flashing off or fading respectively.
-                    </p>
-                </div>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-48-11).png">
-                <div class="text-container">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-41).png">
                     <p>
-                        Player spotlights work similar to the enemies where they are reactive. However instead of a
-                        single
-                        colour being used for all players, different colours have been used to help with character
-                        differentiation.
+                        For environment and ambient lighting, I applied the lighting to the props within the room.
+                        Specific
+                        objects that have their own colour can be spawned to allow the designers to choose a minimum
+                        amount
+                        of lighting within the room. This includes torches on pillars, bonfires, and candlesticks. Some
+                        traps are also able to provide lighting, such as a red flow from the heating vents, which can
+                        help
+                        bring the players' attention to the trap.
 
                         <br><br>
 
-                        When playing alone the spotlight for the player is white with no need to differentiate, but as
-                        soon
-                        as more characters then each player are assigned colours in the following order:
+                        Lighting from flames are able to be animated with a flickering effect to add some realism to the
+                        visuals.
                     </p>
-                    <ol>
-                        <li>Yellow</li>
-                        <li>Purple</li>
-                        <li>Green</li>
-                        <li>Orange</li>
-                    </ol>
-                    <p>On PS5 controllers, the LEDs are able to change colour to match the spotlight, an added feature to help with player identification.</p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-27).png">
+                    <div class="text-container">
+                        <p>
+                            Lighting on characters act like a spotlights and follow them around, colours are used to
+                            give
+                            hints on what is being shown, for non players these are:
+                        </p>
+                        <ul>
+                            <li>Red for enemies to mean danger</li>
+                            <li>Yellow/Gold for chest to mean treasure</li>
+                            <li>The main colour of the boss (so purple for Afner, orange for Keebo)</li>
+                        </ul>
+                        <p>
+                            Spotlights on characters are made reactive to show when a character has taken damage or has
+                            been
+                            defeated by flashing off or fading respectively.
+                        </p>
+                    </div>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-48-11).png">
+                    <div class="text-container">
+                        <p>
+                            Player spotlights work similar to the enemies where they are reactive. However instead of a
+                            single
+                            colour being used for all players, different colours have been used to help with character
+                            differentiation.
+
+                            <br><br>
+
+                            When playing alone the spotlight for the player is white with no need to differentiate, but
+                            as
+                            soon
+                            as more characters then each player are assigned colours in the following order:
+                        </p>
+                        <ol>
+                            <li>Yellow</li>
+                            <li>Purple</li>
+                            <li>Green</li>
+                            <li>Orange</li>
+                        </ol>
+                        <p>On PS5 controllers, the LEDs are able to change colour to match the spotlight, an added
+                            feature
+                            to help with player identification.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="collapsible">
+                Animation Implementation
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-21).png">
+                    <p>
+                        To help with game production, I provided assistance with animation implementation into Unity.
+                        When
+                        art is completed and ready to be added to the game, I would be given the spritesheets and edited
+                        them by changing compression style, pixel Unit value, and slicing them.
+
+                        <br><br>
+
+                        Once sliced I keyframed the and set up the animations with the framerate and created the basic
+                        prefabs, ready for the appropriate programmer to provide functionality.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-58).png">
+                    <p>
+                        When setting up the animations, I created eventhandler scripts and added events within the
+                        animation
+                        timeline, allowing frame based functionality such as spawning objects thrown, or unlocking boss
+                        room
+                        doors.
+
+                        <br><br>
+
+                        Collisions and light intensities would also be impacted by the animations, from having the
+                        airvent
+                        traps increase their collider as the wind animation becomes larger, or making of a fireball
+                        brighter and lighter
+                        as a baby dragon prepares a shot.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
+                    <div class="text-container">
+                        <p>
+                            Along with preparing animations for others, I added functionality to my animations related
+                            to the dungeon, where I would add:
+                        </p>
+                        <ul>
+                            <li>Transition fades between rooms</li>
+                            <li>Animations for traps, such as wall vents</li>
+                            <li>UI animations that play even when the timescale is 0 and the game is frozen</li>
+                            <li>Looped loading animation when starting a game</li>
+                            <li>Spawning, Opening and Exitting of the Mimic chest</li>
+                            <li>Flickering of candlelights, where the animation can start at any frame to prevent
+                                synchronised animations</li>
+                        </ul>
+                    </div>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-34-56).png">
+                    <div class="text-container">
+                        <p>
+                            I worked on the system where at any point the camera can shake, adding more weight on
+                            animations that happen on screen. This system was created to allow the team to call the
+                            function and control how long the animation plays and at what intensity.
+
+                            Uses for the Camera shake include:
+                        </p>
+
+                        <ul>
+                            <li>Afner actions (charge at wall, Axe slam on ground, upon defeat)</li>
+                            <li>Closing of doors</li>
+                            <li>Teleportation to shop area</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
 
-        </div>
-
-        <button type="button" class="collapsible">
-            Animation Implementation
-        </button>
-        <div class="collapsible-content">
-            <img src="/Images/Screenshot 2024-07-11 162900.png">
-            <p>
-                I created the neccessary stuff to make this character work without problems.
-            </p>
-        </div>
-
-        <button type="button" class="collapsible">
-            Audio
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <div class="audio-box">
-                    <p>Final Afner Rage Audio</p>
-                    <audio controls>
-                        <source src="/Audio/AfnerScream.mp3" type="audio/mpeg">
-                    </audio>
-                    <p>Raw voice recordings</p>
-                    <audio controls>
-                        <source src="/Audio/Kane (Afner)_03.wav" type="audio/wav">
-                    </audio>
-                    <p>Edited voice recordings</p>
-                    <audio controls>
-                        <source src="/Audio/Kane (Afner)_03 Bitcrunch.wav" type="audio/wav">
-                    </audio>
+            <button type="button" class="collapsible">
+                Audio
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <div class="audio-box">
+                        <p>Final Afner Rage Audio</p>
+                        <audio controls>
+                            <source src="/Audio/AfnerScream.mp3" type="audio/mpeg">
+                        </audio>
+                        <p>Raw voice recordings</p>
+                        <audio controls>
+                            <source src="/Audio/Kane (Afner)_03.wav" type="audio/wav">
+                        </audio>
+                        <p>Edited voice recordings</p>
+                        <audio controls>
+                            <source src="/Audio/Kane (Afner)_03 Bitcrunch.wav" type="audio/wav">
+                        </audio>
+                    </div>
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
                 </div>
-                <p>
-                    I created the neccessary stuff to make this character work without problems.
-                </p>
             </div>
-        </div>
-        <button type="button" class="collapsible">
-            Lead Programmer Responsibilities
-        </button>
-        <div class="collapsible-content">
+            <button type="button" class="collapsible">
+                Lead Programmer Responsibilities
+            </button>
+            <div class="collapsible-content">
 
-        </div>
+            </div>
 
-        <button type="button" class="collapsible">
-            Releasing onto Steam
-        </button>
-        <div class="collapsible-content">
+            <button type="button" class="collapsible">
+                Releasing onto Steam
+            </button>
+            <div class="collapsible-content">
 
-        </div>
+            </div>
 
-        <button type="button" class="collapsible">
-            Game Marketing
-        </button>
-        <div class="collapsible-content">
+            <button type="button" class="collapsible">
+                Game Marketing
+            </button>
+            <div class="collapsible-content">
 
-        </div>
+            </div>
         </div>
     </section>
 </body>
