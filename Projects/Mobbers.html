@@ -524,7 +524,7 @@ title: Mobbers | Lead Programmer
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
                     <div class="text-container">
                         <p>
-                            The most basic obstacles are ones that are just for decoration, add detail to the level but
+                            The most basic obstacles are just for decoration, add detail to the level but
                             also can be used to either cause the players to have to go around or provide cover for the
                             player from enemies.
 
@@ -806,6 +806,24 @@ title: Mobbers | Lead Programmer
                         Music has been added to the game using a manager that has 2 tracks loaded at a time. When in an area seen as safe, the 'calm' track for the theme is looped until the player enters a room with danger, where the 'combat' will play, increasing in volume while the calm track decreased to create a smooth transition. 
                     </p>
 
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png">
+                    <p>
+                        Sound effects were implemented with an audio manager singleton able to be called by any other script with the sound click(s) to be played, which pitch being randomised to prevent repeating audio. This allows control on how many sounds are heard within the game as the players move around.
+
+                        <br><br>
+
+                        Should a list of audio clips be sent to play, the manager chooses one at random then continues to play that clip.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
+                    <p>
+                        When playing solo, the audio is 3D allowing it to not only change in volume as player moves around but also allow the player to hear the direction the audio is coming from, being useful for when there are enemies of chests out of site.
+
+                        <br><br>
+
+                        With the couch play of co-op, the 3D sounds is limited to only have distance by a factor with audio.
+                    </p>
+
                     <div class="audio-box">
                         <p>Final Afner Rage Audio</p>
                         <audio controls>
@@ -821,7 +839,7 @@ title: Mobbers | Lead Programmer
                         </audio>
                     </div>
                     <p>
-                        I created the neccessary stuff to make this character work without problems.
+                        Alongside creating functionality for the audio in the game, I did the voice acting for the boss Afner the Barbarian. Afner's voice lines entail mostly of shouts and yells of anger to fit the style of Barbarian rage.
                     </p>
                 </div>
             </div>
