@@ -15,7 +15,11 @@ title: Kane Adams, Games Programmer
 </head>
 
 <body onload="PopulateProjects()">
-    <div class="projects-gallery">
+    <header>
+        <h1>Kane Adams</h1>
+        <h2>Games Programmer</h2>
+    </header>
+    <section class="projects-gallery">
 
         <div class="project-card" id="Mobbers" onmouseenter="PlayPreview('Mobbers')"
             onmouseleave="StopPreview('Mobbers')" onclick="OpenPopup('Mobbers'), showSlide(0), resetTimer()">
@@ -70,13 +74,13 @@ title: Kane Adams, Games Programmer
                 <p class="description"></p>
             </div>
         </div> -->
-    </div>
+    </section>
 
 
-    <div id="Popup" class="popup-card" >
+    <section id="Popup" class="popup-card" >
         <span class="close" onclick="ClosePopup()">&times;</span>
         <div class="popup-content">
-            <div class="content-pair">
+            <article class="content-pair">
                 <div class="photo-gallery" onmouseenter="PauseAutoSlide()" onmouseleave="showSlide(0), resetTimer()">
                     <div class="slides">
                         <img src="/Images/Screenshot 2024-10-25 135240.png" />
@@ -116,10 +120,10 @@ title: Kane Adams, Games Programmer
                     <br><br>
                     <a href=""><button>Go To Page</button></a>
                 </p>
-            </div>
+            </article>
         </div>
 
-    </div>
+    </section>
 
     <!-- <div id="popup1" class="popup-overlay">
             <div class="popup">
