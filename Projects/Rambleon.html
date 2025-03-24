@@ -23,7 +23,7 @@ title: Tales of Rambleon | Gameplay Programmer
 <body onload="initialiseCollapsibles(), showSlide(0)">
     <main id="main-content">
         <div id="synopse">
-            <h1>Mobbers</h1>
+            <h1>Tales of Rambleon</h1>
             <p>
                 Tales of Rambleon is a pixelart RPG-Metroidvania, allowing the player to level up you character's class to defeat enemies on your quest.
 
@@ -34,7 +34,7 @@ title: Tales of Rambleon | Gameplay Programmer
                 <br>
                 <br>
 
-                I am the gameplay programmer for the game. My core responsibilities was character controls, core gameplay loop, and creating the arena mode.
+                I was the gameplay programmer for the game. My core responsibilities was character controls, core gameplay loop, and creating the arena mode.
             </p>
         </div>
 
@@ -92,7 +92,7 @@ title: Tales of Rambleon | Gameplay Programmer
                     <br><br>
                     <b>Team Size: </b> 5-8
                     <br><br>
-                    <b>Tools: </b> Unity, C#, GitHub, Inkle, Aseprite
+                    <b>Tools: </b> Unity, C#, GitHub, Inkle, HackNPlan, Aseprite
                     <br><br>
                     <b>Timeline: </b> January 2022 to June 2022
                     <br><br>
@@ -100,7 +100,7 @@ title: Tales of Rambleon | Gameplay Programmer
                     <div class="dropdown">
                         <button class="dropbtn"><b>Explore More!</b></button>
                         <div class="dropdown-content"><a
-                                href="https://store.steampowered.com/app/2452590/Mobbers/">Steam Page</a>
+                                href="https://github.com/Team-Tash/Tales-of-Rambleon">GitHub Repo</a>
                         </div>
                     </div>
 
@@ -114,7 +114,7 @@ title: Tales of Rambleon | Gameplay Programmer
                 <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4" />
             </video> -->
             <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/J1MvMSvuErI?si=SP7sJZNXNBIgeU6p" title="YouTube video player"
+                <iframe src="https://www.youtube.com/embed/6H6Bc4FjRUE?si=pb_cTNUmlVXa9Rh2" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -143,104 +143,48 @@ title: Tales of Rambleon | Gameplay Programmer
             <h2>My Responsibilities</h2>
 
             <button type="button" class="collapsible">
-                Dungeon Generation
+                Player Controller
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png">
                     <p>
-                        A level consists of multiple rooms that the players can tranverse between.
-
-                        <br><br>
-
-                        For the placement of rooms I use a grid and from the central point place a start room that only
-                        has a north entrance. From this initial room, potential rooms are branched off and checks
-                        whether there is already a room there. This continues more branches are created either a desired
-                        number of rooms or created or there has been enough attempts to place a room.
+                        As the gameplay programmer, I set up the basis of the player and elements shared with the enemies such as health.
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-15-23).png">
                     <p>
-                        Once a layout is chosen, neigbouring rooms would be counted and the room would be assigned its
-                        room oriantation with doors representing a direction on a compass (NESW).
-
-                        <br><br>
-
-                        With the room oriantations, rooms can be selected from a folder labelled with the appropriate
-                        directions, with these rooms being stored as 64x64 files team members can make with colours
-                        representing what type of object is placed, such as black and greys used for walls and corners,
-                        blues used for flooring, and red for traps.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-13).png">
                     <p>
-                        When generating a room, the generator stores all the pixels and checks each one to a
-                        corresponding colour in a dictionary and spawns a prefab of that type, if it is an obstacle then
-                        a random one is chosen.
-
-                        <br><br>
-
-                        Once the prefab is spawned, the generator checks neighbouring objects and rotates appropriately.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-45-04).png">
-                    <div class="text-container">
-                        <p>
-                            Textures are chosen based on the pretermined theme. All available textures for a theme are
-                            stored on texture atlases which is zoomed in and uses random offsets to create unique
-                            looking room sections without require lots of textures.
+                    <p>
 
-                            Themes available are:
-                        </p>
-                        <ul>
-                            <li>Kingly Castle</li>
-                            <li>Dark Dungeon</li>
-                            <li>Ludacris Library</li>
-                            <li>Desolate Desert</li>
-                        </ul>
-                    </div>
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
-                    <div class="text-container">
-                        <p>
-                            Along with folders for different room oriantations, special rooms can be placed which allow
-                            special requirements, these rooms include:
-                        </p>
-                        <ul>
-                            <li>Start room with only north doors</li>
-                            <li>Miniboss rooms that are open spaces with minimal obstacles</li>
-                            <li>Shop rooms with only a northern door to boss room and shop stands</li>
-                            <li>Boss rooms that are very open and have south and north doors</li>
-                        </ul>
-                    </div>
+                    <p>
+
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-16-43).png">
                     <p>
-                        Once the layout of the dungeon and rooms are chosen, the dungeon manager controls when rooms are
-                        created and players are moved between rooms.
-
-                        <br><br>
-
-                        When players are spawned into a room, the neigbouring rooms are generated with the presets
-                        already chosen, reducing wait time from generating up to 50 rooms when starting to only
-                        generating a maximum of 3 during transition fades. Rooms the player aren't currently in are set
-                        inactive.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-56).png">
                     <p>
-                        To help prevent the player from getting lost in the dungeon, a minimap is available that reveals
-                        explored rooms. This map uses the template provided for the room generation and only applies
-                        colours for the floors and walls.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-25-53).png">
                     <p>
-                        Along with randomly room generation, a seed generator is available in editor to allow control of
-                        what is generated, allowing ease of testing for bugs by saving the seed and creating specific
-                        levels for marketing and playtests.
-
-                        Users can use both numbers and words which converts to hashcodes for seed assigning.
+                        
                     </p>
                 </div>
 
@@ -248,474 +192,171 @@ title: Tales of Rambleon | Gameplay Programmer
             </div>
 
             <button type="button" class="collapsible">
-                UI/UX Implementation
+                Class System
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-59).png">
                     <p>
-                        I created the UI functionality with both consoles and PC in mind, so the UI can be controlled by
-                        controllers, mouse, and keyboard with the latest used device taking control.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-19-08).png">
                     <p>
-                        When starting the game, a cutscene plays while the main menu loads along with preparing shaders
-                        in advance. The user can watch the whole cutscene or after everything is ready can skip by
-                        pressing spacebar on a keyboard, leading to the menu.
-
-                        <br><br>
-
-                        The main menu consists of animated background panels that are floating vertically, Play game
-                        buttons, settings and the exit.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-48).png">
                     <p>
-                        When starting the game, a cutscene plays while the main menu loads along with preparing shaders
-                        in advance. The user can watch the whole cutscene or after everything is ready can skip by
-                        pressing spacebar on a keyboard, leading to the menu.
-
-                        <br><br>
-
-                        The main menu consists of animated background panels that are floating vertically, Play game
-                        buttons, settings and the exit.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-00-55).png">
                     <p>
-                        The settings menu (found both in the main and pause menus) contains a fullscreen button,
-                        allowing to swap between that and window mode, a back button and volume settings.
-
-                        <br><br>
-
-                        The volume you are able to change all volume with 6 levels. You can also the music and game
-                        sound effects independently to each other, allowing the player to change a ratio of music to
-                        game sounds. The individual volumes are capped to the overall volume.
-
-                        <br><br>
-
-                        When leaving the settings they are immedietely saved to player prefs for future sessions.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-11-02).png">
-                    <div class="text-container">
-                        <p>
-                            The game can be paused once in a dungeon where it will remove all other UI elements for a
-                            fullscreen pause screen with the options for:
-                        </p>
-                        <ul>
-                            <li>Resuming the game</li>
-                            <li>Resetting the dungeon with a brand new seed</li>
-                            <li>settings (same as the main menu)</li>
-                            <li>Exit to main menu</li>
-                        </ul>
-                    </div>
+                    <p>
+                        
+                    </p>
                 </div>
 
             </div>
 
             <button type="button" class="collapsible">
-                Gameplay Loop
+                Leveling System
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-11).png">
                     <p>
-                        After leaving the starting room in a dungeon. A timer will start that will countdown towards the
-                        boss fight, having the players to clear dungeon rooms and collect as much loot and coins as
-                        possible
-                        to prepare for the inevitable.
+                       
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-23-02).png">
                     <p>
-                        When entering a new room, the doors are locked behind the players until all the enemies within
-                        the
-                        room are all defeated.
-
-                        <br><br>
-
-                        Once a room is cleared, the doors are opened and a friendly mimic chest will spawn. After
-                        interacting with the mimi, the timer pauses offering a breather to the players to collect any
-                        drops
-                        and explore further. Once the players enter a new room, including rooms previously explored, the
-                        timer starts again until times up or the next chest.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-46-25).png">
                     <p>
-                        Upon the timer reaching 3 seconds left on the count, all the doors lock to indicate that there
-                        is no
-                        where to run. At 0 the players are teleported to the shop room where they can buy some final
-                        equipment with the coins they looted before leaving through the only door to fight the boss of
-                        the
-                        dungeon.
+                        
                     </p>
                 </div>
             </div>
 
             <button type="button" class="collapsible">
-                Item System
+                Branching Dialogue System
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
                     <p>
-                        As lead programmer, I took on roles of helping the rest of the programming team by providing
-                        help
-                        with researching, debugging, planning ideas and preparing assets for functionality to be added.
-                        This is mainly the case for the item system.
-
-                        <br><br>
-
-                        For the work on the item system, I would use the tool provided to create the prefabs for item
-                        and
-                        weapon pickups, with animated items having to slice the spritesheets.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-12-03).png">
                     <p>
-                        Outside of helping on the item system, I worked on adding the item system to the game by
-                        allowing
-                        weapons to merge. Before the character gets the new weapon, if they are already got a weapon
-                        equipped then it will check whether the new one is in a dictionary of mergables as a key and
-                        would
-                        instead equip the weapon under that key's value.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-41).png">
                     <p>
-                        I created small health pickups and coins that the player can use to get back some lost health or
-                        spend with the shop respectively. These items are dropped by enemies and from breaking certain
-                        props
-                        within the environment.
-
-                        <br><br>
-
-                        To prevent a single player hogging all the coins and health, colour coding has been added to
-                        these
-                        drops to indicate only a specific can pick up these items.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-45-05).png">
                     <p>
-                        When sent to the shop room, coins earned from the dungeon can be spent on shop pillars. The
-                        player
-                        gets close to the pillar and if they have enough coins, a UI prompt will appear to interact and
-                        buy
-                        an item. Once the item is bought, the shop will take a couple of seconds before spawning a new
-                        item
-                        on the pillar to buy.
 
-                        <br><br>
-
-                        The pillars are colour coded to fit different tiers and allows a random item of that tier to be
-                        spawned on the pillar. These stores are will have different prices as the tiers get better,
-                        encouraging players to collect more coins from the dungeon rounds.
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-05).png">
                     <p>
-                        Items are initially only found within the mimic chest where after the player picks them up they
-                        will
-                        unlock within the shop room.
-
-                        <br><br>
-
-                        These items are saved within a binary data file, adding some security to prevent players from
-                        altering the file and giving themselves game ending weapons.
+                        
                     </p>
                 </div>
             </div>
 
             <button type="button" class="collapsible">
-                Enemies
+                Arena Mode
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-10-39).png">
                     <p>
-                        As lead programmer, I took on roles of helping the rest of the programming team by providing
-                        help
-                        with researching, debugging, planning ideas and preparing assets for functionality to be added.
-                        This
-                        is mainly the case for the enemies.
-
-                        <br><br>
-
-                        For the work on the enemies, I would use slice spritesheets and keyframe animations and set up
-                        the
-                        base prefab created by the AI programmer in bulk for functionality to be added.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-24-12).png">
                     <p>
-                        Along with creating the dungeon, I worked alongside the AI prgrammer on having the enemies spawn
-                        within the rooms by checking a random spot in a room and checking with there is room to move
-                        around
-                        and not immedietely attack the player upon entering.
-
-                        <br><br>
-
-                        I also helped with initial AI movement setting up nav-meshes to generate within rooms after they
-                        have been created, avoiding traps, obstacles and walls.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-59-37).png">
                     <p>
-                        Enemy difficulty is able to be impacted by outside factors to provide a balance between player
-                        enjoyment and challange.
-
-                        <br><br>
-
-                        The number of enemies are impacted by both the room size and the number of players. The number
-                        of
-                        enemies will by between set boundaries based on the number of floor tiles there are, so in small
-                        rooms with less than 200 tiles, 1-3 enemies can spawn for a single player and 9-17 spawn in
-                        rooms
-                        with 2000+ tiles. After getting the range, the number of enemies can be increased by amount of
-                        players divided by 2, so with 1 player then no extras, 1 extra with 2-3 players and 2 with all 4
-                        players.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-18).png">
-                    <div class="text-container">
-                        <p>
-                            Alonside developing, I am heavily involved with the planning of enemy ideas. Enemies I was
-                            involved in concepting are:
-                        </p>
-                        <ul>
-                            <li>Bouncing eyeballs</li>
-                            <li>Barrel Goblins and variants</li>
-                            <li>The Librarion Miniboss</li>
-                        </ul>
-                        <p>
-                            I specifically contributed to the conception of Afner, the demonic barbarion boss fight,
-                            having
-                            been named and inspired by my DnD character played within our DnD campaign, along with the
-                            other
-                            heroes. Along with the design I also planned the attack patterns and behaviours he would
-                            have when choosing his targets.
-                        </p>
-                    </div>
+                    <p>
+
+                    </p>
                 </div>
             </div>
 
             <button type="button" class="collapsible">
-                Obstacles & Traps
+                UI/UX
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
                     <p>
-                        Within the dungeon generation, props are able to be spawned in the room that can either help the
-                        players or hinder them. These consist of anything from bookshelves that players can destroy,
-                        even traps that can defeat the player, or simply for decoration.
-
-                        <br><br>
-
-                        Objects are spawned into the work using the dungeon generation unique colour codes can choose to
-                        spawn a specific object type, once the type of obstacle is chosen the the game will choose at
-                        random what it will place based on the provided criteria.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
-                    <div class="text-container">
-                        <p>
-                            The most basic obstacles are just for decoration, add detail to the level but
-                            also can be used to either cause the players to have to go around or provide cover for the
-                            player from enemies.
+                    <p>
 
-                            <br><br>
-
-                            These obstacles are able to be 1 unit tall, same as the player and majority of things in the
-                            game, or 2 high where the player can walk behind them. These obstacles consist of:
-                        </p>
-                        <ul>
-                            <li>Rocks</li>
-                            <li>Stone pillars</li>
-                            <li>Metal cages</li>
-                        </ul>
-                    </div>
-
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-43-01).png">
                     <p>
-                        Light sources can be combined with other object types to help the player to see. These objects
-                        are primarily different types of fires, from candles to bonfires and so are animated as both the
-                        sprite and the flickering of the light.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-46-50).png">
-                    <div class="text-container">
-                        <p>
-                            Breakable objects are able to be shot by both the players and enemies with 4 stages:
-                        </p>
-                        <ol>
-                            <li>Fully repaired</li>
-                            <li>Lightly damaged</li>
-                            <li>Moderately damaged</li>
-                            <li>Rubble</li>
-                        </ol>
-                        <p>When an obstacle is fully destroyed, the players are rewarded health orbs and coins for the
-                            shop. Lightsources that can be destroyed will have their light intensity decrease as these
-                            obstacles are go through the different stages until they will no longer provide light as
-                            rubble.
-                        </p>
-                    </div>
+                    <p>
+
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
-                    <div class="text-container">
-                        <p>
-                            Traps provide the most challange for the players as they are the most varied, able to
-                            take aspects of all the other obstacle types with the added element of activing trying
-                            to stop the players.
+                    <p>
 
-                            <br><br>
-
-                            Traps will attempt to stop the players by:
-                        </p>
-                        <ul>
-                            <li>Slowing the player</li>
-                            <li>Push the players into enemies or other traps</li>
-                            <li>Causing damage over time</li>
-                            <li>Instantly killing the players</li>
-                        </ul>
-                    </div>
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-46-50).png">
                     <p>
-                        Like some props, some traps can be broken to prevent future problems for the players. These
-                        would only have 2 stages (fixed and broken) and would give any coins for health, being alive is
-                        your reward.
-
-                        <br><br>
-
-                        This includes 10 variations of cobwebs that slow down the player while they are in a fixed web.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
-                    <div class="text-container">
-                        <p>
-                            Some traps require being activated by a trigger from a player or enemy being too close to
-                            them. These traps will play an animation upon activation and will then have a short timer
-                            before the trap can be triggered again. To help visually, all trigger traps are activated
-                            upon entering a room. Triggered traps include:
-                        </p>
-                        <ul>
-                            <li>Spike traps that will pierce the players upon being stood on</li>
-                            <li>Wall traps</li>
-                        </ul>
-                    </div>
+                    <p>
+
+                    </p>
 
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-01).png">
-                    <div class="text-container">
-                        <p>
-                            Alongside the traps found on floors, wall traps are also available. While these do not take
-                            up space on the floor, hiding in a corner will not help the players as these wall traps can
-                            are triggered when the player gets close to them. These traps include:
-                        </p>
-                        <ul>
-                            <li>Air vents that push players into traps</li>
-                            <li>Damage over time traps, such as gas and heating vents</li>
-                            <li>Breeze vents that freeze the player, causing slow movement</li>
-                        </ul>
-                    </div>
+                    <p>
+
+                    </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-37).png">
                     <p>
-                        Unlike 1 unit big traps and wall traps that are limit to a set square, pits are able to be
-                        created at a range of sizes. In similar style to flooring and walls, designers say where the pit
-                        edge and all is and the rest is filled in will an abyss that immedietely kills the player when
-                        they fall in.
-
-                        <br><br>
-
-                        To make pits easier to evade, a slow down effect is added on the edges to indicate to players
-                        that it is dangerous along with allowing players to dodge over pits, allowing the option to
-                        place pits to cover doors and requiring the player to dodge over them.
+                        
                     </p>
                 </div>
 
-
-            </div>
-
-            <button type="button" class="collapsible">
-                Lighting
-            </button>
-            <div class="collapsible-content">
-                <div class="content-pair">
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
-                    <p>
-                        Along creating dungeon generation and gameplay functionality, I was involved in creating the
-                        lighting for the game. As the dungeon is procedural, all the lighting is created in runtime. I
-                        worked on the lighting for the environments, obstacles, and characters in the game.
-                    </p>
-
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-41).png">
-                    <p>
-                        For environment and ambient lighting, I applied the lighting to the props within the room.
-                        Specific
-                        objects that have their own colour can be spawned to allow the designers to choose a minimum
-                        amount
-                        of lighting within the room. This includes torches on pillars, bonfires, and candlesticks. Some
-                        traps are also able to provide lighting, such as a red flow from the heating vents, which can
-                        help
-                        bring the players' attention to the trap.
-
-                        <br><br>
-
-                        Lighting from flames are able to be animated with a flickering effect to add some realism to the
-                        visuals.
-                    </p>
-
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-27).png">
-                    <div class="text-container">
-                        <p>
-                            Lighting on characters act like a spotlights and follow them around, colours are used to
-                            give
-                            hints on what is being shown, for non players these are:
-                        </p>
-                        <ul>
-                            <li>Red for enemies to mean danger</li>
-                            <li>Yellow/Gold for chest to mean treasure</li>
-                            <li>The main colour of the boss (so purple for Afner, orange for Keebo)</li>
-                        </ul>
-                        <p>
-                            Spotlights on characters are made reactive to show when a character has taken damage or has
-                            been
-                            defeated by flashing off or fading respectively.
-                        </p>
-                    </div>
-
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-48-11).png">
-                    <div class="text-container">
-                        <p>
-                            Player spotlights work similar to the enemies where they are reactive. However instead of a
-                            single
-                            colour being used for all players, different colours have been used to help with character
-                            differentiation.
-
-                            <br><br>
-
-                            When playing alone the spotlight for the player is white with no need to differentiate, but
-                            as
-                            soon
-                            as more characters then each player are assigned colours in the following order:
-                        </p>
-                        <ol>
-                            <li>Yellow</li>
-                            <li>Purple</li>
-                            <li>Green</li>
-                            <li>Orange</li>
-                        </ol>
-                        <p>On PS5 controllers, the LEDs are able to change colour to match the spotlight, an added
-                            feature
-                            to help with player identification.</p>
-                    </div>
-                </div>
 
             </div>
 
@@ -724,76 +365,27 @@ title: Tales of Rambleon | Gameplay Programmer
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-21).png">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
                     <p>
-                        To help with game production, I provided assistance with animation implementation into Unity.
-                        When
-                        art is completed and ready to be added to the game, I would be given the spritesheets and edited
-                        them by changing compression style, pixel Unit value, and slicing them.
-
-                        <br><br>
-
-                        Once sliced I keyframed the and set up the animations with the framerate and created the basic
-                        prefabs, ready for the appropriate programmer to provide functionality.
+                        
                     </p>
 
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-58).png">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-41).png">
                     <p>
-                        When setting up the animations, I created eventhandler scripts and added events within the
-                        animation
-                        timeline, allowing frame based functionality such as spawning objects thrown, or unlocking boss
-                        room
-                        doors.
-
-                        <br><br>
-
-                        Collisions and light intensities would also be impacted by the animations, from having the
-                        airvent
-                        traps increase their collider as the wind animation becomes larger, or making of a fireball
-                        brighter and lighter
-                        as a baby dragon prepares a shot.
+                        
                     </p>
 
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
-                    <div class="text-container">
-                        <p>
-                            Along with preparing animations for others, I added functionality to my animations related
-                            to the dungeon, where I would add:
-                        </p>
-                        <ul>
-                            <li>Transition fades between rooms</li>
-                            <li>Animations for traps, such as wall vents</li>
-                            <li>UI animations that play even when the timescale is 0 and the game is frozen</li>
-                            <li>Title screens for entering a miniboss/boss room</li>
-                            <li>Looped loading animation when starting a game</li>
-                            <li>Spawning, Opening and Exitting of the Mimic chest</li>
-                            <li>Flickering of candlelights, where the animation can start at any frame to prevent
-                                synchronised animations</li>
-                        </ul>
-                    </div>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-27).png">
+                    <p>
 
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-34-56).png">
-                    <div class="text-container">
-                        <p>
-                            I worked on the system where at any point the camera can shake, adding more weight on
-                            animations that happen on screen. This system was created to allow the team to call the
-                            function and control how long the animation plays and at what intensity.
+                    </p>
 
-                            Uses for the Camera shake include:
-                        </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-48-11).png">
+                    <p>
 
-                        <ul>
-                            <li>Afner actions (charge at wall, Axe slam on ground, upon defeat)</li>
-                            <li>Closing of doors</li>
-                            <li>Teleportation to shop area</li>
-                        </ul>
-                    </div>
-
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-05-56).png">
-                    <p>I also worked on particles within the game using Unity's particle system. I worked on the
-                        particles emitting from the shop and chests to create a mystical feel to these items.</p>
-
+                    </p>
                 </div>
+
             </div>
 
             <button type="button" class="collapsible">
@@ -801,206 +393,86 @@ title: Tales of Rambleon | Gameplay Programmer
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-21).png">
+                    <p>
+                        
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-58).png">
+                    <p>
+                        
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-34-56).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-05-56).png">
+                    <p>
+
+                    </p>
+
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                Camera
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-17).png">
                     <p>
-                        Music has been added to the game using a manager that has 2 tracks loaded at a time. When in an
-                        area seen as safe, the 'calm' track for the theme is looped until the player enters a room with
-                        danger, where the 'combat' will play, increasing in volume while the calm track decreased to
-                        create a smooth transition.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png">
                     <p>
-                        Sound effects were implemented with an audio manager singleton able to be called by any other
-                        script with the sound click(s) to be played, which pitch being randomised to prevent repeating
-                        audio. This allows control on how many sounds are heard within the game as the players move
-                        around.
-
-                        <br><br>
-
-                        Should a list of audio clips be sent to play, the manager chooses one at random then continues
-                        to play that clip.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
                     <p>
-                        When playing solo, the audio is 3D allowing it to not only change in volume as player moves
-                        around but also allow the player to hear the direction the audio is coming from, being useful
-                        for when there are enemies of chests out of site.
-
-                        <br><br>
-
-                        With the couch play of co-op, the 3D sounds is limited to only have distance by a factor with
-                        audio.
+                        
                     </p>
 
-                    <div class="audio-box">
-                        <p>Final Afner Rage Audio</p>
-                        <audio controls>
-                            <source src="/Audio/AfnerScream.mp3" type="audio/mpeg">
-                        </audio>
-                        <p>Raw voice recordings</p>
-                        <audio controls>
-                            <source src="/Audio/Kane (Afner)_03.wav" type="audio/wav">
-                        </audio>
-                        <p>Edited voice recordings</p>
-                        <audio controls>
-                            <source src="/Audio/Kane (Afner)_03 Bitcrunch.wav" type="audio/wav">
-                        </audio>
-                    </div>
-                    <p>
-                        Alongside creating functionality for the audio in the game, I did the voice acting for the boss
-                        Afner the Barbarian. Afner's voice lines entail mostly of shouts and yells of anger to fit the
-                        style of Barbarian rage. I recorded multiple takes and chose the best ones before adding them
-                        ingame.
-                    </p>
                 </div>
             </div>
             <button type="button" class="collapsible">
-                Lead Programmer
+                Non-Programming
             </button>
             <div class="collapsible-content">
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-56).png">
                     <p>
-                        As Lead Programmer, I was involved wih the planning of the game from the programmers'
-                        standpoint, communicating with both the design and programming team on what is possible wihtin
-                        the timelimits we had to get features working in and the assigning appropriate tasks to the
-                        programmers.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
                     <p>
-                        For planning workflow and task assignment, we used HackNPlan with tensorboards to plan out the
-                        work for our sprints. As one of the admins on HackNPlan, I was able to see add, edit and assign
-                        tasks to team members in accordance to frequent team meetings.
-
-                        <br><br>
-
-                        The project was stored on GitHub where I managed the repository, reviewed commits, and fixed
-                        conflicts along multiple branches.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-35-57).png">
                     <p>
-                        Leading the programming team required wearing many hats where I was involved with multiple
-                        components of the game. Alongside my own contributions I was also responsible for reviewing the
-                        work provided by the team, checking it fits the requirements previously set up and compatability
-                        with the rest of the project through vigarous QA testing.
-
-                        <br><br>
-
-                        I also provided assistance with workloads through providing research to help develop features,
-                        completing smaller tasks such as setting up prefabs, debugging and optimising work.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-20).png">
                     <p>
-                        My role of lead programmer stretched outside of the programming team; communicating between the
-                        design and programming teams to find a balance between the features that the designers want and
-                        not overloading the programmers.
-
-                        <br><br>
-
-                        I tested feasibility by breaking down the request down into its core elements to find what is
-                        required and create rapid prototypes for the concept with a single element before confirming an
-                        idea and assigning it for production.
+                        
                     </p>
 
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-47-10).png">
                     <p>
-                        I was involved with the hiring of contractors provided as part of the university requirements,
-                        having hired 2 artists and 1 programmer that was worked closely with to help the workload for
-                        the AI programmer from setting up prefabs to even creating their own enemy AI.
-
-                        <br><br>
-
-                        Also led the work experience for a school student where they took on the role of QA tester,
-                        playtesting and providing tickets of bugs found and how to replicate them whilst I looked into
-                        the tickets and provided pug fixes.
+                        
                     </p>
                 </div>
-            </div>
-
-            <button type="button" class="collapsible">
-                Steam Release
-            </button>
-            <div class="collapsible-content">
-                <div class="content-pair">
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-57).png">
-                    <p>
-                        As programming lead, I was given the responsibilities and privalage to release the demo for
-                        Mobbers on Steam, creating builds of the game with final testing of any major issues before
-                        releasing publically for people to play.
-
-                        <br><br>
-
-                        The demo is limited to one theme with one boss to fight, providing a complete gameloop of 5
-                        minutes where after defeating the boss and leaving returns the players to the main menu. Losing
-                        will restart the dungeon with a brand new game seed to play.
-                    </p>
-
-                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-45-50).png">
-                    <p>
-                        With the game currently in development, I am tasked with creating updates to the demo where I
-                        implement patches for bugs found and new features that benefit the demo whilst not giving away
-                        too much of the game.
-
-                        <br><br>
-
-                        I also organise the Steam events that we are invited to, namely Steam Next Fest and Remote Play
-                        Together. I planned what updates can come out to help push the relevance of the game along with
-                        monitored background data.
-
-                        <br><br>
-
-                        With updates and event participation, the game received 400 wishlists within the first 6 months
-                        of the demo being released.
-                    </p>
-                </div>
-            </div>
-
-            <button type="button" class="collapsible">
-                Game Marketing
-            </button>
-            <div class="collapsible-content">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-20).png">
-                <p>
-                    Outside of game development, I worked alongside the team on the marketing for the game that helped it reach its wishlist count. 
-
-                    <br><br>
-
-                    I initially helped with the creation of promotional material by thinking up post ideas for social media, specifically X, both planning the wording for the post and recording game footage for GIFs, Screenshots with a screenshot script I created, and videos for trailers. As of recently, I am the primary marketer for the game, planning out when to write posts and what to talk about, controlling socials on X, YouTube, Instagram, and TikTok.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-23-55).png">
-                <p>
-                    Mobbers took part in multiple events online to further the game's reach, taking part in the Game Dev World Championship (GDWC) in June 2023, along with Steam events
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-35-16).png">
-                <div class="text-container">
-                    <p>
-                        Alongside digital marketing, we have also participated in both private and public exhibitions, invents we've been to include:
-                    </p>
-                    <ul>
-                        <li>Insomnia (i70, and i71)</li>
-                        <li>Cheltenham Science Fair 2023</li>
-                        <li>University of Gloucestershire COMX 2023</li>
-                    </ul>
-                    <p>
-                        When taking part of these events, I helped with setting up and taking down the stands, interacting with guests where we advertised the game and played the demo. We also provided quick ongoing builds between days with bug fixes to help improve the game and providing a better experience, even as far as contributing to the completion of our second boss on the evening of our first Insomnia event, providing a whole new experience on the second day.
-                    </p>
-                </div>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-16).png">
-                <p>
-                    As results of taking part in these events, we were able to attract more people to our game and social accounts and gain a boost in Wishlists, helping us reach 400.
-                    
-                    <br><br>
-
-                    When at the Insomnia events, we were invited to future events alongside having blog posts about our game as being highlights of the events from  <a href="https://fullsync.co.uk/i70-insomnia-gaming-festival/">FullSync</a> & <a href="https://www.geektown.co.uk/2023/04/10/insomnia-gaming-festival-i70-indie-games-voice-actor-panels-lots-more/">Geektown</a>. We also took part in the Patch Magazine competition where we were one of the runner ups for the event of top indie game and were mentioned in the October 2023 Magazine.
-                </p>
             </div>
         </div>
     </main>
