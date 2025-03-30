@@ -12,7 +12,7 @@
 }
 
 .projects-gallery,
-.projects-gallery>.project-card {
+.projects-gallery.project-card {
     padding: 8px;
 
 }
