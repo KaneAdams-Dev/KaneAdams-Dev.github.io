@@ -229,8 +229,6 @@ img {
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    
 }
 
 .content-break {
@@ -664,7 +662,6 @@ button {
 
 @media screen and (max-width: 1080px) {
     .content-pair {
-
         flex-direction: column;
     }
 
