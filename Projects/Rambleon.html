@@ -152,400 +152,472 @@ title: Tales of Rambleon | Gameplay Programmer
                 <div class="content-pair">
                     <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png">
                     <div class="text-container">
+                        <p>
+                            I created the controls for the player to be able to be played with both PC keyboard and a
+                            controller simultaniously.
+
+                            <br><br>
+
+                            With movement, stamina is limited resource that charges overtime, making players need to
+                            plan
+                            oout their next action carefully. Walking and crouching has no cost, but stamina is required
+                            to:
+                        </p>
+                        <ul>
+                            <li>Running - Small use overtime</li>
+                            <li>Jumping - Small use on launch</li>
+                            <li>Light attack - medium amount of use</li>
+                            <li>Heavy attack - large amount of use</li>
+                        </ul>
+                    </div>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-15-23).png">
                     <p>
-                        I created the controls for the player to be able to be played with both PC keyboard and a
-                        controller simultaniously.
+                        To allow easier traversal around the levels, the jumping has been made advanced with multiple
+                        ways to control the jump heights and distance.
 
                         <br><br>
 
-                        With movement, stamina is limited resource that charges overtime, making players need to plan
-                        oout their next action carefully. Walking and crouching has no cost, but stamina is required to:
-                    </p>
-                    <ul>
-                        <li>Running - Small use overtime</li>
-                        <li>Jumping - Small use on launch</li>
-                        <li>Light attack - medium amount of use</li>
-                        <li>Heavy attack - large amount of use</li>
-                    </ul>
-                </div>
+                        A dynamic jump has been added for the initial launch off the ground where you can hold the jump
+                        button and release to impact height of jumps, allowing small hops with a quick press to
+                        launching yourself in the air to reach a platform.
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-15-23).png">
-                <p>
-                    To allow easier traversal around the levels, the jumping has been made advanced with multiple ways to control the jump heights and distance.
-
-                    <br><br>
-                    
-                    A dynamic jump has been added for the initial launch off the ground where you can hold the jump button and release to impact height of jumps, allowing small hops with a quick press to launching yourself in the air to reach a platform.
-
-                    <br><br>
-
-                    While already in air, the player can perform a second jump and with timing can change how they move, jumping during the ascend can boost height whilst on the fall increases distance.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-13).png">
-                <p>
-                    The player is able to strike with both a light attack and a heavy attack at the cost of stamina and cooldown periods. 
-
-                    <br><br>
-
-                    The light attack is quicker to perform, takes less stamina and has a quicker cooldown but at the cost of damage compared to the heavy strikes. Roughly 2 light attacks can be performed during the time for a heavy to recover so timing your strikes and alternating between the who is key.
-
-                    <br><br>
-
-                    Along with attacking, the player can also be attacked that cancels certain actions. Upon losing all health, the player is taken to a game over screen for a visit with the Reaper and the Goddess.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-45-04).png">
-                <p>
-                    Alongside the physical based controls, the player can use mana to perform different tasks.
-
-                    <br><br>
-
-                    For movement, the player can use a dash where they travel in the direction they were facing, allowing the player to get an extra boost to reach a ledge or travel across the map quicker. This dash also allows phasing through enemies, allowing the player to outflank their enemies and avoid attacks.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
-                <p>
-                    Players are able to cast a fireball, this not only gives the player a ranged attack type but also has some pushback on the player, if used right with enough mana could allow players to traverse long distances without touching the floor, it would just be backwards.
-                </p>
-            </div>
-
-            <!-- <div class="content-break"></div> -->
-        </div>
-
-        <button type="button" class="collapsible">
-            Class System & Leveling Up
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-59).png">
-                <div class="text-container">
-                    <p>
-                        Taking inspiration from RPGs, we created character classes with their own strengths and weaknesses that allow for different play styles. I used Object Oriented methods to create a base character and then children classes that alter the different stat variables that make up the character.
-    
                         <br><br>
-                        
-                        With the different classes, designers are able to create a character and change: 
-                    </p>
-                    <ul>
-                        <li>Health (maximum, regen rate)</li>
-                        <li>Stamina (maximum, regen rate)</li>
-                        <li>Mana (maximum, regen rate)</li>
-                        <li>Move Speed (walking, crouching, running)</li>
-                        <li>Light Attack (strength, cooldown rate)</li>
-                        <li>Heavy Attack (strength, cooldown rate)</li>
-                    </ul>
-                </div>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-19-08).png">
-                <div class="text-container">
+                        While already in air, the player can perform a second jump and with timing can change how they
+                        move, jumping during the ascend can boost height whilst on the fall increases distance.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-13).png">
                     <p>
-                        4 classes can be chosen from that have unique playstyles influenced by their stats:
+                        The player is able to strike with both a light attack and a heavy attack at the cost of stamina
+                        and cooldown periods.
+
+                        <br><br>
+
+                        The light attack is quicker to perform, takes less stamina and has a quicker cooldown but at the
+                        cost of damage compared to the heavy strikes. Roughly 2 light attacks can be performed during
+                        the time for a heavy to recover so timing your strikes and alternating between the who is key.
+
+                        <br><br>
+
+                        Along with attacking, the player can also be attacked that cancels certain actions. Upon losing
+                        all health, the player is taken to a game over screen for a visit with the Reaper and the
+                        Goddess.
                     </p>
-                    <ul>
-                        <li>
-                            Paladin - Heavy attacker with lots of strength and health, decent amount of magic, and slow speed
-                        </li>
-                        <li>
-                            Arcane Warrior - Small health and low melee damage but can rely on it's high mana for strategy
-                        </li>
-                        <li>
-                            Rogue - Fast moving, with able to make lots of attacks with high stamina to balance out the lack of strength and magic
-                        </li>
-                        <li>
-                            Peasant - The hard difficulty, playing with little health, strength, magic, and speed
-                        </li>
-                    </ul>
-                </div>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-48).png">
-                <p>
-                    The player can level improve these stats by leveling up. Along with the stats for the character, level and experience variables are also included.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-00-55).png">
-                <p>
-                    Each enemy contains a certain amount of XP that upon defeating the enemy is gifted to the player. Once the player reaches the maximum XP for that level, the player is leveled up.
-                    
-                    <br><br>
-
-                    Upon leveling up, the XP bar is reset to 0 + any remaining XP from the kill, so if they gained 105XP and only needed 100, the 5 is added to the next level. Leveling up increases amount of XP required, having the player defeat more enemies or more challenging ones.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-11-02).png">
-                <p>
-                    Leveling up rewards the player by increasing their character stats, allowing them to hit and get hit harder, move quicker and for longer, and use more spells.
-
-                    <br><br>
-
-                    Along with stat increases, their health, stamina, and mana bars are refilled to full for the new limit.
-                </p>
-            </div>
-
-        </div>
-
-        <button type="button" class="collapsible">
-            Branching Dialogue System
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
-                <p>
-                    Branching dialogue was added to the game using the inkle API for Unity, this allowed easy to follow dialogue and where different paths in the conversation can lead to, making it easy for anyone on the team to be able to contribute to characters' speech.
-
-                    <br><br>
-
-                    Writing dialogue was done within the Inky IDE using their markup language Ink, and was then converted to JSON within Unity to be used within the game. 
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-12-03).png">
-                <p>
-                    Along with implementing inkle, I created the system used to add the dialogue from the text files into the game with dialogue boxes that appear after interacting with an NPC. 
-                    
-                    <br><br>
-
-                    When a character starts speaking, the words apear 1 letter at a time, acting as both an eye-catching visual and to give a minimum amount of time for people to read before the buttons to continue dialogue or make a decision appears.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-41).png">
-                <div class="text-container">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-45-04).png">
                     <p>
-                        Using CSS within the inky editor, I added customisation to parts of text during dialogue. This allowed key parts of text to be outlined clearly to draw a player's attention, such as controls, whilst other times add personality to how a character speaks. Using CSS I: 
+                        Alongside the physical based controls, the player can use mana to perform different tasks.
+
+                        <br><br>
+
+                        For movement, the player can use a dash where they travel in the direction they were facing,
+                        allowing the player to get an extra boost to reach a ledge or travel across the map quicker.
+                        This dash also allows phasing through enemies, allowing the player to outflank their enemies and
+                        avoid attacks.
                     </p>
-                    <ul>
-                        <li style="color: aqua;">Changed font colours</li>
-                        <li>Emphasised with <b>Bold</b> and <i>Italics</i></li>
-                    </ul>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
+                    <p>
+                        Players are able to cast a fireball, this not only gives the player a ranged attack type but
+                        also has some pushback on the player, if used right with enough mana could allow players to
+                        traverse long distances without touching the floor, it would just be backwards.
+                    </p>
                 </div>
-                
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-45-05).png">
-                <p>
-                    I set variables up within inkle that are then assigned within Unity to allow the dialogue to impact what is happening in the game. 
-
-                    <br><br>
-
-                    At the start of the game, all controls apart from interacting are locked and as you progress through the tutorial, talking to the NPC Rambleon will unlock the controls required for each section of the tutorial along with the required stat bars (stamina, mana, health). 
-                    
-                    <br><br>
-
-                    In arena mode, talking to Rambleon between rounds will have the player say whether they are ready for the next round, saying no closes ends the conversation and yes starts the next round countdown.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-05).png">
-                <p>
-                    Along with creating the dialogue systems, I contributed to the creation of the dialogue during the tutorial between the player and the character Rambleon. 
-
-                    <br><br>
-
-                    For the character, the dialogue is chosen to be of someone confused as to what is happening around them, enforcing the need for a tutorial to explain to people.
-                    
-                    <br><br>
-                    
-                    Rambleon guides the player by giving tips on what to do next and what keys to press whilst making jokes and having the characteristics of a crazy old man.
-                </p>
-            </div>
-        </div>
-
-        <button type="button" class="collapsible">
-            Arena Mode
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-10-39).png">
-                <p>
-                    Along with the tutorial level, an arena mode was also created where the player can fight endless amount of enenmies until they eventually lose.
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-24-12).png">
-                <p>
-                    When starting arena mode the player will spawn in the arena used within the boss fight against Bernard where there would be Rambleon standing in the centre.
-
-                    <br><br>
-
-                    The gamemode is split into multiple waves where the player has to talk to Rambleon and confirm whether they are ready for the next round, where a countdown timer will start before enemies are spawned in. Having to talk to Rambleon offers the player breathing time between waves and allow any stats to auto regen to give the player the best chance. 
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-59-37).png">
-                <p>
-                    There are 10 unique waves within the mode where different enemies are spawned in each round, allowing the player to get used to the arena mode loop. On round 1, a single enemy spawns at one of the spawn points within the arena and more enemies are added until round 10 with multiple enemies. 
-
-                    <br><br>
-
-                    When the player reaches round 10, the loop starts over again with the stats increased for the enemies to give the player a challenge. Both gaining health increases with Fire Elementals becoming faster while Earth Elementals throw rocks harder.
-                </p>
-            </div>
-        </div>
-
-        <button type="button" class="collapsible">
-            UI/UX
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-43-01).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-46-50).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-46-50).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
-                <p>
-
-                </p>
-
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-01).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-37).png">
-                <p>
-
-                </p>
+                <!-- <div class="content-break"></div> -->
             </div>
 
+            <button type="button" class="collapsible">
+                Class System & Leveling Up
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-08-59).png">
+                    <div class="text-container">
+                        <p>
+                            Taking inspiration from RPGs, we created character classes with their own strengths and
+                            weaknesses that allow for different play styles. I used Object Oriented methods to create a
+                            base character and then children classes that alter the different stat variables that make
+                            up the character.
 
-        </div>
+                            <br><br>
 
-        <button type="button" class="collapsible">
-            Animations
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
-                <p>
+                            With the different classes, designers are able to create a character and change:
+                        </p>
+                        <ul>
+                            <li>Health (maximum, regen rate)</li>
+                            <li>Stamina (maximum, regen rate)</li>
+                            <li>Mana (maximum, regen rate)</li>
+                            <li>Move Speed (walking, crouching, running)</li>
+                            <li>Light Attack (strength, cooldown rate)</li>
+                            <li>Heavy Attack (strength, cooldown rate)</li>
+                        </ul>
+                    </div>
 
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-19-08).png">
+                    <div class="text-container">
+                        <p>
+                            4 classes can be chosen from that have unique playstyles influenced by their stats:
+                        </p>
+                        <ul>
+                            <li>
+                                Paladin - Heavy attacker with lots of strength and health, decent amount of magic, and
+                                slow speed
+                            </li>
+                            <li>
+                                Arcane Warrior - Small health and low melee damage but can rely on it's high mana for
+                                strategy
+                            </li>
+                            <li>
+                                Rogue - Fast moving, with able to make lots of attacks with high stamina to balance out
+                                the lack of strength and magic
+                            </li>
+                            <li>
+                                Peasant - The hard difficulty, playing with little health, strength, magic, and speed
+                            </li>
+                        </ul>
+                    </div>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-41).png">
-                <p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-48).png">
+                    <p>
+                        The player can level improve these stats by leveling up. Along with the stats for the character,
+                        level and experience variables are also included.
+                    </p>
 
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-00-55).png">
+                    <p>
+                        Each enemy contains a certain amount of XP that upon defeating the enemy is gifted to the
+                        player. Once the player reaches the maximum XP for that level, the player is leveled up.
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-27).png">
-                <p>
+                        <br><br>
 
-                </p>
+                        Upon leveling up, the XP bar is reset to 0 + any remaining XP from the kill, so if they gained
+                        105XP and only needed 100, the 5 is added to the next level. Leveling up increases amount of XP
+                        required, having the player defeat more enemies or more challenging ones.
+                    </p>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-48-11).png">
-                <p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-11-02).png">
+                    <p>
+                        Leveling up rewards the player by increasing their character stats, allowing them to hit and get
+                        hit harder, move quicker and for longer, and use more spells.
 
-                </p>
-            </div>
+                        <br><br>
 
-        </div>
-
-        <button type="button" class="collapsible">
-            Audio
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-21).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-58).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-34-56).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-05-56).png">
-                <p>
-
-                </p>
-
-            </div>
-        </div>
-
-        <button type="button" class="collapsible">
-            Camera
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-17).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png">
-                <p>
-
-                </p>
-
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
-                <p>
-
-                </p>
+                        Along with stat increases, their health, stamina, and mana bars are refilled to full for the new
+                        limit.
+                    </p>
+                </div>
 
             </div>
-        </div>
-        <button type="button" class="collapsible">
-            Non-Programming
-        </button>
-        <div class="collapsible-content">
-            <div class="content-pair">
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-56).png">
-                <p>
 
-                </p>
+            <button type="button" class="collapsible">
+                Branching Dialogue System
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
+                    <p>
+                        Branching dialogue was added to the game using the inkle API for Unity, this allowed easy to
+                        follow dialogue and where different paths in the conversation can lead to, making it easy for
+                        anyone on the team to be able to contribute to characters' speech.
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
-                <p>
+                        <br><br>
 
-                </p>
+                        Writing dialogue was done within the Inky IDE using their markup language Ink, and was then
+                        converted to JSON within Unity to be used within the game.
+                    </p>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-35-57).png">
-                <p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-12-03).png">
+                    <p>
+                        Along with implementing inkle, I created the system used to add the dialogue from the text files
+                        into the game with dialogue boxes that appear after interacting with an NPC.
 
-                </p>
+                        <br><br>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-20).png">
-                <p>
+                        When a character starts speaking, the words apear 1 letter at a time, acting as both an
+                        eye-catching visual and to give a minimum amount of time for people to read before the buttons
+                        to continue dialogue or make a decision appears.
+                    </p>
 
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-41).png">
+                    <div class="text-container">
+                        <p>
+                            Using CSS within the inky editor, I added customisation to parts of text during dialogue.
+                            This allowed key parts of text to be outlined clearly to draw a player's attention, such as
+                            controls, whilst other times add personality to how a character speaks. Using CSS I:
+                        </p>
+                        <ul>
+                            <li style="color: aqua;">Changed font colours</li>
+                            <li>Emphasised with <b>Bold</b> and <i>Italics</i></li>
+                        </ul>
+                    </div>
 
-                <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-47-10).png">
-                <p>
 
-                </p>
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-45-05).png">
+                    <p>
+                        I set variables up within inkle that are then assigned within Unity to allow the dialogue to
+                        impact what is happening in the game.
+
+                        <br><br>
+
+                        At the start of the game, all controls apart from interacting are locked and as you progress
+                        through the tutorial, talking to the NPC Rambleon will unlock the controls required for each
+                        section of the tutorial along with the required stat bars (stamina, mana, health).
+
+                        <br><br>
+
+                        In arena mode, talking to Rambleon between rounds will have the player say whether they are
+                        ready for the next round, saying no closes ends the conversation and yes starts the next round
+                        countdown.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-05).png">
+                    <p>
+                        Along with creating the dialogue systems, I contributed to the creation of the dialogue during
+                        the tutorial between the player and the character Rambleon.
+
+                        <br><br>
+
+                        For the character, the dialogue is chosen to be of someone confused as to what is happening
+                        around them, enforcing the need for a tutorial to explain to people.
+
+                        <br><br>
+
+                        Rambleon guides the player by giving tips on what to do next and what keys to press whilst
+                        making jokes and having the characteristics of a crazy old man.
+                    </p>
+                </div>
             </div>
-        </div>
+
+            <button type="button" class="collapsible">
+                Arena Mode
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-10-39).png">
+                    <p>
+                        Along with the tutorial level, an arena mode was also created where the player can fight endless
+                        amount of enenmies until they eventually lose.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-24-12).png">
+                    <p>
+                        When starting arena mode the player will spawn in the arena used within the boss fight against
+                        Bernard where there would be Rambleon standing in the centre.
+
+                        <br><br>
+
+                        The gamemode is split into multiple waves where the player has to talk to Rambleon and confirm
+                        whether they are ready for the next round, where a countdown timer will start before enemies are
+                        spawned in. Having to talk to Rambleon offers the player breathing time between waves and allow
+                        any stats to auto regen to give the player the best chance.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-59-37).png">
+                    <p>
+                        There are 10 unique waves within the mode where different enemies are spawned in each round,
+                        allowing the player to get used to the arena mode loop. On round 1, a single enemy spawns at one
+                        of the spawn points within the arena and more enemies are added until round 10 with multiple
+                        enemies.
+
+                        <br><br>
+
+                        When the player reaches round 10, the loop starts over again with the stats increased for the
+                        enemies to give the player a challenge. Both gaining health increases with Fire Elementals
+                        becoming faster while Earth Elementals throw rocks harder.
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                UI/UX
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-22).png">
+                    <div class="text-container">
+                        <p>
+                            I worked on the functionality for the UI within the game, allowing it to scale with
+                            screensize and be interacted with by the player. The core UI includes:
+                        </p>
+                        <ul>
+                            <li>Stats bars</li>
+                            <li>Dialogue boxes</li>
+                            <li>Main Menu</li>
+                            <li>Character selection</li>
+                        </ul>
+                    </div>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-53).png">
+                    <p>
+                        In the game there are 4 stats bars shown on screen, these being the health, stamina, mana, and
+                        level. As these health bars change, they have an animation that plays to show the change
+                        gradually, with the difference between the old and new values being a yellow bar that
+                        interpolates between the values.
+
+                        <br><br>
+
+                        As the player increases their level, the other stat bars increase in size to give visual
+                        indications that they have more of a particular stat. Having the stat bars able to change size
+                        also provides a good indication to that a class is particularly good for.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-43-01).png">
+                    <p>
+                        For the dialogue, a button prompt will appear above the character that wants to talk to you.
+                        Pressing the prompt will reveal a box from below the camera that will show the characters' name
+                        and reveals their text 1 letter at a time, providing time to read it fully. Once the dialogue is
+                        completed a continue button will appear to show the player's response or end the dialogue
+                        entirely.
+
+                        <br><br>
+
+                        In cases with decisions to make 2 dialogue boxes appear with the options that player can choose
+                        from. Upon finishing the conversation, all text is removed from the box and the box will descend
+                        again.
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-46-50).png">
+                    <div class="text-container">
+                        <p>
+                            When starting the game or exiting the level by pressing the ESc key, the main menu will
+                            appear showing the options that the player can choose from that they can select with mouse
+                            or keyboard. These options include:
+                        </p>
+                        <ul>
+                            <li>New Game - Opens the character select to start the tutorial demo scene</li>
+                            <li>Arena - Opens the character select to start the wave based arena mode</li>
+                            <li>Credits - Showing the names of who worked on the project and their roles</li>
+                            <li>Exit - Closes the game window</li>
+                        </ul>
+                    </div>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
+                    <p>
+
+                    </p>
+                </div>
+
+
+            </div>
+
+            <button type="button" class="collapsible">
+                Animations
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-41).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-17-27).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-48-11).png">
+                    <p>
+
+                    </p>
+                </div>
+
+            </div>
+
+            <button type="button" class="collapsible">
+                Audio
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-42-21).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-37-58).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-01-33).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-34-56).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-05-56).png">
+                    <p>
+
+                    </p>
+
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                Camera
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-06-17).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (11-55-21).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-58).png">
+                    <p>
+
+                    </p>
+
+                </div>
+            </div>
+            <button type="button" class="collapsible">
+                Non-Programming
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-13-56).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-36-38).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (23-35-57).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (00-04-20).png">
+                    <p>
+
+                    </p>
+
+                    <img src="/Images/Mobbers/Unchecked/GameScreenshot06-07-24 (22-47-10).png">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
         </div>
     </main>
 </body>
