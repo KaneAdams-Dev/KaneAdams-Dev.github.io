@@ -88,8 +88,10 @@ img {
     text-align: center;
 
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;     /* Vertically center */
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
     flex-direction: column;
 }
 
@@ -153,6 +155,8 @@ img {
 .dropdown {
     position: relative;
     display: inline-block;
+
+
 }
 
 .dropbtn {
@@ -171,6 +175,10 @@ img {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 /* Links inside the dropdown */
@@ -359,7 +367,7 @@ button {
     /* Match the max-width of the video previews or iframe */
     box-sizing: border-box;
     /* Ensure padding is included in the width */
-    
+
 }
 
 .text-container {
@@ -508,14 +516,17 @@ button {
 
 .audio-box {
     width: 75%;
-    max-width: 600px; /* Match image size */
+    max-width: 600px;
+    /* Match image size */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #404040; /* Match the collapsible background */
+    background-color: #404040;
+    /* Match the collapsible background */
     padding: 1rem;
-    margin: 1rem auto 1rem 2rem; /* Align with images */
+    margin: 1rem auto 1rem 2rem;
+    /* Align with images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -722,8 +733,10 @@ button {
 
 @media screen and (max-width: 1080px) and (orientation: landscape) {
     .popup-card {
-        padding-top: 10px; /* Reduce top padding */
-        height: 100vh; /* Ensure it fits within the viewport */
+        padding-top: 10px;
+        /* Reduce top padding */
+        height: 100vh;
+        /* Ensure it fits within the viewport */
     }
 
     .popup-content {
@@ -731,8 +744,10 @@ button {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -40%);
-        max-height: 90vh; /* Prevent it from being too tall */
-        overflow-y: auto; /* Allow scrolling if content is too large */
+        max-height: 90vh;
+        /* Prevent it from being too tall */
+        overflow-y: auto;
+        /* Allow scrolling if content is too large */
         width: 90%;
     }
 }
