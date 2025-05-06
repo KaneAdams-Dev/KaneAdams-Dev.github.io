@@ -58,14 +58,14 @@ const projects = {
     AiO: {
         title: "Art Is Opinion",
         description: "Paint what you can see... literally!",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/ArtIsOpinion/AiO_edited.jpg",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "BSc Second year group project",
-        role: "Programmer",
-        size: "4",
+        role: "Gameplay Programmer",
+        size: "4-5",
         tools: "Unity, C#, GitHub, Tobii",
-        timeline: "December 2019 to August 2021",
-        ProjectLink: "",
+        timeline: "December 2019 to June 2021",
+        ProjectLink: "Projects/ArtIsOpinion.html",
         slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
 
