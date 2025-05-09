@@ -70,7 +70,7 @@ const projects = {
     },
 
     Rambleon: {
-        title: "Tales of Rableon",
+        title: "Tales of Rambleon",
         description: "Pixelart Metroidvania with RPG elements where you play as a chosen.",
         thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
