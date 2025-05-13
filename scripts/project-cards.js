@@ -30,7 +30,7 @@ const projects = {
     TerrainGenerator: {
         title: "Terrain Generator",
         description: "Terrain generation with demos on specific procedural demos",
-        thumbnail: "/Images/TerrainGeneration/TerrainGenerationThumbnail.png",
+        thumbnail: "/Images/TerrainGeneration/TerrainGeneration.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "MSc Procedural Generation project ",
         role: "Procedural Programmer",
