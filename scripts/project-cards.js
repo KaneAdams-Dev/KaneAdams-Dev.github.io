@@ -96,6 +96,20 @@ const projects = {
         ProjectLink: "",
         slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
+
+    PuzzledGaze: {
+        title: "Puzzled Gaze",
+        description: "Puzzles you solve with your eyes!",
+        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
+        summary: "Final year solo project where ",
+        role: "Programmer",
+        size: "Solo",
+        tools: "Unity, C#, GitHub, Tobii SDK",
+        timeline: "April 2022 to May 2022",
+        ProjectLink: "Projects/PuzzledGaze.html",
+        slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
+    }
 };
 
 currentThumbnail;
