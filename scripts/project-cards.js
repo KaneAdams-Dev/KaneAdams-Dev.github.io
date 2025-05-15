@@ -85,7 +85,7 @@ const projects = {
 
     ML: {
         title: "Machine Learning",
-        description: "Created a Machine .",
+        description: "Trained a Unity Agent to search for and chase a target",
         thumbnail: "/Images/UnityML/UnityMLThumbnail.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Masters Degree assignment ",
