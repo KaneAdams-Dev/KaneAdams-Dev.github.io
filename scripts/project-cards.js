@@ -2,7 +2,7 @@ const projects = {
     Mobbers: {
         title: "Mobbers",
         description: "Roguelike where you play as the mobs of the dungeon",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/Mobbers/MobbersThumbnail.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Roguelike where you play as the Mobs in a dungeon and want out",
         role: "Lead Programmer",
@@ -16,7 +16,7 @@ const projects = {
     Mobberville: {
         title: "Mobberville",
         description: "Farming game where you... play as a mob of a dungeon... ",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/Mobberville/MainKSImage.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Huh!",
         role: "Lead Programmer",
@@ -34,7 +34,7 @@ const projects = {
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "MSc Procedural Generation project ",
         role: "Procedural Programmer",
-        size: "1",
+        size: "Solo",
         tools: "Unity, C#, GitHub",
         timeline: "September 2022 to December 2022",
         ProjectLink: "Projects/TerrainGeneration.html",
@@ -44,7 +44,7 @@ const projects = {
     Zombeez: {
         title: "Survival Horde",
         description: "Survive the horde of zombies, and meet some friends along the way!",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/Zombeez/SurvivorHordeImage.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Game Jam submission with the objective to get the survivors from",
         role: "Unity Developer",
@@ -58,7 +58,7 @@ const projects = {
     AiO: {
         title: "Art Is Opinion",
         description: "Paint what you can see... literally!",
-        thumbnail: "/Images/ArtIsOpinion/AiO_edited.jpg",
+        thumbnail: "/Images/ArtIsOpinion/AiO.jpg",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "BSc Second year group project",
         role: "Gameplay Programmer",
@@ -72,7 +72,7 @@ const projects = {
     Rambleon: {
         title: "Tales of Rambleon",
         description: "Pixelart Metroidvania with RPG elements where you play as a chosen.",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/Rambleon/Merge_poster.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Final year group project where ",
         role: "Programmer",
@@ -86,13 +86,13 @@ const projects = {
     ML: {
         title: "Machine Learning",
         description: "Created a Machine .",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/UnityML/UnityMLThumbnail.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
-        summary: "Final year group project where ",
-        role: "Programmer",
-        size: "4",
-        tools: "Unity, C#, GitHub, Inkle",
-        timeline: "January 2023 to June 2023",
+        summary: "Masters Degree assignment ",
+        role: "Machine Learning Developer",
+        size: "Solo",
+        tools: "Unity, C#, GitHub, UnityML Agents",
+        timeline: "January 2023 to May 2023",
         ProjectLink: "",
         slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     },
@@ -100,7 +100,7 @@ const projects = {
     PuzzledGaze: {
         title: "Puzzled Gaze",
         description: "Puzzles you solve with your eyes!",
-        thumbnail: "/Images/Zombeez/SH_AKBoss.PNG",
+        thumbnail: "/Images/PuzzledGaze/DontStare.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Final year solo project where ",
         role: "Programmer",
