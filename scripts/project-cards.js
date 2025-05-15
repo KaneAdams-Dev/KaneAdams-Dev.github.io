@@ -1,7 +1,7 @@
 const projects = {
     Mobbers: {
         title: "Mobbers",
-        description: "Roguelike where you play as the mobs of the dungeon",
+        description: "Play as the Mobs of the dungeon, take the treasure, and run from the heroes!",
         thumbnail: "/Images/Mobbers/MobbersThumbnail.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Roguelike where you play as the Mobs in a dungeon and want out",
@@ -15,7 +15,7 @@ const projects = {
 
     Mobberville: {
         title: "Mobberville",
-        description: "Farming game where you... play as a mob of a dungeon... ",
+        description: "Help the mobs rebuild their invaded town ",
         thumbnail: "/Images/Mobberville/MainKSImage.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Huh!",
@@ -72,7 +72,7 @@ const projects = {
     Rambleon: {
         title: "Tales of Rambleon",
         description: "Pixelart Metroidvania with RPG elements where you play as a chosen.",
-        thumbnail: "/Images/Rambleon/Merge_poster.PNG",
+        thumbnail: "/Images/Rambleon/RambleonThumbnail.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Final year group project where ",
         role: "Programmer",
