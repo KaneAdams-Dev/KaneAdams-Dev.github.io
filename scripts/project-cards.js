@@ -72,7 +72,7 @@ const projects = {
     Rambleon: {
         title: "Tales of Rambleon",
         description: "Pixelart Metroidvania with RPG elements where you play as a chosen.",
-        thumbnail: "/Images/Rambleon/RambleonThumbnail.PNG",
+        thumbnail: "/Images/Rambleon/TalesOfRambleonThumbnail.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Final year group project where ",
         role: "Programmer",
