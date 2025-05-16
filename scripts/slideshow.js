@@ -44,7 +44,7 @@ function timedSlideChange() {
 }
 
 function resetTimer() {
-    timer = setTimeout(timedSlideChange, 5000);
+    timer = setTimeout(timedSlideChange, 10000);
 }
 
 function PauseAutoSlide(){
