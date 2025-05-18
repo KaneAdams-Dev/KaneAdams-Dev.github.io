@@ -91,7 +91,7 @@ const projects = {
         summary: "Masters Degree assignment ",
         role: "Machine Learning Developer",
         size: "Solo",
-        tools: "Unity, C#, GitHub, UnityML Agents",
+        tools: "Unity, C#, GitHub, Unity ML-Agents",
         timeline: "January 2023 to May 2023",
         ProjectLink: "",
         slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]

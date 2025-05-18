@@ -1,0 +1,181 @@
+---
+layout: default
+title: Unity ML Agents | Machine Learning Developer
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>Unity ML Agents | Machine Learning Developer</Title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- <script type="text/javascript" src="/scripts/Core.js" defer></script> -->
+
+    <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
+    <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
+    <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
+    <script type="text/javascript" src="/scripts/project-cards.js" defer></script>
+</head>
+
+<body onload="initialiseCollapsibles(), showSlide(0)">
+    <section id="main-content">
+        <div id="synopse">
+            <h1>Unity ML-Agents</h1>
+            <p>
+                This project was for the Data Analytics & Machine Learning module in my Masters degree where we were tasked with creating our own agents using Unity ML-Agents.
+
+                <br><br>
+
+                For my project I trained an agent tasked with finding and chasing a target while avoiding obstacles using reinforcement learning. 
+            </p>
+        </div>
+
+        <div id="overview">
+            <div class="content-pair">
+                <div class="photo-gallery">
+                    <div class="slides">
+                        <!-- <div class="numbertext">1 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-10-25 135240.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">2 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-10-30 133532.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">3 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-10-30 133556.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">4 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-12-11 114208.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">5 / 5</div> -->
+                        <img src="/Images/Screenshot 2024-07-11 162900.png" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">5 / 5</div> -->
+                        <video controls>
+                            <source src="/Videos/Mobbers 2024-07-09 09-30-03.mp4">
+                        </video>
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+
+                    <div class="slides">
+                        <iframe src="https://www.youtube.com/embed/aClQwNeTDvI?si=vfc8LOZlRJL-wxcV"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <a class="prev" onclick="changeSlide(-1)">«</a>
+                    <a class="next" onclick="changeSlide(1)">»</a>
+                </div>
+
+                <div class="breakdown">
+                    <!-- <b>Summary: </b> Roguelike where you play as the Mobs in a dungeon and want out
+                        <br><br>  -->
+                    <b>Role: </b> Machine Learning Developer
+                    <br><br>
+                    <b>Team Size: </b> Solo
+                    <br><br>
+                    <b>Timeline: </b> January 2023 - May 2023
+                    <br><br>
+                    <b>Tools: </b> Unity, C#, GitHub, ML-Agents, Tensorboard
+
+                    <br><br>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><b>Explore More!</b></button>
+                        <div class="dropdown-content">
+                            <a href="https://kabeja.itch.io/survivor-horde">Itch.io</a>
+                            <a href="https://github.com/KaneAdams-Dev/Zombeez-GameJam">GitHub
+                                Repo</a>
+                            <a href="https://itch.io/jam/-zombeez-game-jam-by-fan-studio">Game Jam Page</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- Overview -->
+
+
+        <div class="VideoPreview">
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/DfMTvRaegnI?si=PwzlhLAE7--Lgkg9" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <br>
+        <div id="Popup" class="demo-card" onmouseenter="PauseAutoSlide()"
+            onmouseleave="showSlide(0), timedSlideChange()">
+            <span class="close" onclick="ClosePopup()">&times;</span>
+            <div class="demo-popup">
+                <div class="iframe-webgl">
+                    <iframe id="PerlinNoise" mozallowfullscreen="true"
+                        src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no"
+                        frameborder="0"></iframe>
+                    <div class="iframe-hotbar">
+                        <button class="left-button" onclick="copyToClipboard('PerlinNoise');">Share</button>
+                        <button class="right-button"
+                            onclick="goFullscreen('PerlinNoise'); return false">FullScreen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="Responsibilities">
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+
+                <div class="content-break"></div>
+
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+        </div> -->
+    </section>
+</body>
+
+</html>
