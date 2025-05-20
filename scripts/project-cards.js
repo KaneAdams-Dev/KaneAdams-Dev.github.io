@@ -84,7 +84,7 @@ const projects = {
     },
 
     ML: {
-        title: "Machine Learning",
+        title: "Unity ML-Agents",
         description: "Trained a Unity Agent to search for and chase a target",
         thumbnail: "/Images/UnityML/UnityMLThumbnail.PNG",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
@@ -99,7 +99,7 @@ const projects = {
 
     PuzzledGaze: {
         title: "Puzzled Gaze",
-        description: "Puzzles you solve with your eyes!",
+        description: "Mini-games you play with your eyes!",
         thumbnail: "/Images/PuzzledGaze/DontStare.png",
         previews: ["/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif"],
         summary: "Final year solo project where ",
