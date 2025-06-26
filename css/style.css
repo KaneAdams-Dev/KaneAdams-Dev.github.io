@@ -635,6 +635,19 @@ button {
     transform: scale(1.1);
 }
 
+.HowMade {
+    padding: 1rem;
+    text-align: center;
+}
+
+.HowMade:hover {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 48rem) {
     /* #top-nav {
         padding: 10px 10px !important;

@@ -1,0 +1,175 @@
+---
+layout: default
+title: Portfolio Site | Frontend Developer
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>Portfolio Site | Frontend Developer</Title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <!-- <script type="text/javascript" src="/scripts/Core.js" defer></script> -->
+
+    <script type="text/javascript" src="/scripts/slideshow.js" defer></script>
+    <script type="text/javascript" src="/scripts/collapsibles.js" defer></script>
+    <script type="text/javascript" src="/scripts/webgl-manager.js" defer></script>
+    <script type="text/javascript" src="/scripts/project-cards.js" defer></script>
+</head>
+
+<body onload="initialiseCollapsibles(), showSlide(0)">
+    <section id="main-content">
+        <div id="synopse">
+            <h1>Portfolio Site</h1>
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="overview">
+            <div class="content-pair">
+                <div class="photo-gallery">
+                    <div class="slides">
+                        <!-- <div class="numbertext">1 / 5</div> -->
+                        <img src="/Images/Mobberville/b67b01_2943fc36147c48f28423ae0a005dc1c2~mv2.gif" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">2 / 5</div> -->
+                        <img src="/Images/Mobberville/b67b01_3f454d51e49645b68a7c25427b517d2f~mv2.gif" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">3 / 5</div> -->
+                        <img src="/Images/Mobberville/b67b01_81400b01932e434da01dd999123f6059~mv2.gif" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">4 / 5</div> -->
+                        <img src="/Images/Mobberville/b67b01_c15a3162bed64ea29b2c1cacd702d1c1~mv2.gif" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+                    <div class="slides">
+                        <!-- <div class="numbertext">5 / 5</div> -->
+                        <img src="/Images/Mobberville/b67b01_ff22211f3f3741a99c4d31dce7f8c3a1~mv2.gif" />
+                        <!-- <figcaption>Temp Image (with a caption)</figcaption> -->
+                    </div>
+
+                    <div class="slides">
+                        <iframe src="https://www.youtube.com/embed/AgZWDVuy7DA?si=4XC9Xt75lrJ-3a-I"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <a class="prev" onclick="changeSlide(-1)">«</a>
+                    <a class="next" onclick="changeSlide(1)">»</a>
+                </div>
+
+                <div class="breakdown">
+                    <!-- <b>Summary: </b> Roguelike where you play as the Mobs in a dungeon and want out
+                        <br><br>  -->
+                    <b>Role: </b> Frontend Developer
+                    <br><br>
+                    <b>Team Size: </b> Solo
+                    <br><br>
+                    <b>Timeline: </b> January 2025 to Present (Ongoing)
+                    <br><br>
+                    <b>Tools: </b> HTML, CSS, JavaScript, GitHub
+                    <br><br>
+                    <b>Hosting: </b> GitHub Pages
+                    <br><br>
+
+                    <br><br>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><b>Explore More!</b></button>
+                        <div class="dropdown-content">
+                            <li><a href="https://kaneadams-dev.github.io">Homepage</a></li>
+                            <li><a href="https://github.com/KaneAdams-Dev/KaneAdams-Dev.github.io">GitHub Repo</a></li>
+                            
+                            <!-- <a href="/docs/CT7101_IndustrialExperienceSlides_KaneAdams.pptx" download="CT7101_IndustrialExperienceSlides_KaneAdams">Assignment Presentation</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> <!-- Overview -->
+
+
+        <div class="VideoPreview">
+            <!-- <video controls>
+                <source src="/Videos/ArtIsOpinion/AiO_ComX_Trailer.mp4"/>
+            </video> -->
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/LFoeC7F4Fp8?si=TcoTFK-umaQCpE1t" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <br>
+        <div id="Popup" class="demo-card" onmouseenter="PauseAutoSlide()"
+            onmouseleave="showSlide(0), timedSlideChange()">
+            <span class="close" onclick="ClosePopup()">&times;</span>
+            <div class="demo-popup">
+                <div class="iframe-webgl">
+                    <iframe id="PerlinNoise" mozallowfullscreen="true"
+                        src="https://kaneadams-dev.github.io/Perlin-Noise-Test-2/" scrolling="no"
+                        frameborder="0"></iframe>
+                    <div class="iframe-hotbar">
+                        <button class="left-button" onclick="copyToClipboard('PerlinNoise');">Share</button>
+                        <button class="right-button"
+                            onclick="goFullscreen('PerlinNoise'); return false">FullScreen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="Responsibilities">
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+
+                <div class="content-break"></div>
+
+                <div class="content-pair">
+                    <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                    <p>
+                        I created the neccessary stuff to make this character work without problems.
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+
+            <button type="button" class="collapsible">
+                I created the work neccessary to work.
+            </button>
+            <div class="collapsible-content">
+                <img src="/Images/Screenshot 2024-07-11 162900.png" loading="lazy">
+                <p>
+                    I created the neccessary stuff to make this character work without problems.
+                </p>
+            </div>
+        </div> -->
+    </section>
+</body>
+
+</html>
