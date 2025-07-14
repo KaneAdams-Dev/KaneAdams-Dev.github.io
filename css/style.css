@@ -638,10 +638,13 @@ button {
 .HowMade {
     padding: 1rem;
     text-align: center;
+    text-decoration: underline;
 }
 
 .HowMade:hover {
-    text-decoration: underline;
+    color:gray;
+    cursor:pointer;
+    transform: scale(0.95);
 }
 
 .link:hover {
