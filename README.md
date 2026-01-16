@@ -87,7 +87,7 @@ A limit of 12 projects was chosen because it allows the grid to remain visually 
 - 6 rows of 2 projects
 - 12 rows of 1 project
 
-This avoids uneven rows or incomplete columns wgeb resizing the page, ensuring the layout feels intentional and balanced across all devices.
+This avoids uneven rows or incomplete columns when resizing the page, ensuring the layout feels intentional and balanced across all devices.
 
 > ⚠ <strong>Note:</strong> While fewer projects may be shown during active development, the layout is designed to scale cleanly up to the 12-project limit. <!-- REMOVE WHEN AT 12 GAMES! -->
 
