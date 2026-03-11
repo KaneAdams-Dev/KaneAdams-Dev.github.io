@@ -125,6 +125,19 @@ const projects = {
         slideshow: ["/Images/Zombeez/SH_AKBoss.PNG", "/Images/Zombeez/SH_M60Boss.PNG", "/Images/Mobbers/Lib.gif", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
     
     },
+    MixUp : {
+        title: "Mix Up Vania",
+        description: "Explore different game genres as a Metroidvania protagonist and try to find a way home",
+        thumbnail: "/Images/MixUpVania/Mix_Up_Vania_Thumbnail_Git.png",
+        previews: ["/Images/CrumblingColony/CC_MainMenu.png"],
+        summary: "Final year solo project where ",
+        role: "Frontend Developer",
+        size: "5",
+        tools: "HTML, CSS, JavaScript, GitHub",
+        timeline: "April 2025 to Present",
+        ProjectLink: "Projects/CrumblingColony.html",
+        slideshow: ["/Images/CrumblingColony/CC_Trail.png", "/Images/CrumblingColony/CC_patch1Army.png", "/Images/CrumblingColony/CC_MainMenu.png", "/Images/Mobbers/test.gif", "/Videos/Mobbers 2024-07-09 09-30-03.mp4"]
+    },
 
     CrumblingColony : {
         title: "Crumbling Colony",
